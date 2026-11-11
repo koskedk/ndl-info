@@ -1,0 +1,23 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.ovpn
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# Local data and scratch
+*.duckdb
+*.duckdb.wal
+.DS_Store
