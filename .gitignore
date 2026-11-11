@@ -21,3 +21,7 @@ logs/
 *.duckdb
 *.duckdb.wal
 .DS_Store
+
+# Explorer: local caches and query output (output may contain patient data)
+explorer/.cache/
+explorer/out/

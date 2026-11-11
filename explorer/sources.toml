@@ -1,0 +1,77 @@
+# Sources the explorer knows about.
+#
+# To add a new data source, add a [[source]] block. No code change is needed.
+#
+#   name         short name used on the command line and in SQL (letters, digits, underscore)
+#   store        which [store.*] block holds the connection details
+#   kind         "iceberg"  = a folder with one Iceberg table per sub-folder
+#                "parquet"  = plain Parquet files; list each table under [source.tables]
+#   path         folder inside the bucket (no leading slash)
+#   description  one line, shown by `lake-explorer sources`
+#   notes        optional reminders shown by `lake-explorer schema`
+
+# Connection details are read from the project's .env file.
+# env_prefix = "SRC_S3" means: SRC_S3_ENDPOINT, SRC_S3_ACCESS_KEY, SRC_S3_SECRET_KEY,
+# SRC_S3_REGION, SRC_S3_BUCKETS (first bucket in the list is used).
+[store.dha]
+env_prefix = "SRC_S3"
+
+[[source]]
+name = "kenyaemr"
+store = "dha"
+kind = "iceberg"
+path = "iceberg/hmis_kenya_emr_conso"
+description = "KenyaEMR, consolidated copy (current)"
+notes = "Join on source_schema plus the id. Drop deleted rows with voided = 0. Lookup tables contain repeated rows."
+
+[[source]]
+name = "kenyaemr_old"
+store = "dha"
+kind = "iceberg"
+path = "iceberg/hmis_kenya_emr"
+description = "KenyaEMR, older per-facility copy (stopped loading October 2026)"
+notes = "Use only to fill gaps in kenyaemr, such as orders."
+
+[[source]]
+name = "amrs"
+store = "dha"
+kind = "iceberg"
+path = "iceberg/hmis_ampath_prod"
+description = "AMPATH AMRS, production"
+notes = "Single database, no facility column. Drop deleted rows with voided = 0."
+
+[[source]]
+name = "tiberbu"
+store = "dha"
+kind = "iceberg"
+path = "iceberg/hmis_tiberbu_ingestion"
+description = "Tiberbu HMIS"
+notes = "company is the facility. Drop cancelled rows with docstatus != 2. Child tables link through parent and parenttype."
+
+[[source]]
+name = "facility"
+store = "dha"
+kind = "iceberg"
+path = "iceberg/facility_safaricom"
+description = "Facility registry"
+
+[[source]]
+name = "registry"
+store = "dha"
+kind = "iceberg"
+path = "iceberg/hie_tiberbu_iceberg"
+description = "Client registry and related tables (last loaded August 2026)"
+
+[[source]]
+name = "khis"
+store = "dha"
+kind = "parquet"
+path = "khis/khis_apis_v2"
+description = "KHIS indicators, one value per facility per month (July 2025 to June 2026)"
+notes = "Folder names become columns: run_id, api_id, api_name."
+
+  # table name = file pattern, relative to the source path
+  [source.tables]
+  data = "**/khis_data.parquet"
+  facility_details = "**/facility_details.parquet"
+  facility_name = "**/facility_name.parquet"
