@@ -25,7 +25,7 @@ flowchart LR
     BR[Bronze<br/>staged as picked up]
     SV[Silver<br/>cleaned, patients linked by the<br/>Master Patient Index,<br/>one canonical model]
     GD[Gold<br/>facts, dimensions,<br/>indicator tables]
-    SRV[Serving database]
+    SRV[Serving database<br/>ClickHouse]
     REG[Indicator Registry]
     API[API layer and access control]
   end
@@ -42,7 +42,7 @@ flowchart LR
   NOT == target: staged in S3 Ceph ==> CEPH
 ```
 
-In words: NHAI picks up the data staged in S3 Ceph and lands it, unchanged, in its own bronze. It cleans the data, links patients across systems and maps everything into one canonical model in silver, shapes it for analysis in gold, loads it into a fast serving database, and defines every indicator once in the Indicator Registry. Dashboards, the Intelligence Centre and external systems all read through one API layer. Data that is not in S3 Ceph arrives through temporary bridges until DHA stages it there.
+In words: NHAI picks up the data staged in S3 Ceph and lands it, unchanged, in its own bronze. It cleans the data, links patients across systems and maps everything into one canonical model in silver, shapes it for analysis in gold, copies the gold tables into ClickHouse (the fast serving database), and defines every indicator once in the Indicator Registry. Dashboards, the Intelligence Centre and external systems all read through one API layer. Data that is not in S3 Ceph arrives through temporary bridges until DHA stages it there.
 
 ## Components and tools
 
@@ -64,14 +64,14 @@ The last column notes where the same tool was seen in use on the S3 Ceph side. M
 | Table format | Bronze, silver, gold | Database-style tables on object storage, with history | Apache Iceberg | none needed | Yes |
 | Table catalog | Cross-cutting: infrastructure | One register of all NHAI tables so every tool sees the same thing | Lakekeeper, on PostgreSQL | SeaweedFS's built-in Iceberg catalog; Apache Polaris | None seen |
 | Query and transformation engine | Silver, gold | Run the SQL that builds silver and gold | Trino | Apache Spark for very heavy jobs; DuckDB for development | Not seen |
-| Transformation | Silver, gold | Models, tests, documentation and lineage as code | dbt Core with dbt-trino | SQLMesh | Not seen |
+| Transformation | Silver, gold | Models, tests, documentation and lineage as code. Its generated documentation site shows where every table comes from. | dbt Core with dbt-trino | SQLMesh | Not seen |
 | Table upkeep | Cross-cutting: infrastructure | Merge small files, expire old snapshots | Trino maintenance commands, scheduled by Dagster | Spark procedures | Not done at the source |
 
 ### Silver: quality, standards and identity
 
 | Component | DHA box | Job | Proposed tool | Alternative |
 |---|---|---|---|---|
-| Data quality checks | Silver: data quality checks; cross-cutting: data quality assurance | Rules on every table; thresholds and freshness per facility | dbt tests, plus Soda Core | Great Expectations, Elementary |
+| Data quality checks | Silver: data quality checks; cross-cutting: data quality assurance | Rules on every table, run after each load; thresholds and freshness per facility | dbt tests, plus Soda Core | Great Expectations, Elementary |
 | Terminology service | Silver: terminology alignment | Map each system's codes to national code sets | Open Concept Lab, with the maps loaded as dbt seed tables | Snowstorm |
 | Integration layer | Silver: deduplication and reconciliation | Link records across systems and keep their history (Data Vault) | dbt macros written for Trino | AutomateDV, if it supports Trino at the time |
 | Master Patient Index | Cross-cutting: Master Patient Index; silver: deduplication | Recognise one person across systems and give every patient record a person key | See the Master Patient Index section below | |
@@ -82,7 +82,8 @@ The last column notes where the same tool was seen in use on the S3 Ceph side. M
 | Component | DHA box | Job | Proposed tool | Alternative | Seen at DHA? |
 |---|---|---|---|---|---|
 | Dimensional model | Gold: data marts | Facts and dimensions per programme, and indicator tables | dbt Core (Kimball style) | none needed | |
-| Serving database | Gold to API | Sub-second answers for dashboards | ClickHouse | StarRocks | ClickHouse: yes |
+| Serving database | Gold to API | Sub-second answers for dashboards. Gold stays in Iceberg as the master copy; ClickHouse holds a scheduled copy of the gold marts and indicator tables. | ClickHouse | StarRocks | ClickHouse: yes |
+| Analyst SQL | Gold to API | Ad-hoc questions over silver and gold without going through the serving copy | Trino, directly | DuckDB on a laptop for small extracts | Not seen |
 | Indicator Registry | API: aggregate data services | Define each indicator once; serve it over an API with caching | Cube | dbt MetricFlow | No |
 | Boundaries and geography | Gold | County, sub-county and ward shapes | PostgreSQL with PostGIS | GeoJSON files served from object storage | |
 
@@ -117,6 +118,7 @@ The last column notes where the same tool was seen in use on the S3 Ceph side. M
 |---|---|---|---|---|
 | Data catalog, glossary and lineage | Data governance | Searchable inventory, definitions, and where each figure comes from | OpenMetadata | DataHub |
 | Monitoring and logging | Monitoring and logging | System health, pipeline failures, logs | Prometheus, Grafana and Loki; Dagster's own interface | none needed |
+| Operational database | Infrastructure | Backing store for the table catalog, Dagster, OpenMetadata, the steward review queue and small reference tables. It holds no health data. | PostgreSQL | none needed |
 | Secrets | Security | Keep credentials out of code | OpenBao | SOPS |
 | Runtime | Infrastructure | Run the services | Kubernetes for production; Docker Compose for the proof of concept | Nomad |
 | Change control | Data governance | Review and test every change before release | Git, with automated dbt builds and SQLFluff checks | none needed |

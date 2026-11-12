@@ -82,6 +82,17 @@ uv run lake-explorer changes
 
 The snapshot files hold table statistics only, no data, and are meant to be committed so the history builds up.
 
+## Long counts over an unreliable connection
+
+A count over a table made of thousands of small files can take 20 minutes or more, and one dropped VPN connection loses the whole run. `scripts/batched_count.py` runs the same count over 250 files at a time and saves each batch's totals, so a drop costs only the batch in flight. It waits for the connection to come back, and running it again carries on where it stopped.
+
+```bash
+uv run --offline python scripts/batched_count.py tiberbu form_data_repository \
+    queries/batched/tiberbu_form_fields.sql out/tiberbu_form_fields
+```
+
+The SQL file reads from a table called `batch`. Batch results land in `out/<name>.parts/` and are then added together. Use it only for counts that add up across batches (`count(*)`, sums), not for `count(DISTINCT ...)`. No rows of the table are kept on disk.
+
 ## Adding a new source
 
 Add a block to `sources.toml`. No code change is needed.
@@ -125,7 +136,7 @@ env_prefix = "BRONZE_S3"   # reads BRONZE_S3_ENDPOINT, BRONZE_S3_ACCESS_KEY, BRO
 - **Only current rows are counted.** Some table folders hold files that are no longer part of the table. The tool reads the table definition and ignores those, so its counts can be lower than a count of everything in the folder. For Tiberbu's `form_data_repository` the difference is large: the current table has 8 million rows, while the folder holds 31 million.
 - **Query output can contain personal data.** The source tables hold names, phone numbers, national IDs and clinical notes. `out/` is ignored by git for that reason. Prefer totals over row listings, and do not paste row-level output into documents or chats.
 - **`profile` shows the smallest and largest value of each column**, which for a name or ID column is a real person's value. Pick columns with `--columns` when profiling a table that holds personal details.
-- **Memory.** Queries are capped at 4 GB and spill to disk beyond that. Raise it with `--memory 8GB` if the machine has room.
+- **Memory.** Queries are capped at 4 GB and spill to disk beyond that. Raise it with `--memory 8GB` if the machine has room. Spill space under `.cache/duckdb_tmp` is capped at 20 GB: a query that needs more stops with an error instead of filling the disk. If a query is killed part-way, delete what it left in that folder.
 
 ## How it works
 
@@ -140,6 +151,7 @@ env_prefix = "BRONZE_S3"   # reads BRONZE_S3_ENDPOINT, BRONZE_S3_ACCESS_KEY, BRO
 explorer/
   sources.toml          the sources
   queries/              saved SQL
+  scripts/              batched_count.py, for long counts that must survive a dropped connection
   snapshots/<date>/     inventory history (commit these)
   out/                  query output (ignored by git)
   .cache/               file lists and DuckDB spill space (ignored by git)

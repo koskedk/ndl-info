@@ -26,6 +26,8 @@ class Engine:
         spill.mkdir(parents=True, exist_ok=True)
         self.con.execute(f"SET memory_limit='{memory_limit}'")
         self.con.execute(f"SET temp_directory='{spill}'")
+        # A query that outgrows this fails with an error instead of filling the disk.
+        self.con.execute("SET max_temp_directory_size='20GB'")
         self.con.execute("SET preserve_insertion_order=false")
         if threads:
             self.con.execute(f"SET threads={int(threads)}")

@@ -9,7 +9,7 @@ A record of what is in the existing DHA lake (`s3://dha-analytics`, on Ceph), wr
 | [01-bucket-map.md](01-bucket-map.md) | What each folder in the bucket holds, how big and how fresh it is, and whether we need it |
 | [02-source-table-inventory.md](02-source-table-inventory.md) | Every table in the five EMR source folders, with row counts, sizes and last load dates |
 | [03-malaria-data-map.md](03-malaria-data-map.md) | For a disease question such as malaria: which tables supply patients, encounters, clinical notes, diagnoses, lab tests and prescriptions in each source |
-| [04-rmncah-data-map.md](04-rmncah-data-map.md) | For the RMNCAH-N dashboards: which sources hold maternal, newborn, child, family planning and nutrition data, how much, and a verdict for each of the 20 core indicators |
+| [04-rmncah-data-map.md](04-rmncah-data-map.md) | For the RMNCAH-N dashboards: which tables and fields hold maternal, newborn, child, family planning and nutrition data in each of the three EMRs, how much each has, and a verdict for each of the 20 core indicators |
 | [table_inventory.csv](table_inventory.csv) | The inventory as a spreadsheet, including the column names of every table |
 
 ## Main findings
@@ -23,7 +23,9 @@ A record of what is in the existing DHA lake (`s3://dha-analytics`, on Ceph), wr
 7. **AMRS has two mismatches.** Its diagnosis table has 9,192 rows against 16 million encounters, so diagnoses must be recorded elsewhere, most likely as coded observations. And it has 21.4 million prescriptions but only 890,096 rows in `orders`, the table that should hold one parent row for each.
 8. **The tables have never been tidied.** Every load appends a new small file. The Tiberbu folder alone has about 243,000 data files. There is no table catalog. Reading directly from this bucket will be slow.
 9. **Repeated rows are real.** KenyaEMR's `encounter_type` lookup holds about five copies of every entry (578,124 rows for 113,205 entries), and the folder for Tiberbu's `form_data_repository` holds 30.7 million rows where the current table has 8 million. KenyaEMR's `encounter` table is far cleaner: 211,617 of its 75 million rows (0.3%) are extra copies. AMRS `encounter` showed no repeats.
-10. **Sensitive content is present in clear.** Tiberbu's `patient` table holds names, phone numbers and national IDs, `doctors_notes` holds free-text clinical notes, and `company_settings` holds credential columns (`secret`, `password`, `private_key`).
+10. **Tiberbu's form answers are packed, not laid out in columns.** Each row of `form_data_repository` is one submitted form, with every answer held together as a JSON object in one column. Reading a single field, such as the ANC contact number, means unpacking it. The 6,870 field names inside the forms have been listed with how often each is filled; their answer values have not been read.
+11. **Death audits are not being recorded.** Tiberbu's death notification form started in July 2026 and has audit columns, but only 3 of 4,354 notices are marked as audited. KenyaEMR's mortality encounter holds no cause or audit.
+12. **Sensitive content is present in clear.** Tiberbu's `patient` table holds names, phone numbers and national IDs, `doctors_notes` holds free-text clinical notes, and `company_settings` holds credential columns (`secret`, `password`, `private_key`).
 
 ## Recommendations
 
@@ -34,7 +36,7 @@ A record of what is in the existing DHA lake (`s3://dha-analytics`, on Ceph), wr
 5. **Raise the gaps with the lake's owners** (the questions are listed below) before designing silver around tables that turn out to be incomplete.
 6. **Ask for a fuller, current KHIS feed.** Both the RMNCAH-N dashboards and the malaria work depend on KHIS figures that are not in the lake today.
 7. **For the malaria workshop, answer from the EMR data first.** Case-management indicators (testing, positivity, treatment, inpatient deaths) are reachable from the three sources. Elimination, stock-out and community indicators are not. The detail is in [03-malaria-data-map.md](03-malaria-data-map.md).
-8. **For the RMNCAH-N dashboards, settle the indicator list and build in two layers.** The mock-ups in `resources/` show survey-based figures (under-5 mortality, stunting, contraceptive prevalence, wealth-quintile splits) that the core indicator framework set aside as not routinely collected. Of the 20 core indicators, six can be shown now from the KHIS figures in the lake and two more in part, and most of the rest can be built from Tiberbu and KenyaEMR records for the facilities on those systems. The indicator-by-indicator verdict is in [04-rmncah-data-map.md](04-rmncah-data-map.md).
+8. **For the RMNCAH-N dashboards, settle the indicator list and build in two layers.** The mock-ups in `resources/` show survey-based figures (under-5 mortality, stunting, contraceptive prevalence, wealth-quintile splits) that the core indicator framework set aside as not routinely collected. Of the 20 core indicators, six can be shown now from the KHIS figures in the lake, seven more can be built from Tiberbu and KenyaEMR records for the facilities on those systems, four can probably be built from Tiberbu alone once answer values are confirmed (chlorhexidine cord care, pneumonia and diarrhoea treatment, and the OTP default rate), and three cannot be answered today (the two death audit indicators and HPV vaccination). The indicator-by-indicator verdict is in [04-rmncah-data-map.md](04-rmncah-data-map.md).
 9. **Bring in KNBS population projections.** Seven of the 20 RMNCAH-N indicators and the malaria incidence and mortality rates need a population denominator that is not in the lake.
 
 ## Questions for the lake's owners
@@ -56,10 +58,10 @@ A record of what is in the existing DHA lake (`s3://dha-analytics`, on Ceph), wr
 - Read-only access with the S3 credentials in `.env`, over the VPN, using the `aws` command-line tool. Nothing in the bucket was changed.
 - Folders were listed level by level. Sizes and date ranges for the non-EMR folders come from listing every object in each folder.
 - For each of the 267 tables in the five EMR source folders, the newest Iceberg metadata file was downloaded and its current snapshot summary read. That gives row counts, file counts, sizes, columns and load dates without reading any patient rows.
-- For the RMNCAH-N page, the `explorer` tool was used to count rows by encounter type, programme, form and month. Only totals were produced; no individual record was viewed or saved. The tool reads each table's current state, and the queries are saved in `explorer/queries/` so the counts can be repeated.
+- For the RMNCAH-N page, the `explorer` tool was used to count rows by encounter type, programme, form and month, and then by question and answer option within the maternal and child encounter types of KenyaEMR and AMRS, and by field name inside Tiberbu's forms. Only totals were produced; no individual record was viewed or saved. The tool reads each table's current state, and the queries are saved in `explorer/queries/` so the counts can be repeated.
 
 ## What has not been done yet
 
-- **No individual patient record has been examined.** The malaria page describes structure and volume only; which codes, test names and result values identify malaria is still to be confirmed, and the checks are listed at the end of [03-malaria-data-map.md](03-malaria-data-map.md). The RMNCAH-N page uses totals only.
+- **No individual patient record has been examined.** The malaria page describes structure and volume only; which codes, test names and result values identify malaria is still to be confirmed, and the checks are listed at the end of [03-malaria-data-map.md](03-malaria-data-map.md). The RMNCAH-N page uses totals only, and the answer values inside Tiberbu's form fields are still to be read.
 - The tables in the non-EMR Iceberg folders (facility registry, client registry, provider portal) were sized by folder but their columns were not examined.
 - The size given for `erp/` is a minimum, because its listing may have been cut short.
