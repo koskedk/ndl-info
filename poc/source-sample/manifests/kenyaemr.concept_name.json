@@ -1,0 +1,26 @@
+{
+  "source": "kenyaemr",
+  "table": "concept_name",
+  "sampled_at": "2026-11-16T18:15:08Z",
+  "source_metadata_file": "00536-92405de2-6e35-43b3-a280-cbd8aea909cd.metadata.json",
+  "source_snapshot_id": 5671693064405286153,
+  "select_by": "whole",
+  "source_rows": 367842,
+  "source_files": 536,
+  "source_bytes": 13359733,
+  "files_read": 536,
+  "bytes_read": 13359733,
+  "rows_kept": 367842,
+  "rows_by_facility": {},
+  "rows_by_load": {
+    "1": 367842
+  },
+  "patients_referred_to": null,
+  "patients_in_source": null,
+  "rows_by_facility_month": [],
+  "emptied_columns": [
+    "void_reason"
+  ],
+  "standin_location": "s3://dha-analytics/iceberg/hmis_kenya_emr_conso/concept_name",
+  "problems": []
+}

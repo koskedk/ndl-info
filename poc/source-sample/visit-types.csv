@@ -1,0 +1,38 @@
+source,encounter_type,area,used_by
+kenyaemr,MCH Mother Enrollment,ANC,RMN-16
+kenyaemr,ANC Mother Enrollment,ANC,RMN-16
+kenyaemr,PNC Mother Enrollment,Postnatal,RMN-04
+kenyaemr,MCH Mother Consultation,ANC and postnatal,"RMN-04, RMN-06, RMN-01"
+kenyaemr,MCH Inpatient,Maternity,"RMN-01, RMN-06"
+kenyaemr,MCH Partograph,Maternity,
+kenyaemr,New born admission,Newborn,RMN-06
+kenyaemr,CWC Enrollment,Child clinic,RMN-08
+kenyaemr,CWC Consultation,Child clinic,
+kenyaemr,Mortality,Deaths,"RMN-01, RMN-06"
+kenyaemr,MCH Mother Discontinuation,Leaving a programme,RMN-01
+kenyaemr,MCH Child Discontinuation,Leaving a programme,RMN-06
+kenyaemr,ANC Discontinuation,Leaving a programme,
+kenyaemr,PNC Discontinuation,Leaving a programme,
+kenyaemr,Immunizations,Immunisation,Later indicators
+kenyaemr,MCH Child Immunization,Immunisation,Later indicators
+kenyaemr,Nutrition,Nutrition,Later indicators
+kenyaemr,Nutrition Enrollment,Nutrition,Later indicators
+kenyaemr,Nutrition encounter,Nutrition,Later indicators
+kenyaemr,Nutrition Discontinuation,Nutrition,Later indicators
+kenyaemr,Family Planning,Family planning,Later indicators
+kenyaemr,Family Planning Enrollment,Family planning,Later indicators
+kenyaemr,Family planning Discontinuation,Family planning,Later indicators
+amrs,ANCADULTINITIAL,ANC,RMN-16
+amrs,ANCADULTRETURN,ANC,RMN-16
+amrs,PNCADULTINITIAL,Postnatal,"RMN-04, RMN-08"
+amrs,PNCADULTRETURN,Postnatal,"RMN-04, RMN-08"
+amrs,LABORANDDELIVERY,Maternity,"RMN-01, RMN-06"
+amrs,LABORCAREGUIDE,Maternity,
+amrs,MATERNITYADMISSION,Maternity,
+amrs,MATERNITYDISCHARGE,Maternity,"RMN-01, RMN-06"
+amrs,MATERNALDEATHNOTIFICATION,Deaths,RMN-01
+amrs,PERINATALDEATHNOTIFICATION,Deaths,RMN-06
+amrs,MATERNALDEATHAUDIT,Deaths,RMN-05
+amrs,IMMUNIZATIONVISIT,Immunisation,Later indicators
+amrs,PEDSNUTRITION,Nutrition,Later indicators
+amrs,FPSCREENING,Family planning,Later indicators

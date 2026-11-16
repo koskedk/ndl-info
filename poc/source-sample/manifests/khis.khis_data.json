@@ -1,0 +1,22 @@
+{
+  "source": "khis",
+  "table": "khis_data",
+  "sampled_at": "2026-11-16T18:15:23Z",
+  "source_metadata_file": null,
+  "source_snapshot_id": null,
+  "select_by": "files",
+  "source_rows": 493568,
+  "source_files": 22,
+  "source_bytes": 10873321,
+  "files_read": 22,
+  "bytes_read": 10873321,
+  "rows_kept": 493568,
+  "rows_by_facility": {},
+  "rows_by_load": {},
+  "patients_referred_to": null,
+  "patients_in_source": null,
+  "rows_by_facility_month": [],
+  "emptied_columns": [],
+  "standin_location": "s3://dha-analytics/khis/khis_apis_v2",
+  "problems": []
+}

@@ -1,0 +1,158 @@
+{
+  "source": "amrs",
+  "table": "obs",
+  "sampled_at": "2026-11-16T19:37:56Z",
+  "source_metadata_file": "01945-e3b656e8-dd22-47ed-8913-c7e101709a7a.metadata.json",
+  "source_snapshot_id": 1430647954417820038,
+  "select_by": "encounters_in:encounter",
+  "source_rows": 452649164,
+  "source_files": 1945,
+  "source_bytes": 11148739736,
+  "files_read": 1023,
+  "bytes_read": 5103099765,
+  "rows_kept": 353926,
+  "rows_by_facility": {},
+  "rows_by_load": {
+    "1": 255620,
+    "2": 50130,
+    "3": 48176
+  },
+  "patients_referred_to": null,
+  "patients_in_source": null,
+  "encounters_chosen": 9775,
+  "encounters_with_rows": 9761,
+  "by_visit_type": [
+    {
+      "visit_type": "ANCADULTINITIAL",
+      "encounters": 684,
+      "encounters_with_rows": 684,
+      "rows": 29225
+    },
+    {
+      "visit_type": "ANCADULTRETURN",
+      "encounters": 2243,
+      "encounters_with_rows": 2243,
+      "rows": 97922
+    },
+    {
+      "visit_type": "FPSCREENING",
+      "encounters": 710,
+      "encounters_with_rows": 710,
+      "rows": 13010
+    },
+    {
+      "visit_type": "IMMUNIZATIONVISIT",
+      "encounters": 1992,
+      "encounters_with_rows": 1983,
+      "rows": 32703
+    },
+    {
+      "visit_type": "LABORANDDELIVERY",
+      "encounters": 178,
+      "encounters_with_rows": 178,
+      "rows": 4836
+    },
+    {
+      "visit_type": "LABORCAREGUIDE",
+      "encounters": 147,
+      "encounters_with_rows": 146,
+      "rows": 4186
+    },
+    {
+      "visit_type": "MATERNALDEATHAUDIT",
+      "encounters": 1,
+      "encounters_with_rows": 1,
+      "rows": 76
+    },
+    {
+      "visit_type": "MATERNALDEATHNOTIFICATION",
+      "encounters": 8,
+      "encounters_with_rows": 7,
+      "rows": 67
+    },
+    {
+      "visit_type": "MATERNITYADMISSION",
+      "encounters": 280,
+      "encounters_with_rows": 280,
+      "rows": 9781
+    },
+    {
+      "visit_type": "MATERNITYDISCHARGE",
+      "encounters": 113,
+      "encounters_with_rows": 110,
+      "rows": 1889
+    },
+    {
+      "visit_type": "PEDSNUTRITION",
+      "encounters": 181,
+      "encounters_with_rows": 181,
+      "rows": 1287
+    },
+    {
+      "visit_type": "PERINATALDEATHNOTIFICATION",
+      "encounters": 1,
+      "encounters_with_rows": 1,
+      "rows": 17
+    },
+    {
+      "visit_type": "PNCADULTINITIAL",
+      "encounters": 248,
+      "encounters_with_rows": 248,
+      "rows": 11218
+    },
+    {
+      "visit_type": "PNCADULTRETURN",
+      "encounters": 2989,
+      "encounters_with_rows": 2989,
+      "rows": 147779
+    }
+  ],
+  "by_facility": [
+    {
+      "facility": "195",
+      "encounters": 137,
+      "encounters_with_rows": 133,
+      "rows": 4696
+    },
+    {
+      "facility": "325",
+      "encounters": 1003,
+      "encounters_with_rows": 1003,
+      "rows": 65748
+    },
+    {
+      "facility": "329",
+      "encounters": 2403,
+      "encounters_with_rows": 2403,
+      "rows": 110184
+    },
+    {
+      "facility": "333",
+      "encounters": 338,
+      "encounters_with_rows": 335,
+      "rows": 13408
+    },
+    {
+      "facility": "62",
+      "encounters": 5839,
+      "encounters_with_rows": 5832,
+      "rows": 156561
+    },
+    {
+      "facility": "71",
+      "encounters": 56,
+      "encounters_with_rows": 56,
+      "rows": 3399
+    }
+  ],
+  "visit_types_without_encounters": [],
+  "rows_by_facility_month": [],
+  "emptied_columns": [
+    "comments",
+    "value_complex",
+    "value_text",
+    "void_reason"
+  ],
+  "standin_location": "s3://dha-analytics/iceberg/hmis_ampath_prod/obs",
+  "problems": []
+}

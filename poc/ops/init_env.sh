@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Creates the local settings the POC needs: poc/.env and the keys for the stand-in S3 Ceph.
+# Creates the local settings the POC needs: .env and the keys for the stand-in S3 Ceph.
 # Safe to run again: existing files are left alone. Nothing here is committed.
 set -euo pipefail
 POC_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd -P)"
@@ -27,7 +27,7 @@ STANDIN_S3_WRITE_ACCESS_KEY=$write_key
 STANDIN_S3_WRITE_SECRET_KEY=$write_secret
 ENV
   chmod 600 "$POC_DIR/.env"
-  echo "created poc/.env"
+  echo "created .env"
 fi
 
 if [[ ! -f "$POC_DIR/.secrets/standin-s3.json" ]]; then
@@ -49,11 +49,11 @@ if [[ ! -f "$POC_DIR/.secrets/standin-s3.json" ]]; then
 }
 JSON
   chmod 644 "$POC_DIR/.secrets/standin-s3.json"
-  echo "created poc/.secrets/standin-s3.json"
+  echo "created .secrets/standin-s3.json"
 fi
 
 if [[ ! -f "$POC_DIR/.secrets/hash_key" ]]; then
   rand 32 > "$POC_DIR/.secrets/hash_key"
   chmod 600 "$POC_DIR/.secrets/hash_key"
-  echo "created poc/.secrets/hash_key"
+  echo "created .secrets/hash_key"
 fi

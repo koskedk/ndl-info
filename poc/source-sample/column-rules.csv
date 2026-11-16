@@ -126,3 +126,174 @@ amrs,encounter_type,edit_privilege,keep,,
 amrs,patient_identifier,identifier,identity,identifier,Kind is given by identifier_type
 amrs,patient_identifier,void_reason,empty,,Free text
 amrs,patient_identifier,uuid,keep,,Record key
+kenyaemr,patient_identifier_type,source_schema,keep,,The facility
+kenyaemr,patient_identifier_type,name,keep,,
+kenyaemr,patient_identifier_type,description,keep,,
+kenyaemr,patient_identifier_type,format,keep,,
+kenyaemr,patient_identifier_type,format_description,keep,,
+kenyaemr,patient_identifier_type,validator,keep,,
+kenyaemr,patient_identifier_type,retire_reason,keep,,
+kenyaemr,patient_identifier_type,uuid,keep,,Record key
+kenyaemr,patient_identifier_type,location_behavior,keep,,
+kenyaemr,patient_identifier_type,uniqueness_behavior,keep,,
+amrs,patient_identifier_type,name,keep,,
+amrs,patient_identifier_type,description,keep,,
+amrs,patient_identifier_type,format,keep,,
+amrs,patient_identifier_type,format_description,keep,,
+amrs,patient_identifier_type,validator,keep,,
+amrs,patient_identifier_type,retire_reason,keep,,
+amrs,patient_identifier_type,uuid,keep,,Record key
+amrs,patient_identifier_type,location_behavior,keep,,
+amrs,patient_identifier_type,uniqueness_behavior,keep,,
+tiberbu,form_data_repository,name,keep,,Record key
+tiberbu,form_data_repository,modified_by,empty,,"Staff account, not needed"
+tiberbu,form_data_repository,owner,empty,,"Staff account, not needed"
+tiberbu,form_data_repository,form_name,keep,,Which form this is
+tiberbu,form_data_repository,dictionary_concept,keep,,A code for the form
+tiberbu,form_data_repository,patient,keep,,Record key
+tiberbu,form_data_repository,observed_value,keep,,"Every answer on the form as one JSON object. Some forms hold names, ID numbers and phone numbers inside it: unpack only the fields needed and never pass the column whole into silver"
+tiberbu,form_data_repository,control_id,keep,,
+tiberbu,form_data_repository,patient_encounter,keep,,Record key
+tiberbu,form_data_repository,company,keep,,The facility
+tiberbu,form_data_repository,context_id,keep,,
+tiberbu,form_data_repository,health_program_enrollment,keep,,Record key
+tiberbu,form_data_repository,health_program,keep,,
+tiberbu,form_data_repository,_user_tags,empty,,"System field, not needed"
+tiberbu,form_data_repository,_comments,empty,,"System field, not needed"
+tiberbu,form_data_repository,_assign,empty,,"System field, not needed"
+tiberbu,form_data_repository,_liked_by,empty,,"System field, not needed"
+tiberbu,form_data_repository,patient_appointment,keep,,Record key
+tiberbu,form_data_repository,inpatient_record,keep,,Record key
+tiberbu,form_data_repository,county_id,keep,,
+tiberbu,death_notification,name,keep,,Record key
+tiberbu,death_notification,modified_by,empty,,"Staff account, not needed"
+tiberbu,death_notification,owner,empty,,"Staff account, not needed"
+tiberbu,death_notification,naming_series,keep,,
+tiberbu,death_notification,patient,keep,,Record key
+tiberbu,death_notification,patient_name,identity,full_name,The deceased
+tiberbu,death_notification,inpatient_record,keep,,Record key
+tiberbu,death_notification,ward_of_demise,keep,,
+tiberbu,death_notification,hospital_of_demise,keep,,The facility
+tiberbu,death_notification,practitioner_pronouncing_death,empty,,"Staff, not needed"
+tiberbu,death_notification,time_of_death,keep,,
+tiberbu,death_notification,death_diagnosis,keep,,"Cause of death, for the breakdown by cause"
+tiberbu,death_notification,immediate_cause,keep,,"Cause of death, for the breakdown by cause"
+tiberbu,death_notification,underlying_cause,keep,,"Cause of death, for the breakdown by cause"
+tiberbu,death_notification,_user_tags,empty,,"System field, not needed"
+tiberbu,death_notification,_comments,empty,,"System field, not needed"
+tiberbu,death_notification,_assign,empty,,"System field, not needed"
+tiberbu,death_notification,_liked_by,empty,,"System field, not needed"
+tiberbu,death_notification,cause_of_death_d,keep,,"Cause of death, for the breakdown by cause"
+tiberbu,death_notification,audit_participants,empty,,Free text naming staff
+tiberbu,death_notification,audit_findings,empty,,Free text
+tiberbu,death_notification,audit_recommendations,empty,,Free text
+tiberbu,death_notification,death_notification_serial,keep,,
+tiberbu,death_notification,interval_a_value,keep,,
+tiberbu,death_notification,interval_a_unit,keep,,
+tiberbu,death_notification,interval_b_value,keep,,
+tiberbu,death_notification,interval_b_unit,keep,,
+tiberbu,death_notification,interval_c_value,keep,,
+tiberbu,death_notification,interval_c_unit,keep,,
+tiberbu,death_notification,interval_d_value,keep,,
+tiberbu,death_notification,interval_d_unit,keep,,
+tiberbu,death_notification,contributing_condition_a,keep,,
+tiberbu,death_notification,contributing_condition_a_interval_value,keep,,
+tiberbu,death_notification,contributing_condition_a_interval_unit,keep,,
+tiberbu,death_notification,contributing_condition_b,keep,,
+tiberbu,death_notification,contributing_condition_b_interval_value,keep,,
+tiberbu,death_notification,contributing_condition_b_interval_unit,keep,,
+tiberbu,death_notification,contributing_condition_c,keep,,
+tiberbu,death_notification,contributing_condition_c_interval_value,keep,,
+tiberbu,death_notification,contributing_condition_c_interval_unit,keep,,
+tiberbu,death_notification,surgery_within_4_weeks,keep,,
+tiberbu,death_notification,surgery_reason,empty,,Free text
+tiberbu,death_notification,surgery_procedure,empty,,Free text
+tiberbu,death_notification,autopsy_requested,keep,,
+tiberbu,death_notification,autopsy_findings_used,keep,,
+tiberbu,death_notification,manner_of_death,keep,,
+tiberbu,death_notification,external_cause_description,empty,,Free text
+tiberbu,death_notification,place_of_occurrence,keep,,
+tiberbu,death_notification,deceased_pregnant,keep,,
+tiberbu,death_notification,pregnancy_timing,keep,,
+tiberbu,death_notification,pregnancy_contributed,keep,,
+tiberbu,death_notification,multiple_pregnancy,keep,,
+tiberbu,death_notification,stillborn,keep,,
+tiberbu,death_notification,died_within_24_hours,keep,,
+tiberbu,death_notification,condition_of_mother,keep,,
+tiberbu,death_notification,perinatal_death_referred,keep,,
+tiberbu,death_notification,certified_by,empty,,"Staff, not needed"
+tiberbu,death_notification,certified_by_name,empty,,"Staff, not needed"
+tiberbu,death_notification,notification_type,keep,,"Maternal, neonatal, perinatal or general"
+tiberbu,death_notification,period_of_death,keep,,
+tiberbu,death_notification,maternal_nationality,keep,,
+tiberbu,death_notification,maternal_education_level,keep,,
+tiberbu,death_notification,maternal_occupation,keep,,
+tiberbu,death_notification,maternal_admission_time,keep,,
+tiberbu,death_notification,maternal_admission_diagnosis,keep,,
+tiberbu,death_notification,maternal_referred,keep,,
+tiberbu,death_notification,maternal_referring_facility_level,keep,,
+tiberbu,death_notification,maternal_direct_cause,keep,,"Cause of death, for the breakdown by cause"
+tiberbu,death_notification,maternal_direct_cause_specify,empty,,Free text
+tiberbu,death_notification,maternal_preexisting_others_specify,empty,,Free text
+tiberbu,death_notification,time_of_birth,keep,,
+tiberbu,death_notification,baby_sex,keep,,
+tiberbu,death_notification,baby_outcome,keep,,
+tiberbu,death_notification,mother_marital_status,keep,,
+tiberbu,death_notification,mother_parity,keep,,
+tiberbu,death_notification,mother_outcome,keep,,
+tiberbu,death_notification,type_of_pregnancy,keep,,
+tiberbu,death_notification,anc_attendance,keep,,
+tiberbu,death_notification,place_of_childbirth,keep,,
+tiberbu,death_notification,delivery_facility_level,keep,,
+tiberbu,death_notification,mode_of_childbirth,keep,,
+tiberbu,death_notification,fetal_heart_rate_admission,keep,,
+tiberbu,death_notification,perinatal_cause_category,keep,,"Cause of death, for the breakdown by cause"
+tiberbu,death_notification,perinatal_cause_specify,empty,,Free text
+tiberbu,death_notification,maternal_factor_category,keep,,
+tiberbu,death_notification,facility_county,keep,,
+tiberbu,death_notification,facility_sub_county,keep,,
+tiberbu,death_notification,facility_level,keep,,
+tiberbu,death_notification,facility_managing_authority,keep,,
+tiberbu,death_notification,facility_kmhfl_code,keep,,Not always an MFL code; the Master Facility List decides
+tiberbu,death_notification,khis_case_id,keep,,
+tiberbu,death_notification,khis_transmission,keep,,
+tiberbu,death_notification,khis_event_id,keep,,
+tiberbu,death_notification,maternal_marital_status,keep,,
+tiberbu,death_notification,maternal_parity,keep,,
+tiberbu,death_notification,obstetric_other_specify,empty,,Free text
+tiberbu,death_notification,certified_by_designation,empty,,"Staff, not needed"
+tiberbu,death_notification,certified_by_telephone,empty,,"Staff contact, not needed"
+tiberbu,death_notification,certified_by_email,empty,,"Staff contact, not needed"
+tiberbu,death_notification,county_id,keep,,
+kenyaemr,concept_name,source_schema,keep,,The facility
+kenyaemr,concept_name,name,keep,,The name of the question or answer
+kenyaemr,concept_name,locale,keep,,
+kenyaemr,concept_name,void_reason,empty,,Free text
+kenyaemr,concept_name,uuid,keep,,Record key
+kenyaemr,concept_name,concept_name_type,keep,,
+kenyaemr,obs,source_schema,keep,,The facility
+kenyaemr,obs,accession_number,keep,,
+kenyaemr,obs,value_modifier,keep,,
+kenyaemr,obs,value_text,empty,,Free text. None of the six indicators reads it
+kenyaemr,obs,value_complex,empty,,Free text or a file reference
+kenyaemr,obs,comments,empty,,Free text
+kenyaemr,obs,void_reason,empty,,Free text
+kenyaemr,obs,uuid,keep,,Record key
+kenyaemr,obs,form_namespace_and_path,keep,,
+kenyaemr,obs,status,keep,,
+kenyaemr,obs,interpretation,keep,,
+amrs,concept_name,name,keep,,The name of the question or answer
+amrs,concept_name,locale,keep,,
+amrs,concept_name,void_reason,empty,,Free text
+amrs,concept_name,uuid,keep,,Record key
+amrs,concept_name,concept_name_type,keep,,
+amrs,obs,accession_number,keep,,
+amrs,obs,value_modifier,keep,,
+amrs,obs,value_text,empty,,Free text. None of the six indicators reads it
+amrs,obs,comments,empty,,Free text
+amrs,obs,void_reason,empty,,Free text
+amrs,obs,value_complex,empty,,Free text or a file reference
+amrs,obs,uuid,keep,,Record key
+amrs,obs,form_namespace_and_path,keep,,
+amrs,obs,status,keep,,
+amrs,obs,interpretation,keep,,

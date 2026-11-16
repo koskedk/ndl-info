@@ -1,0 +1,184 @@
+{
+  "source": "kenyaemr",
+  "table": "obs",
+  "sampled_at": "2026-11-16T18:52:49Z",
+  "source_metadata_file": "01782-c6f9e2b3-4bcd-4b26-82e9-5f337b6d4f37.metadata.json",
+  "source_snapshot_id": 7711833629099485999,
+  "select_by": "encounters_in:encounter",
+  "source_rows": 689590829,
+  "source_files": 1764,
+  "source_bytes": 17168966620,
+  "files_read": 281,
+  "bytes_read": 3794544668,
+  "rows_kept": 2578992,
+  "rows_by_facility": {
+    "openmrs_lumumba": 1666168,
+    "openmrs_siayacrh": 534583,
+    "openmrs_sigomere": 378241
+  },
+  "rows_by_load": {
+    "1": 1980929,
+    "2": 318123,
+    "3": 279940
+  },
+  "patients_referred_to": null,
+  "patients_in_source": null,
+  "encounters_chosen": 178636,
+  "encounters_with_rows": 164428,
+  "by_visit_type": [
+    {
+      "visit_type": "ANC Discontinuation",
+      "encounters": 19,
+      "encounters_with_rows": 19,
+      "rows": 19
+    },
+    {
+      "visit_type": "ANC Mother Enrollment",
+      "encounters": 4146,
+      "encounters_with_rows": 0,
+      "rows": 0
+    },
+    {
+      "visit_type": "CWC Consultation",
+      "encounters": 51130,
+      "encounters_with_rows": 51028,
+      "rows": 682099
+    },
+    {
+      "visit_type": "CWC Enrollment",
+      "encounters": 11957,
+      "encounters_with_rows": 7896,
+      "rows": 121751
+    },
+    {
+      "visit_type": "Family Planning",
+      "encounters": 1841,
+      "encounters_with_rows": 1841,
+      "rows": 35673
+    },
+    {
+      "visit_type": "Family Planning Enrollment",
+      "encounters": 1615,
+      "encounters_with_rows": 0,
+      "rows": 0
+    },
+    {
+      "visit_type": "Immunizations",
+      "encounters": 24080,
+      "encounters_with_rows": 24076,
+      "rows": 268939
+    },
+    {
+      "visit_type": "MCH Child Discontinuation",
+      "encounters": 1161,
+      "encounters_with_rows": 1152,
+      "rows": 1490
+    },
+    {
+      "visit_type": "MCH Child Immunization",
+      "encounters": 475,
+      "encounters_with_rows": 471,
+      "rows": 11928
+    },
+    {
+      "visit_type": "MCH Inpatient",
+      "encounters": 1062,
+      "encounters_with_rows": 1062,
+      "rows": 40269
+    },
+    {
+      "visit_type": "MCH Mother Consultation",
+      "encounters": 47662,
+      "encounters_with_rows": 47628,
+      "rows": 1127952
+    },
+    {
+      "visit_type": "MCH Mother Discontinuation",
+      "encounters": 1818,
+      "encounters_with_rows": 1779,
+      "rows": 1856
+    },
+    {
+      "visit_type": "MCH Mother Enrollment",
+      "encounters": 18480,
+      "encounters_with_rows": 18468,
+      "rows": 241070
+    },
+    {
+      "visit_type": "MCH Partograph",
+      "encounters": 8338,
+      "encounters_with_rows": 8338,
+      "rows": 36991
+    },
+    {
+      "visit_type": "Mortality",
+      "encounters": 126,
+      "encounters_with_rows": 126,
+      "rows": 148
+    },
+    {
+      "visit_type": "Nutrition",
+      "encounters": 527,
+      "encounters_with_rows": 527,
+      "rows": 8789
+    },
+    {
+      "visit_type": "Nutrition Discontinuation",
+      "encounters": 12,
+      "encounters_with_rows": 12,
+      "rows": 13
+    },
+    {
+      "visit_type": "Nutrition Enrollment",
+      "encounters": 335,
+      "encounters_with_rows": 0,
+      "rows": 0
+    },
+    {
+      "visit_type": "PNC Discontinuation",
+      "encounters": 5,
+      "encounters_with_rows": 5,
+      "rows": 5
+    },
+    {
+      "visit_type": "PNC Mother Enrollment",
+      "encounters": 3847,
+      "encounters_with_rows": 0,
+      "rows": 0
+    }
+  ],
+  "by_facility": [
+    {
+      "facility": "openmrs_lumumba",
+      "encounters": 121274,
+      "encounters_with_rows": 111038,
+      "rows": 1666168
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "encounters": 36359,
+      "encounters_with_rows": 35680,
+      "rows": 534583
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "encounters": 21003,
+      "encounters_with_rows": 17710,
+      "rows": 378241
+    }
+  ],
+  "visit_types_without_encounters": [
+    "Family planning Discontinuation",
+    "New born admission",
+    "Nutrition encounter"
+  ],
+  "rows_by_facility_month": [],
+  "emptied_columns": [
+    "comments",
+    "value_complex",
+    "value_text",
+    "void_reason"
+  ],
+  "standin_location": "s3://dha-analytics/iceberg/hmis_kenya_emr_conso/obs",
+  "problems": []
+}

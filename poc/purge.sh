@@ -10,24 +10,31 @@ set -euo pipefail
 
 POC_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
 REPO_DIR="$(dirname "$POC_DIR")"
-PROJECT="${NHAI_COMPOSE_PROJECT:-nhai-poc}"
+# The Compose project name: `nhai-poc` unless COMPOSE_PROJECT_NAME is set in .env.
+PROJECT="${NHAI_COMPOSE_PROJECT:-$(cd "$POC_DIR" && docker compose config --format json 2>/dev/null | python3 -c 'import json,sys; print(json.load(sys.stdin)["name"])' 2>/dev/null || true)}"
+PROJECT="${PROJECT:-nhai-poc}"
 DRY_RUN="${DRY_RUN:-0}"
 LOG="$POC_DIR/purge.log"
 
-# Folders and files that can hold data, relative to the repository.
+# Folders and files that can hold data.
 TARGETS=(
-  "explorer/out"            # query results
-  "explorer/.cache"         # file lists and DuckDB spill
-  "poc/.data"               # Trino spill, Dagster local storage, anything bind-mounted
-  "poc/matching/data"       # Splink inputs and outputs
-  "poc/transform/target"    # compiled SQL, which carries the hash key
-  "poc/transform/logs"
-  "poc/.secrets/hash_key"   # the hash key itself
+  "$POC_DIR/.data"               # Trino spill, Dagster local storage, anything bind-mounted
+  "$POC_DIR/exports"             # encrypted exports of the stand-in
+  "$POC_DIR/matching/data"       # Splink inputs and outputs
+  "$POC_DIR/transform/target"    # compiled SQL, which carries the hash key
+  "$POC_DIR/transform/logs"
+  "$POC_DIR/.secrets/hash_key"   # the hash key itself
 )
+# Where the lake explorer sits beside this folder, its query results and caches go too.
+EXPLORER_DIR=""
+if [[ -d "$REPO_DIR/explorer/src/lake_explorer" ]]; then
+  EXPLORER_DIR="$REPO_DIR/explorer"
+  TARGETS+=("$EXPLORER_DIR/out" "$EXPLORER_DIR/.cache")
+fi
 
 fail() { echo "purge: $*" >&2; exit 2; }
 
-[[ -d "$REPO_DIR/.git" && -f "$POC_DIR/PLAN.md" ]] || fail "this does not look like the project folder ($REPO_DIR); nothing removed"
+[[ -f "$POC_DIR/PLAN.md" && -f "$POC_DIR/compose.yaml" ]] || fail "this does not look like the project folder ($POC_DIR); nothing removed"
 
 docker_up=1
 docker info >/dev/null 2>&1 || docker_up=0
@@ -40,10 +47,10 @@ list_volumes()    { docker volume ls -q --filter "label=com.docker.compose.proje
 list_paths() {
   local target
   for target in "${TARGETS[@]}"; do
-    [[ -e "$REPO_DIR/$target" ]] && echo "$REPO_DIR/$target"
+    [[ -e "$target" ]] && echo "$target"
   done
-  # DuckDB files left anywhere under the two folders that run queries.
-  find "$REPO_DIR/explorer" "$POC_DIR" \( -name '*.duckdb' -o -name '*.duckdb.wal' \) \
+  # DuckDB files left anywhere under the folders that run queries.
+  find ${EXPLORER_DIR:+"$EXPLORER_DIR"} "$POC_DIR" \( -name '*.duckdb' -o -name '*.duckdb.wal' \) \
     -not -path '*/.venv/*' -not -path '*/node_modules/*' 2>/dev/null || true
 }
 
@@ -59,7 +66,7 @@ echo "Containers to remove: ${#containers[@]}"
 echo "Volumes to remove:    ${#volumes[@]}"
 for v in "${volumes[@]}"; do echo "  $v"; done
 echo "Folders and files to remove: ${#paths[@]}"
-for p in "${paths[@]}"; do echo "  ${p#"$REPO_DIR"/}  ($(du -sh "$p" 2>/dev/null | cut -f1))"; done
+for p in "${paths[@]}"; do echo "  ${p#"$POC_DIR"/}  ($(du -sh "$p" 2>/dev/null | cut -f1))"; done
 [[ $docker_up -eq 0 ]] && echo "Docker is not running: volumes were not listed."
 
 if [[ $DRY_RUN == 1 ]]; then
@@ -76,7 +83,7 @@ if [[ ${#containers[@]} -gt 0 ]]; then docker rm -f "${containers[@]}" >/dev/nul
 if [[ ${#volumes[@]} -gt 0 ]]; then docker volume rm "${volumes[@]}" >/dev/null; fi
 for p in "${paths[@]}"; do
   real="$(realpath -m "$p")"
-  [[ "$real" == "$REPO_DIR"/* ]] || fail "$p points outside the project; stopped before removing it"
+  [[ "$real" == "$POC_DIR"/* || ( -n "$EXPLORER_DIR" && "$real" == "$EXPLORER_DIR"/* ) ]] || fail "$p points outside the project; stopped before removing it"
   rm -rf -- "$real"
 done
 
@@ -96,4 +103,5 @@ if [[ ${#left[@]} -gt 0 ]]; then
   exit 3
 fi
 echo "$stamp purge complete $summary" >> "$LOG"
-echo "Done. Nothing is left. Recorded in ${LOG#"$REPO_DIR"/}."
+echo "Done. Nothing is left. Recorded in ${LOG#"$POC_DIR"/}."
+echo "Exports already sent to someone else, and notebooks the row browser keeps in ~/.duckdb, are not covered."

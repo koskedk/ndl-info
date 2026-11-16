@@ -1,0 +1,5 @@
+source,folder,system
+tiberbu,hmis_tiberbu_ingestion,Tiberbu
+kenyaemr,hmis_kenya_emr_conso,KenyaEMR
+amrs,hmis_ampath_prod,AMRS
+khis,khis,KHIS

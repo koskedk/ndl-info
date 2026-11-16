@@ -1,0 +1,82 @@
+{
+  "source": "tiberbu",
+  "table": "death_notification",
+  "sampled_at": "2026-11-16T18:12:40Z",
+  "source_metadata_file": "01803-cedf4042-0077-41cd-98d4-266bdf766cc2.metadata.json",
+  "source_snapshot_id": 4733214904916547594,
+  "select_by": "facility",
+  "source_rows": 4756,
+  "source_files": 1803,
+  "source_bytes": 103513605,
+  "files_read": 87,
+  "bytes_read": 4992595,
+  "rows_kept": 16,
+  "rows_by_facility": {
+    "LUMAKANDA SUB-COUNTY HOSPITAL": 12,
+    "Turbo Sub County Hospital": 4
+  },
+  "rows_by_load": {
+    "2": 5,
+    "3": 11
+  },
+  "patients_referred_to": null,
+  "patients_in_source": null,
+  "rows_by_facility_month": [
+    {
+      "facility": "LUMAKANDA SUB-COUNTY HOSPITAL",
+      "month": "2026-08",
+      "rows": 1
+    },
+    {
+      "facility": "LUMAKANDA SUB-COUNTY HOSPITAL",
+      "month": "2026-09",
+      "rows": 1
+    },
+    {
+      "facility": "LUMAKANDA SUB-COUNTY HOSPITAL",
+      "month": "2026-10",
+      "rows": 6
+    },
+    {
+      "facility": "LUMAKANDA SUB-COUNTY HOSPITAL",
+      "month": "2026-11",
+      "rows": 4
+    },
+    {
+      "facility": "Turbo Sub County Hospital",
+      "month": "2026-09",
+      "rows": 3
+    },
+    {
+      "facility": "Turbo Sub County Hospital",
+      "month": "2026-10",
+      "rows": 1
+    }
+  ],
+  "emptied_columns": [
+    "_assign",
+    "_comments",
+    "_liked_by",
+    "_user_tags",
+    "audit_findings",
+    "audit_participants",
+    "audit_recommendations",
+    "certified_by",
+    "certified_by_designation",
+    "certified_by_email",
+    "certified_by_name",
+    "certified_by_telephone",
+    "external_cause_description",
+    "maternal_direct_cause_specify",
+    "maternal_preexisting_others_specify",
+    "modified_by",
+    "obstetric_other_specify",
+    "owner",
+    "perinatal_cause_specify",
+    "practitioner_pronouncing_death",
+    "surgery_procedure",
+    "surgery_reason"
+  ],
+  "standin_location": "s3://dha-analytics/iceberg/hmis_tiberbu_ingestion/death_notification",
+  "problems": []
+}

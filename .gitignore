@@ -30,3 +30,15 @@ explorer/out/
 poc/.data/
 poc/.secrets/
 poc/matching/data/
+
+# Exports of the stand-in: they hold patient records and must never be committed
+poc/exports/
+*.tar
+*.tar.gz
+*.tgz
+*.gpg
+*.age
+
+# Stray files
+~$*
+*:Zone.Identifier

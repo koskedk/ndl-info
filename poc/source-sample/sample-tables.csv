@@ -1,11 +1,22 @@
-source,table,from_stage,select_by,load_date_column,why
-tiberbu,health_program_enrollment,2,facility,modified,"RMN-16: ANC enrolment, date and facility"
-tiberbu,patient,2,patients_in:health_program_enrollment,modified,"RMN-16: who the client is, sex and date of birth; identity fields for the Master Patient Index"
-kenyaemr,person,2,facility,date_created,RMN-16: sex and date of birth
-kenyaemr,encounter,2,facility,date_created,"RMN-16: the ANC enrolment encounter, date and facility"
-kenyaemr,encounter_type,2,whole,,RMN-16: names the encounter types
-kenyaemr,patient_identifier,2,facility,date_created,Identity for the Master Patient Index
-amrs,encounter,2,facility,date_created,"RMN-16: the ANC encounter, date and facility. Mirrors kenyaemr.encounter"
-amrs,encounter_type,2,whole,,RMN-16: names the encounter types
-amrs,person,2,patients_in:encounter,date_created,RMN-16: sex and date of birth. No location column; taken through the patients of the sampled encounters
-amrs,patient_identifier,2,patients_in:encounter,date_created,Identity for the Master Patient Index. Every identifier of the sampled patients
+source,table,from_stage,select_by,load_date_column,facility_column,why
+tiberbu,health_program_enrollment,2,facility,modified,,"RMN-16: ANC enrolment, date and facility"
+tiberbu,form_data_repository,8,facility,modified,,"RMN-04, RMN-08, RMN-06, RMN-01: every form filled in at the sampled facilities (postnatal checks, childbirth, discharge). One row is one submitted form"
+tiberbu,death_notification,8,facility,modified,hospital_of_demise,"RMN-01, RMN-05, RMN-06: death notices and their audit fields. It has no company column; the facility is the hospital of demise"
+tiberbu,patient,2,patients_in:health_program_enrollment+form_data_repository+death_notification,modified,,"Who the client is, sex and date of birth; identity fields for the Master Patient Index. Taken through the patients those three tables refer to, plus the babies whose mother (custom_parent) is one of them"
+kenyaemr,person,2,facility,date_created,,RMN-16: sex and date of birth
+kenyaemr,encounter,2,facility,date_created,,"RMN-16: the ANC enrolment encounter, date and facility"
+kenyaemr,encounter_type,2,whole,,,RMN-16: names the encounter types
+kenyaemr,patient_identifier,2,facility,date_created,,Identity for the Master Patient Index
+kenyaemr,patient_identifier_type,2,facility,date_created,,Names each kind of identifier (national ID and so on) for the Master Patient Index
+kenyaemr,concept_name,8,whole,,,Names every question and answer in obs
+kenyaemr,obs,8,encounters_in:encounter,date_created,,"RMN-04, RMN-08, RMN-06, RMN-01: the answers recorded at the sampled visits whose type is in visit-types.csv"
+amrs,encounter,2,facility,date_created,,"RMN-16: the ANC encounter, date and facility. Mirrors kenyaemr.encounter"
+amrs,encounter_type,2,whole,,,RMN-16: names the encounter types
+amrs,person,2,patients_in:encounter,date_created,,RMN-16: sex and date of birth. No location column; taken through the patients of the sampled encounters
+amrs,patient_identifier,2,patients_in:encounter,date_created,,Identity for the Master Patient Index. Every identifier of the sampled patients
+amrs,patient_identifier_type,2,whole,,,Names each kind of identifier for the Master Patient Index
+amrs,concept_name,8,whole,,,Names every question and answer in obs
+amrs,obs,8,encounters_in:encounter,date_created,,"RMN-04, RMN-08, RMN-06, RMN-01: the answers recorded at the sampled encounters whose type is in visit-types.csv"
+khis,khis_data,8,files,,,"RMN-01, RMN-06: KHIS monthly figures per facility, whole country, July 2025 to June 2026. Copied as files; no patient data"
+khis,facility_details,8,files,,,KHIS: the facility details file beside each indicator
+khis,facility_name,8,files,,,KHIS: the facility names file beside each indicator

@@ -1,0 +1,10 @@
+[project]
+name = "standin-tools"
+version = "0.1.0"
+description = "Tools for the stand-in S3 Ceph of the NHAI proof of concept: list tables, read rows, export and import"
+requires-python = ">=3.12"
+dependencies = [
+    "pyiceberg[pyarrow]>=0.9",
+    "duckdb>=1.1",
+    "python-dotenv>=1.0",
+]

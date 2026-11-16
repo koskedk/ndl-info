@@ -29,9 +29,10 @@ As of 16 November 2026.
 
 | Stage | State |
 |---|---|
-| 1. Facilities and column rules | Done, except that the facilities are a proposal still to be confirmed, and their FID and MFL codes are still to be entered |
-| 2. Stand-in S3 Ceph | Done for the six tables RMN-16 needs: 7,026,141 rows, 176 MB |
-| 0, and 3 onwards | Not started. Stage 0 exists only as far as stages 1 and 2 needed it: one service in `compose.yaml`, the `Makefile`, and local settings |
+| 1. Facilities and column rules | Done. The Master Facility List holds seven facilities with their FID and MFL codes. Two of them are on two systems, which gives the nine facility entries the sampler copies |
+| 2. Stand-in S3 Ceph | Done for twelve tables across Tiberbu, KenyaEMR and AMRS: the ten RMN-16 needs and the two that name identifier types. It can be exported to one encrypted file and imported on another laptop |
+| 8. Widen source and silver | The sourcing half is done for the six RMNCAH-N indicators (16 November 2026): Tiberbu forms and death notifications, a wider Tiberbu patient table, KenyaEMR and AMRS visit answers for maternal and child visit types, concept names, and the KHIS files. The stand-in now holds 21 tables, 11,942,618 rows, 306 MB. Not yet sampled: lab, admissions, client registry. Silver is not started |
+| 0, 3 to 7, and 9 onwards | Not started. Stage 0 exists only as far as stages 1 and 2 needed it: one service in `compose.yaml`, the `Makefile`, and local settings |
 
 Checks run on the first sample:
 
@@ -130,7 +131,7 @@ This is the first job. The stand-in has to look like S3 Ceph to the pick-up, hol
 
 ### Choosing the facilities
 
-Nine facilities, three per system, in one or two neighbouring counties. They are chosen with the explorer, using totals only.
+Nine facility entries, three per system, in one or two neighbouring counties. They are seven facilities: Turbo and Moi's Bridge are on both Tiberbu and AMRS. They are chosen with the explorer, using totals only.
 
 | Criterion | Why |
 |---|---|
@@ -151,15 +152,16 @@ No current source table is split by facility, and each system names its facility
 
 | Source | Filter | Tables without a facility column |
 |---|---|---|
-| KenyaEMR | `source_schema`, present on all 53 tables | None |
+| KenyaEMR | `source_schema`, present on all 53 tables. Visit answers (`obs`) are further limited to the sampled visits of the listed visit types. | None |
 | Tiberbu | `company`, present on 23 tables. `county_id`, present on nearly all, is a coarse first filter. | 34 tables, including `patient`, `diagnosis_entry`, `normal_test_result`, `lab_prescription`, `doctor_drug_prescription`. Child rows are taken where `parent` is a sampled encounter or lab test; patients are those any sampled row refers to. |
-| AMRS | `location_id`, present on 8 tables including `visit`, `encounter` and `obs` | 33 tables. `patient`, `person`, `orders` and `drug_order` are taken through the patient, encounter and order keys of the sampled rows. |
+| AMRS | `location_id`, present on 8 tables including `visit`, `encounter` and `obs` | 33 tables. `patient`, `person`, `orders` and `drug_order` are taken through the patient, encounter and order keys of the sampled rows. Visit answers (`obs`) are taken through the sampled encounters of the listed visit types. |
 | Client registry | Only rows whose identifier matches a sampled patient (31.8 million rows in the source) | |
-| KHIS, lookup tables | Whole. They are small and hold no patient data. | |
+| KHIS, lookup tables | Whole. They are small and hold no patient data. The KHIS figures are plain files and are copied as files. | |
 | Facility registry | Not sampled. Facility details come from the Master Facility List. | |
 
 - **Rows are copied as they are.** Repeated rows, soft-deleted rows, vitals stored as text and packed JSON forms all come across. The faults the pipeline must handle are the real ones.
-- **Full history for the chosen facilities.** No date cut.
+- **Full history for the chosen facilities.** No date cut. August 2026 is where reporting starts, not where sourcing starts (confirmed 16 November 2026).
+- **Visit answers are limited by visit type** (decided 16 November 2026). KenyaEMR and AMRS keep every answer in one `obs` table, mostly from HIV care: about 50 million rows for the three KenyaEMR facilities alone. Only the answers recorded at maternal and child visit types are copied. The types are listed in `source-sample/visit-types.csv`; adding one means another read of the table.
 - **A patient's records at facilities outside the sample are not copied.** Their history stops at the sample's edge.
 - **Only the tables the current stage needs** (about 30 of the 227 in the end).
 
@@ -176,7 +178,7 @@ No current source table is split by facility, and each system names its facility
 
 Decided 16 November 2026: the sample keeps personal identifiers and names in clear, because the Master Patient Index is built on them. The POC therefore treats personal data the way the shared environment will. It arrives as it is in the source, and silver hashes it.
 
-Every text column in a sampled table gets one rule in `source-sample/column-rules.csv`, one line per column, in git. The tables the sampler copies are listed in `source-sample/sample-tables.csv`, each with how its rows are chosen (by facility, by the patients a sampled table refers to, or whole). `make check-rules` fails if a text column in any listed table has no rule, if a rule names an unknown treatment, or if a credential column is not emptied.
+Every text column in a sampled table gets one rule in `source-sample/column-rules.csv`, one line per column, in git. The tables the sampler copies are listed in `source-sample/sample-tables.csv`, each with how its rows are chosen (by facility, by the patients a sampled table refers to, by the sampled encounters of the listed visit types, whole, or as plain files). `make check-rules` fails if a text column in any listed table has no rule, if a rule names an unknown treatment, or if a credential column is not emptied.
 
 | Kind of column | Examples | Rule |
 |---|---|---|
@@ -238,6 +240,7 @@ vars:
 - **The disk must be encrypted before the first sampling run.** On 16 November 2026 Windows reported BitLocker as off on C:, which is where the Docker volumes live.
 - **It lives only in Docker volumes**, and never in git.
 - **`make purge` clears all data on demand.** See below.
+- **It reaches teammates as an encrypted export, not over the VPN.** `make export-source` writes one file protected by a passphrase and `make import-source` loads it and checks the row counts. The file goes only to people cleared to hold the data, over an approved channel, with the passphrase sent separately.
 - **No row-level output goes into documents, chats or screenshots.** Totals only, as with the explorer. This covers AI assistants too: any query they run on identity columns returns counts, never rows.
 
 ### Clearing all data on demand
@@ -252,6 +255,7 @@ One command, `make purge`, removes every copy of the data from this laptop. It e
 | The ClickHouse volume | The serving copy |
 | Trino spill space and Dagster's local storage, under `.data/` | Rows can sit in working files |
 | The explorer's `out/` and `.cache/` folders | Query results can hold personal data |
+| Exports of the stand-in, under `exports/` | Each one is a full copy of the sample, encrypted |
 | The matching folder's DuckDB files and outputs | Splink reads clear names |
 | dbt's `target/` and `logs/` folders | Compiled SQL carries the hash key |
 | The hash key, `.secrets/hash_key` | With the data gone the key has no use; the next sample gets a new one |
@@ -268,7 +272,8 @@ One command, `make purge`, removes every copy of the data from this laptop. It e
 ### Getting it across the VPN
 
 - **Measured on 16 November 2026.** The sampler skips any source file whose recorded lowest and highest value rule out the sampled facilities. For Tiberbu this works well: 6 to 9% of a table is read, because each file holds one county. For KenyaEMR it barely helps: 62 to 94% is read, because each file mixes many facilities. The six first tables need about 2 GB read over the VPN. `make measure` repeats the measurement without copying anything.
-- **Retries, not yet resumable.** Network errors are retried. A run that fails part-way is started again from the first table; saving progress per batch is still to build, and matters once the large `obs` tables are sampled in stage 8.
+- **Retries, and a rerun continues.** Source files are read in groups, and each finished group is recorded. A dropped connection costs one group. A run that stops part-way continues from the last finished group when it is run again, on the same source snapshot. Until a table is finished, its part-read rows sit in `.data/sampler`, which `make purge` removes.
+- **A table chosen through another reads that table's keys from the stand-in**, so tables already sampled are not read again over the VPN.
 - **A manifest is written** for every table: the source snapshot it was taken from, rows read, and rows kept per facility.
 
 ### How the result is checked
@@ -351,6 +356,7 @@ These are the six priority indicators of DHA's first release, taken from the moc
 - **The bands go into the Indicator Registry**, not into page code. The mock-up takes them from DHA's core workbook.
 - **Breakdowns the mock-up shows and the POC carries:** county, facility, facility level and ownership (from the Master Facility List), mother's age group, and birthweight for RMN-06.
 - **Rates on nine facilities are indicative.** For the mortality indicators the page shows the counts beside the rate.
+- **AMRS is a records source for postnatal care too** (decided 16 November 2026). Its answers for maternal visits are sampled, so RMN-04 and RMN-08 can also be computed at the three AMRS facilities, two of which are on Tiberbu as well.
 
 With real rows, each indicator also settles its entries on the "still to confirm" lists in `docs/exploration/` (which codes mean malaria, how a positive result is written, which form field holds the contact number). An indicator that turns out not to be computable for the sampled facilities is recorded as a finding, with the reason.
 
@@ -460,11 +466,13 @@ The machine has 4 cores and WSL is capped at 12 GB, with other Compose stacks cu
 ```
 poc/
   PLAN.md             this plan
-  README.md           how to run it (written in stage 0)
+  README.md           how to run it
   compose.yaml        every service, grouped in profiles
-  Makefile            up, sample, run, reset, purge, check-rules, demo
+  Makefile            up, tables, browse-rows, export-source, import-source, run, reset, purge, demo; sample and check-rules in the lead's copy
   purge.sh            clears every copy of the data; run through make purge
-  source-sample/      builds the stand-in S3 Ceph: the sampler, sample-tables.csv, column-rules.csv, check_rules.py, manifests, check queries
+  source-sample/      what the stand-in S3 Ceph holds: sample-tables.csv, visit-types.csv, column-rules.csv, manifests; in the lead's copy also the sampler and its checks
+  tools/              lists, browses, exports and imports the stand-in; needs no VPN
+  exports/            encrypted exports of the stand-in; never committed
   fixtures/           stand-ins for sources not in S3 Ceph: KHIS values, population, boundaries
   pipelines/          Dagster project: pick-up, interim bridges, dbt, ClickHouse load, matching
   matching/           Splink: the practice notebook, the model settings, the grouping step
@@ -487,6 +495,7 @@ Data volumes stay out of git.
 | Which RMNCAH-N indicators | The six in DHA's demonstration mock-up: RMN-16, RMN-04, RMN-08, RMN-06, RMN-01, RMN-05 (decided 16 November 2026) | They are DHA's first release, so the POC shows what DHA will ask to see | The six in the data layers paper (RMN-03, RMN-02 and RMN-11 in place of RMN-04, RMN-08 and RMN-05) |
 | How personal data is handled | Copied in clear, hashed in silver, clear values kept in `silver_restricted` (decided 16 November 2026) | The Master Patient Index needs real identifiers and names. It is also how the shared environment will work, so the POC proves the de-identification step. | Mask in the sampler before anything is written locally, as first planned. Safer on a laptop, but scored matching then works only on hashed names. |
 | Where facility identifiers come from | A Master Facility List the team manages, holding FID and MFL code side by side (decided 16 November 2026) | One source of truth for facilities; the team supplies the FID to MFL mapping | Work the mapping out from the facility registry and each system's settings. Slower, and the registry carries no MFL code. |
+| Which visit answers are copied | Only those recorded at maternal and child visit types, named in `visit-types.csv` (decided 16 November 2026) | Keeps the stand-in, and the export teammates import, small. Reading time over the VPN is the same either way | Every answer for the facilities: about 50 million rows for KenyaEMR alone, most of it HIV care |
 | Which period the POC reports | Data from August 2026 onward (decided 16 November 2026) | S3 Ceph's Tiberbu patient table is complete only from then; earlier months would give skewed figures | Wait for DHA to load the patient table in full, or show earlier months as partial |
 | How data is cleared | One command, `make purge`, that removes every copy and checks that nothing is left (decided 16 November 2026) | The data can be removed on demand, and the removal can be shown | Deleting volumes by hand, which is easy to get half right |
 | How silver knows what to hash | One list of canonical fields in `dbt_project.yml`, applied by one macro (decided 16 November 2026) | Every hashed field is in one place, and adding or removing one is a one-line change | A rule on each source column, in the YAML beside each staging model. Closer to each column's documentation, but spread over many files. |

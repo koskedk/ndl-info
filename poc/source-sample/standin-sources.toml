@@ -25,3 +25,16 @@ store = "standin"
 kind = "iceberg"
 path = "iceberg/hmis_tiberbu_ingestion"
 description = "Tiberbu HMIS: sample in the stand-in"
+
+[[source]]
+name = "khis"
+store = "standin"
+kind = "parquet"
+path = "khis/khis_apis_v2"
+description = "KHIS indicators, one value per facility per month: whole copy in the stand-in"
+notes = "Folder names become columns: run_id, api_id, api_name."
+
+  [source.tables]
+  data = "**/khis_data.parquet"
+  facility_details = "**/facility_details.parquet"
+  facility_name = "**/facility_name.parquet"

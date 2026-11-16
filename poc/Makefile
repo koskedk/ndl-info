@@ -1,11 +1,13 @@
 # NHAI proof of concept. Run `make help` for the list.
 .DEFAULT_GOAL := help
-.PHONY: help init up down browse-rows check-rules measure sample verify-sample reset-source purge purge-dry-run
+.PHONY: help init up down tables browse-rows export-source import-source reset-source purge purge-dry-run
+
+TOOLS = env -u VIRTUAL_ENV uv run --project tools python tools/standin.py
 
 help:  ## Show the commands
-	@grep -E '^[a-z-]+:.*##' $(MAKEFILE_LIST) | awk -F ':.*## ' '{printf "  make %-15s %s\n", $$1, $$2}'
+	@grep -hE '^[a-z-]+:.*##' $(MAKEFILE_LIST) | awk -F ':.*## ' '{printf "  make %-16s %s\n", $$1, $$2}'
 
-init:  ## Create local settings and keys (poc/.env, poc/.secrets); safe to run again
+init:  ## Create local settings and keys (.env, .secrets); safe to run again
 	@./ops/init_env.sh
 
 up: init  ## Start the core services
@@ -14,27 +16,28 @@ up: init  ## Start the core services
 down:  ## Stop the services; data is kept
 	@docker compose --profile core down
 
+tables: up  ## List the tables in the stand-in S3 Ceph, with row counts
+	@$(TOOLS) tables
+
 browse-rows: up  ## Open a web page for reading rows in the stand-in with SQL; Ctrl+C stops it
-	@LAKE_EXPLORER_CONFIG=$(CURDIR)/source-sample/standin-sources.toml \
-		env -u VIRTUAL_ENV uv run --project ../explorer lake-explorer ui
+	@$(TOOLS) browse
 
-check-rules:  ## Check that every text column the sampler copies has a rule
-	@python3 source-sample/check_rules.py
+export-source: up  ## Write the whole stand-in to one encrypted file under exports/, to hand to a teammate
+	@$(TOOLS) export
 
-measure: check-rules  ## Show how many source files each table needs; copies nothing (VPN)
-	@cd source-sample && env -u VIRTUAL_ENV uv run python sampler.py measure $(if $(ONLY),--only $(ONLY))
+import-source: up  ## Replace the stand-in with an export: make import-source FILE=path/to/standin-....tar.gpg
+	@test -n "$(FILE)" || { echo "Give the export file: make import-source FILE=path/to/standin-....tar.gpg"; exit 1; }
+	@$(TOOLS) import "$(FILE)"
 
-sample: check-rules up  ## Copy the sampled facilities from the real S3 Ceph into the stand-in (VPN)
-	@cd source-sample && env -u VIRTUAL_ENV uv run python sampler.py sample $(if $(ONLY),--only $(ONLY))
-
-verify-sample:  ## Count the same rows on the real S3 Ceph and compare with the sample (VPN)
-	@cd source-sample && env -u VIRTUAL_ENV uv run python sampler.py verify $(if $(ONLY),--only $(ONLY))
-
-reset-source:  ## Delete only the stand-in S3 Ceph and its sample
-	@docker compose --profile core rm -sf standin-s3 && docker volume rm -f nhai-poc_standin_data
+reset-source:  ## Delete only the stand-in S3 Ceph and what it holds
+	@docker compose --profile core rm -sf standin-browser standin-s3
+	@docker volume rm -f "$$(docker compose --profile core config --format json | python3 -c 'import json,sys; print(json.load(sys.stdin)["volumes"]["standin_data"]["name"])')"
 
 purge-dry-run:  ## List what `make purge` would remove, and remove nothing
 	@DRY_RUN=1 ./purge.sh
 
 purge:  ## Remove every copy of the data from this machine (asks first)
 	@./purge.sh
+
+# Commands for whoever samples from DHA's lake. They need the VPN and are not in the shared copy.
+-include lead.mk

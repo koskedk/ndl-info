@@ -6,6 +6,9 @@ Every text column in every table the sampler copies must have exactly one rule:
   keep      copied as it is
   empty     not copied; the column arrives empty
 
+Tables copied as plain files (select_by = files, KHIS) are left out: they hold no patient data
+and are not in the column inventory. The visit-type list is checked here too.
+
 Run from the repository root or through `make check-rules`. Exits with 1 if anything is wrong.
 """
 import csv
@@ -17,6 +20,7 @@ POC = Path(__file__).resolve().parent.parent
 REPO = POC.parent
 RULES = POC / "source-sample" / "column-rules.csv"
 TABLES = POC / "source-sample" / "sample-tables.csv"
+VISIT_TYPES = POC / "source-sample" / "visit-types.csv"
 PROJECT = POC / "transform" / "dbt_project.yml"
 ALLOWED = {"identity", "keep", "empty"}
 MUST_BE_EMPTY = re.compile(r"secret|password|private_key|consumer_key|token", re.I)
@@ -55,9 +59,25 @@ def main() -> int:
         if row["type"] == "string":
             text_columns.setdefault(key, []).append(row["column"])
 
-    wanted = [(r["source"], r["table"]) for r in csv.DictReader(TABLES.open())]
+    listed = list(csv.DictReader(TABLES.open()))
+    wanted = [(r["source"], r["table"]) for r in listed if r["select_by"] != "files"]
     rules: dict[tuple[str, str, str], dict] = {}
     problems: list[str] = []
+
+    # The visit types whose answers are copied: one line each, for a system that has encounters.
+    seen = set()
+    for line, row in enumerate(csv.DictReader(VISIT_TYPES.open()), start=2):
+        key = (row["source"], row["encounter_type"].strip().lower())
+        if row["source"] not in ("kenyaemr", "amrs"):
+            problems.append(f"visit-types.csv line {line}: source '{row['source']}' is not kenyaemr or amrs")
+        if not key[1]:
+            problems.append(f"visit-types.csv line {line}: the visit type is blank")
+        if key in seen:
+            problems.append(f"visit-types.csv line {line}: {row['source']} '{row['encounter_type']}' is listed more than once")
+        seen.add(key)
+    for row in listed:
+        if row["select_by"].startswith("encounters_in:") and not any(source == row["source"] for source, _ in seen):
+            problems.append(f"{row['source']}.{row['table']} is chosen by visit type, but visit-types.csv lists none for {row['source']}")
     for line, row in enumerate(csv.DictReader(RULES.open()), start=2):
         key = (row["source"], row["table"], row["column"])
         if key in rules:
@@ -94,7 +114,7 @@ def main() -> int:
 
     counts = {rule: sum(1 for r in rules.values() if r["rule"] == rule) for rule in sorted(ALLOWED)}
     print(f"Inventory: {inventory.relative_to(REPO)}")
-    print(f"Tables: {len(wanted)}   Rules: {len(rules)}   " + "   ".join(f"{k}: {v}" for k, v in counts.items()))
+    print(f"Tables: {len(wanted)}   Rules: {len(rules)}   " + "   ".join(f"{k}: {v}" for k, v in counts.items()) + f"   Visit types: {len(seen)}")
     if problems:
         print(f"\n{len(problems)} problem(s):")
         for problem in problems:

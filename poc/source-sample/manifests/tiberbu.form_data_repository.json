@@ -1,0 +1,102 @@
+{
+  "source": "tiberbu",
+  "table": "form_data_repository",
+  "sampled_at": "2026-11-16T18:12:16Z",
+  "source_metadata_file": "07194-16dc95db-d213-49e0-b2ef-eeb61679da55.metadata.json",
+  "source_snapshot_id": 4278655294183479540,
+  "select_by": "facility",
+  "source_rows": 8365147,
+  "source_files": 7194,
+  "source_bytes": 822596476,
+  "files_read": 344,
+  "bytes_read": 47759128,
+  "rows_kept": 15516,
+  "rows_by_facility": {
+    "LUMAKANDA SUB-COUNTY HOSPITAL": 8507,
+    "Moi Bridge Health Centre": 5159,
+    "Turbo Sub County Hospital": 1850
+  },
+  "rows_by_load": {
+    "2": 5332,
+    "3": 10184
+  },
+  "patients_referred_to": null,
+  "patients_in_source": null,
+  "rows_by_facility_month": [
+    {
+      "facility": "LUMAKANDA SUB-COUNTY HOSPITAL",
+      "month": "2026-07",
+      "rows": 69
+    },
+    {
+      "facility": "LUMAKANDA SUB-COUNTY HOSPITAL",
+      "month": "2026-08",
+      "rows": 1631
+    },
+    {
+      "facility": "LUMAKANDA SUB-COUNTY HOSPITAL",
+      "month": "2026-09",
+      "rows": 1608
+    },
+    {
+      "facility": "LUMAKANDA SUB-COUNTY HOSPITAL",
+      "month": "2026-10",
+      "rows": 3416
+    },
+    {
+      "facility": "LUMAKANDA SUB-COUNTY HOSPITAL",
+      "month": "2026-11",
+      "rows": 1783
+    },
+    {
+      "facility": "Moi Bridge Health Centre",
+      "month": "2026-09",
+      "rows": 1226
+    },
+    {
+      "facility": "Moi Bridge Health Centre",
+      "month": "2026-10",
+      "rows": 2957
+    },
+    {
+      "facility": "Moi Bridge Health Centre",
+      "month": "2026-11",
+      "rows": 976
+    },
+    {
+      "facility": "Turbo Sub County Hospital",
+      "month": "2026-07",
+      "rows": 12
+    },
+    {
+      "facility": "Turbo Sub County Hospital",
+      "month": "2026-08",
+      "rows": 364
+    },
+    {
+      "facility": "Turbo Sub County Hospital",
+      "month": "2026-09",
+      "rows": 422
+    },
+    {
+      "facility": "Turbo Sub County Hospital",
+      "month": "2026-10",
+      "rows": 678
+    },
+    {
+      "facility": "Turbo Sub County Hospital",
+      "month": "2026-11",
+      "rows": 374
+    }
+  ],
+  "emptied_columns": [
+    "_assign",
+    "_comments",
+    "_liked_by",
+    "_user_tags",
+    "modified_by",
+    "owner"
+  ],
+  "standin_location": "s3://dha-analytics/iceberg/hmis_tiberbu_ingestion/form_data_repository",
+  "problems": []
+}

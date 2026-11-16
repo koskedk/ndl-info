@@ -1,0 +1,20 @@
+# What goes to the shared copy. One path per line, relative to this project folder.
+# A folder is copied whole. Anything not listed here stays private.
+.gitignore
+README.md
+PLAN.md
+Makefile
+compose.yaml
+purge.sh
+ops/init_env.sh
+ops/standin-browser.conf
+tools/standin.py
+tools/pyproject.toml
+tools/uv.lock
+transform
+source-sample/README.md
+source-sample/sample-tables.csv
+source-sample/column-rules.csv
+source-sample/visit-types.csv
+source-sample/source-folders.csv
+source-sample/manifests

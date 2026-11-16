@@ -1,26 +1,27 @@
 {
   "source": "tiberbu",
   "table": "patient",
-  "sampled_at": "2026-11-16T08:50:43Z",
-  "source_metadata_file": "07766-bf247543-3deb-4dbb-bdc2-3e6b668cbb8f.metadata.json",
-  "source_snapshot_id": 989906627134639318,
-  "select_by": "patients_in:health_program_enrollment",
-  "source_rows": 9078984,
-  "source_files": 7766,
-  "source_bytes": 1244363578,
-  "files_read": 364,
-  "bytes_read": 76214968,
-  "rows_kept": 7248,
+  "sampled_at": "2026-11-16T18:14:26Z",
+  "source_metadata_file": "07794-5cc6d667-1e61-469e-a102-ef688c60884a.metadata.json",
+  "source_snapshot_id": 2364891696746099057,
+  "select_by": "patients_in:health_program_enrollment+form_data_repository+death_notification",
+  "source_rows": 9163736,
+  "source_files": 7794,
+  "source_bytes": 1254501378,
+  "files_read": 365,
+  "bytes_read": 77001587,
+  "rows_kept": 9932,
   "rows_by_facility": {
-    "kakamega": 4086,
-    "uasin_gishu": 3162
+    "kakamega": 5786,
+    "uasin_gishu": 4146
   },
   "rows_by_load": {
-    "2": 3107,
-    "3": 4141
+    "2": 3824,
+    "3": 6108
   },
-  "patients_referred_to": 7391,
-  "patients_in_source": 3567,
+  "patients_referred_to": 8374,
+  "patients_in_source": 4553,
+  "babies_through_mother": 686,
   "rows_by_facility_month": [],
   "emptied_columns": [
     "_assign",

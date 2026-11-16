@@ -1,0 +1,161 @@
+{
+  "source": "kenyaemr",
+  "table": "patient_identifier_type",
+  "sampled_at": "2026-11-16T12:20:18Z",
+  "source_metadata_file": "00535-66ec66c0-bbe3-4b82-b4e2-095a72bf37c7.metadata.json",
+  "source_snapshot_id": 6821327152681076811,
+  "select_by": "facility",
+  "source_rows": 86124,
+  "source_files": 535,
+  "source_bytes": 5770910,
+  "files_read": 4,
+  "bytes_read": 341467,
+  "rows_kept": 434,
+  "rows_by_facility": {
+    "openmrs_lumumba": 148,
+    "openmrs_siayacrh": 143,
+    "openmrs_sigomere": 143
+  },
+  "rows_by_load": {
+    "1": 16,
+    "2": 262,
+    "3": 156
+  },
+  "patients_referred_to": null,
+  "patients_in_source": null,
+  "rows_by_facility_month": [
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2005-09",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2019-08",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2020-03",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2020-04",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2022-08",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2023-05",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2026-09",
+      "rows": 90
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2026-10",
+      "rows": 26
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2026-11",
+      "rows": 26
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2005-09",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2019-08",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2020-03",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2020-04",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2023-05",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2026-08",
+      "rows": 34
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2026-09",
+      "rows": 52
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2026-10",
+      "rows": 26
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2026-11",
+      "rows": 26
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2005-09",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2019-08",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2020-03",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2020-04",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2023-05",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2026-09",
+      "rows": 86
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2026-10",
+      "rows": 26
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2026-11",
+      "rows": 26
+    }
+  ],
+  "emptied_columns": [],
+  "standin_location": "s3://dha-analytics/iceberg/hmis_kenya_emr_conso/patient_identifier_type",
+  "problems": []
+}

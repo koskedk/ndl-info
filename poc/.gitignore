@@ -1,0 +1,32 @@
+# Local settings and keys
+.env
+.env.*
+.secrets/
+*.pem
+*.key
+
+# Data: working files and exports hold patient records and must never be committed
+.data/
+exports/
+matching/data/
+*.tar
+*.tar.gz
+*.tgz
+*.gpg
+*.age
+*.duckdb
+*.duckdb.wal
+purge.log
+
+# Python and dbt
+__pycache__/
+*.py[cod]
+.venv/
+target/
+dbt_packages/
+logs/
+
+# Stray files
+.DS_Store
+~$*
+*:Zone.Identifier

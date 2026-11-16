@@ -1,0 +1,24 @@
+{
+  "source": "amrs",
+  "table": "patient_identifier_type",
+  "sampled_at": "2026-11-16T12:20:19Z",
+  "source_metadata_file": "00001-36bfdafd-a53b-4f81-9ed5-f47aca2a8945.metadata.json",
+  "source_snapshot_id": 8551817146055485443,
+  "select_by": "whole",
+  "source_rows": 62,
+  "source_files": 1,
+  "source_bytes": 12552,
+  "files_read": 1,
+  "bytes_read": 12552,
+  "rows_kept": 62,
+  "rows_by_facility": {},
+  "rows_by_load": {
+    "1": 62
+  },
+  "patients_referred_to": null,
+  "patients_in_source": null,
+  "rows_by_facility_month": [],
+  "emptied_columns": [],
+  "standin_location": "s3://dha-analytics/iceberg/hmis_ampath_prod/patient_identifier_type",
+  "problems": []
+}
