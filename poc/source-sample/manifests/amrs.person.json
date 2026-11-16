@@ -1,0 +1,29 @@
+{
+  "source": "amrs",
+  "table": "person",
+  "sampled_at": "2026-11-16T10:12:14Z",
+  "source_metadata_file": "00703-371a1f0f-c0fd-4757-b060-f0878190db8a.metadata.json",
+  "source_snapshot_id": 1686641314789921610,
+  "select_by": "patients_in:encounter",
+  "source_rows": 1322889,
+  "source_files": 703,
+  "source_bytes": 52647425,
+  "files_read": 703,
+  "bytes_read": 52647425,
+  "rows_kept": 29816,
+  "rows_by_facility": {},
+  "rows_by_load": {
+    "1": 27058,
+    "2": 1831,
+    "3": 927
+  },
+  "patients_referred_to": 29774,
+  "patients_in_source": 29773,
+  "rows_by_facility_month": [],
+  "emptied_columns": [
+    "cause_of_death_non_coded",
+    "void_reason"
+  ],
+  "standin_location": "s3://dha-analytics/iceberg/hmis_ampath_prod/person",
+  "problems": []
+}

@@ -110,3 +110,19 @@ kenyaemr,patient_identifier,source_schema,keep,,The facility
 kenyaemr,patient_identifier,identifier,identity,identifier,Kind is given by identifier_type
 kenyaemr,patient_identifier,void_reason,empty,,Free text
 kenyaemr,patient_identifier,uuid,keep,,Record key
+amrs,person,gender,keep,,
+amrs,person,void_reason,empty,,Free text
+amrs,person,uuid,keep,,Record key
+amrs,person,birthtime,keep,,
+amrs,person,cause_of_death_non_coded,empty,,Free text
+amrs,encounter,void_reason,empty,,Free text
+amrs,encounter,uuid,keep,,Record key
+amrs,encounter_type,name,keep,,
+amrs,encounter_type,description,keep,,
+amrs,encounter_type,retire_reason,keep,,
+amrs,encounter_type,uuid,keep,,Record key
+amrs,encounter_type,view_privilege,keep,,
+amrs,encounter_type,edit_privilege,keep,,
+amrs,patient_identifier,identifier,identity,identifier,Kind is given by identifier_type
+amrs,patient_identifier,void_reason,empty,,Free text
+amrs,patient_identifier,uuid,keep,,Record key

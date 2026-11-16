@@ -107,6 +107,16 @@ FACILITY_COLUMN = {"tiberbu": "company", "kenyaemr": "source_schema", "amrs": "l
 PRUNE_COLUMN = {"tiberbu": "county_id", "kenyaemr": "source_schema", "amrs": "location_id"}
 
 
+def patient_link(source: str, table: str) -> tuple[list[str], list[str]]:
+    """For a table chosen through another table's patients: the columns that name the patient
+    in the parent table, and the matching columns in this one."""
+    if source == "tiberbu":
+        return ["county_id", "patient"], ["county_id", "name"]
+    if source == "amrs":  # one database, so the patient number alone is enough
+        return ["patient_id"], ["person_id" if table == "person" else "patient_id"]
+    raise SystemExit(f"{source}.{table}: choosing rows through patients is not supported for {source} yet")
+
+
 def selection(spec: dict, facilities: dict) -> tuple[str | None, list, str, str | None]:
     """For one table: the column files are skipped on, its values, the WHERE clause, the facility column."""
     source, how = spec["source"], spec["select_by"]
@@ -125,6 +135,16 @@ def selection(spec: dict, facilities: dict) -> tuple[str | None, list, str, str 
             return "county_id", counties, where, "county_id"
     if source == "kenyaemr" and how == "facility":
         return "source_schema", chosen["keys"], f"source_schema IN {in_list(chosen['keys'])}", "source_schema"
+    if source == "amrs":
+        if how == "facility":
+            locations = sorted(int(key) for key in chosen["keys"])  # location_id is a number
+            return "location_id", locations, f"location_id IN ({', '.join(map(str, locations))})", "location_id"
+        if how.startswith("patients_in:"):
+            # No column to skip files on: patients of the sampled locations are spread through the whole table.
+            parent = f"amrs__{how.split(':', 1)[1]}"
+            parent_columns, own_columns = patient_link(source, spec["table"])
+            where = f'"{own_columns[0]}" IN (SELECT DISTINCT "{parent_columns[0]}" FROM "{parent}")'
+            return None, [], where, None
     raise SystemExit(f"{source}.{spec['table']}: select_by '{how}' is not supported yet")
 
 
@@ -173,6 +193,25 @@ def plan_files(table: StaticTable, column: str | None, values: list) -> dict:
                     keep.append(path.removeprefix("s3://").removeprefix("s3a://"))
                     keep_size += nbytes
     return {"keep": keep, "files": files, "bytes": size, "keep_bytes": keep_size, "rows": rows}
+
+
+def read_source(con, sql: str, attempts: int = 6) -> None:
+    """Run a query that reads the real S3 Ceph, starting it again if the connection drops.
+
+    DuckDB reports a dropped connection as its own kind of error, which the explorer's
+    retry does not recognise, so it is caught here.
+    """
+    for attempt in range(1, attempts + 1):
+        try:
+            con.execute(sql).fetchall()
+            return
+        except (duckdb.Error, OSError) as exc:
+            dropped = any(word in str(exc) for word in ("NETWORK_CONNECTION", "Timeout", "timed out", "curlCode", "SLOW_DOWN", "503", "Connection reset", "Temporary failure"))
+            if not dropped or attempt == attempts:
+                raise
+            pause = min(30 * attempt, 120)
+            say(f"      connection dropped (attempt {attempt} of {attempts}); starting this table again in {pause}s")
+            time.sleep(pause)
 
 
 def mb(n: int) -> str:
@@ -277,7 +316,7 @@ def run(args) -> int:
         con.register("source_rows", dataset)
         empty = emptied_columns(source, name)
         columns = ", ".join(f'CAST(NULL AS VARCHAR) AS "{f.name}"' if f.name in empty else f'"{f.name}"' for f in arrow_schema)
-        lake_store.retrying(lambda: con.execute(f'CREATE OR REPLACE TABLE "{local}" AS SELECT {columns} FROM source_rows WHERE {where}').fetchall())
+        read_source(con, f'CREATE OR REPLACE TABLE "{local}" AS SELECT {columns} FROM source_rows WHERE {where}')
         con.unregister("source_rows")
         kept = con.execute(f'SELECT count(*) FROM "{local}"').fetchall()[0][0]
         say(f"      kept: {kept:,} rows ({time.time() - started:.0f}s)")
@@ -286,11 +325,14 @@ def run(args) -> int:
         referred = found = None
         if spec["select_by"].startswith("patients_in:"):
             parent = f"{source}__{spec['select_by'].split(':', 1)[1]}"
+            theirs, ours = patient_link(source, name)
+            their_list, our_list = (", ".join(f'"{c}"' for c in cols) for cols in (theirs, ours))
+            match = " AND ".join(f'p."{o}" = e."{t}"' for t, o in zip(theirs, ours))
             referred, found = con.execute(
-                f'SELECT count(*), count(p.name) FROM (SELECT DISTINCT county_id, patient FROM "{parent}") e '
-                f'LEFT JOIN (SELECT DISTINCT county_id, name FROM "{local}") p ON p.county_id = e.county_id AND p.name = e.patient').fetchall()[0]
+                f'SELECT count(*), count(p."{ours[-1]}") FROM (SELECT DISTINCT {their_list} FROM "{parent}") e '
+                f'LEFT JOIN (SELECT DISTINCT {our_list} FROM "{local}") p ON {match}').fetchall()[0]
             say(f"      patients the sampled {parent.split('__')[1]} rows refer to: {referred:,}; "
-                f"in the source under their county and copied: {found:,}; not in the source: {referred - found:,}")
+                f"in the source and copied: {found:,}; not in the source: {referred - found:,}")
 
         # Write the stand-in table: same folder, same columns, no catalog, three loads.
         location = f"{bucket}/{src.path}/{name}"
@@ -358,8 +400,11 @@ def verify(args) -> int:
     config, _ = open_sources()
     engine = Engine(config, memory_limit="3GB", log=lambda m: say(f"      {m}"))
     failed = 0
+    only = set(args.only.split(",")) if args.only else None
     for spec in table_list():
         if spec["select_by"] != "facility":
+            continue
+        if only and f"{spec['source']}.{spec['table']}" not in only:
             continue
         source, name = spec["source"], spec["table"]
         manifest_file = MANIFESTS / f"{source}.{name}.json"

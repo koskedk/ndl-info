@@ -32,6 +32,7 @@ class Engine:
         if threads:
             self.con.execute(f"SET threads={int(threads)}")
         self._registered: set[tuple[str, str]] = set()
+        self._stores: set[str] = set()
 
     # -- registering tables -------------------------------------------------
 
@@ -69,6 +70,64 @@ class Engine:
         self.con.execute(f'CREATE SCHEMA IF NOT EXISTS "{source_name}"')
         self.con.execute(f'CREATE OR REPLACE VIEW "{source_name}"."{table}" AS SELECT * FROM "{handle}"')
         self._registered.add(key)
+
+    # -- views any connection can read (for the web page) ---------------------
+
+    def _connect_store(self, store) -> None:
+        """Give DuckDB itself the key for a store, so it reads the files without Python in between."""
+        name = f"store_{store.name}"
+        if name in self._stores:
+            return
+        if not self._stores:
+            self.con.execute("INSTALL httpfs")
+            self.con.execute("LOAD httpfs")
+        quote = lambda v: "'" + str(v).replace("'", "''") + "'"
+        self.con.execute(
+            f"CREATE OR REPLACE SECRET {name} (TYPE s3, KEY_ID {quote(store.access_key)}, SECRET {quote(store.secret_key)}, "
+            f"ENDPOINT {quote(store.host)}, REGION {quote(store.region)}, URL_STYLE 'path', "
+            f"USE_SSL {'true' if store.scheme == 'https' else 'false'}, SCOPE {quote('s3://' + store.bucket)})"
+        )
+        self._stores.add(name)
+
+    def publish(self, source_name: str, table: str) -> int | None:
+        """Expose source.table as a view over its current files, read by DuckDB directly.
+
+        Views made by `register` live in one connection. These can be read by every
+        connection, which the web page needs. Returns the row count where the table's
+        own records give it, or None. Raises ValueError for a table that cannot be read this way.
+        """
+        source = self.config.source(source_name)
+        rows = None
+        hive = "false"
+        if source.kind == "parquet":
+            if table not in source.tables:
+                raise KeyError(f"{source.name} has no table '{table}'")
+            files = st.glob(source.store, source.root, source.tables[table])
+            hive = "true"
+        else:
+            tbl = iceberg.open_table(source, table)
+            plan = iceberg.current_files(source, table, tbl, on_progress=self.progress)
+            if plan.delete_files:
+                raise ValueError("has row-level deletes, which reading the files directly would ignore")
+            files, rows = list(plan.files), plan.rows
+        if not files:
+            raise ValueError("has no data files")
+        self._connect_store(source.store)
+        listed = ", ".join("'s3://" + f.replace("'", "''") + "'" for f in files)
+        self.con.execute(f'CREATE SCHEMA IF NOT EXISTS "{source_name}"')
+        self.con.execute(
+            f'CREATE OR REPLACE VIEW "{source_name}"."{table}" AS '
+            f"SELECT * FROM read_parquet([{listed}], union_by_name=true, hive_partitioning={hive})"
+        )
+        return rows
+
+    def start_ui(self, port: int) -> str:
+        """Start DuckDB's local web page on this machine and return its address."""
+        self.con.execute("INSTALL ui")
+        self.con.execute("LOAD ui")
+        self.con.execute(f"SET ui_local_port={int(port)}")
+        self.con.execute("CALL start_ui_server()")
+        return f"http://localhost:{int(port)}/"
 
     def referenced_tables(self, sql: str) -> list[tuple[str, str]]:
         """source.table names used in a query, for the sources named in sources.toml."""

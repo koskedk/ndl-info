@@ -5,3 +5,7 @@ kenyaemr,person,2,facility,date_created,RMN-16: sex and date of birth
 kenyaemr,encounter,2,facility,date_created,"RMN-16: the ANC enrolment encounter, date and facility"
 kenyaemr,encounter_type,2,whole,,RMN-16: names the encounter types
 kenyaemr,patient_identifier,2,facility,date_created,Identity for the Master Patient Index
+amrs,encounter,2,facility,date_created,"RMN-16: the ANC encounter, date and facility. Mirrors kenyaemr.encounter"
+amrs,encounter_type,2,whole,,RMN-16: names the encounter types
+amrs,person,2,patients_in:encounter,date_created,RMN-16: sex and date of birth. No location column; taken through the patients of the sampled encounters
+amrs,patient_identifier,2,patients_in:encounter,date_created,Identity for the Master Patient Index. Every identifier of the sampled patients

@@ -372,6 +372,53 @@ def sql(
 
 
 @app.command()
+def ui(
+    sources: Optional[list[str]] = typer.Argument(None, help="Sources to show. Leave empty for all of them."),
+    port: int = typer.Option(4213, help="Port for the page on this machine."),
+    memory: str = typer.Option("4GB", help="Memory DuckDB may use before spilling to disk."),
+):
+    """Open a web page for browsing tables and running SQL over them (DuckDB's local UI)."""
+    import time
+
+    cfg = _config()
+    chosen = [_source(cfg, name) for name in (sources or list(cfg.sources))]
+    engine = _engine(cfg, memory)
+
+    err.print("Step 1 of 2: finding the tables")
+    wanted: list[tuple[str, str]] = []
+    for source in chosen:
+        names = list(source.tables) if source.kind == "parquet" else iceberg.list_tables(source)
+        err.print(f"  {source.name}: {len(names):,} tables")
+        wanted += [(source.name, name) for name in names]
+    if not wanted:
+        console.print("[red]No tables found in the chosen sources.[/red]")
+        raise typer.Exit(1)
+
+    err.print(f"Step 2 of 2: preparing {len(wanted):,} tables")
+    ready = 0
+    for i, (source_name, table) in enumerate(wanted, 1):
+        try:
+            rows = engine.publish(source_name, table)
+            ready += 1
+            err.print(f"  {i}/{len(wanted)} {source_name}.{table}" + (f": {rows:,} rows" if rows is not None else ""))
+        except Exception as exc:  # one unreadable table should not stop the rest
+            err.print(f"  {i}/{len(wanted)} {source_name}.{table}: left out, {exc}")
+    if not ready:
+        console.print("[red]No table could be prepared.[/red]")
+        raise typer.Exit(1)
+
+    address = engine.start_ui(port)
+    console.print(f"\n[bold]{ready:,} tables ready. Open {address}[/bold]")
+    console.print("In the page, tables are under the [bold]memory[/bold] database, one schema per source.")
+    console.print("Press Ctrl+C here to stop.")
+    try:
+        while True:
+            time.sleep(3600)
+    except KeyboardInterrupt:
+        console.print("Stopped.")
+
+
+@app.command()
 def profile(
     source: str,
     table: str,

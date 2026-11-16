@@ -34,6 +34,7 @@ uv run --offline lake-explorer sources
 | `inventory` | Record today's state of every table under `snapshots/` |
 | `changes` | Compare two inventories, and list tables that have stopped loading |
 | `sql "<query>"` | Run DuckDB SQL; name tables as `source.table` |
+| `ui [source ...]` | Open a web page for browsing tables and running SQL (DuckDB's local UI). Name the sources on the real lake; preparing every table there is slow |
 | `profile <source> <table>` | Per column: share missing, distinct values, smallest and largest |
 | `dupes <source> <table> --key a,b` | Check for repeated rows on a key |
 

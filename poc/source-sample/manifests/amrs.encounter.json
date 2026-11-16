@@ -1,0 +1,3776 @@
+{
+  "source": "amrs",
+  "table": "encounter",
+  "sampled_at": "2026-11-16T10:11:24Z",
+  "source_metadata_file": "01017-ed123126-0617-4cec-820a-5660d6f4d3e9.metadata.json",
+  "source_snapshot_id": 5163261268181480705,
+  "select_by": "facility",
+  "source_rows": 16394937,
+  "source_files": 1017,
+  "source_bytes": 622254617,
+  "files_read": 868,
+  "bytes_read": 621307062,
+  "rows_kept": 387785,
+  "rows_by_facility": {
+    "62": 98317,
+    "71": 231555,
+    "195": 20420,
+    "325": 11419,
+    "329": 19861,
+    "333": 6213
+  },
+  "rows_by_load": {
+    "1": 354260,
+    "2": 19811,
+    "3": 13714
+  },
+  "patients_referred_to": null,
+  "patients_in_source": null,
+  "rows_by_facility_month": [
+    {
+      "facility": "195",
+      "month": "2015-12",
+      "rows": 1
+    },
+    {
+      "facility": "195",
+      "month": "2016-03",
+      "rows": 1
+    },
+    {
+      "facility": "195",
+      "month": "2016-05",
+      "rows": 110
+    },
+    {
+      "facility": "195",
+      "month": "2016-06",
+      "rows": 285
+    },
+    {
+      "facility": "195",
+      "month": "2016-07",
+      "rows": 239
+    },
+    {
+      "facility": "195",
+      "month": "2016-08",
+      "rows": 192
+    },
+    {
+      "facility": "195",
+      "month": "2016-09",
+      "rows": 269
+    },
+    {
+      "facility": "195",
+      "month": "2016-10",
+      "rows": 374
+    },
+    {
+      "facility": "195",
+      "month": "2016-11",
+      "rows": 146
+    },
+    {
+      "facility": "195",
+      "month": "2016-12",
+      "rows": 36
+    },
+    {
+      "facility": "195",
+      "month": "2017-01",
+      "rows": 244
+    },
+    {
+      "facility": "195",
+      "month": "2017-02",
+      "rows": 515
+    },
+    {
+      "facility": "195",
+      "month": "2017-03",
+      "rows": 900
+    },
+    {
+      "facility": "195",
+      "month": "2017-04",
+      "rows": 436
+    },
+    {
+      "facility": "195",
+      "month": "2017-05",
+      "rows": 335
+    },
+    {
+      "facility": "195",
+      "month": "2017-06",
+      "rows": 362
+    },
+    {
+      "facility": "195",
+      "month": "2017-07",
+      "rows": 341
+    },
+    {
+      "facility": "195",
+      "month": "2017-08",
+      "rows": 136
+    },
+    {
+      "facility": "195",
+      "month": "2017-09",
+      "rows": 201
+    },
+    {
+      "facility": "195",
+      "month": "2017-10",
+      "rows": 122
+    },
+    {
+      "facility": "195",
+      "month": "2017-11",
+      "rows": 248
+    },
+    {
+      "facility": "195",
+      "month": "2017-12",
+      "rows": 76
+    },
+    {
+      "facility": "195",
+      "month": "2018-01",
+      "rows": 145
+    },
+    {
+      "facility": "195",
+      "month": "2018-02",
+      "rows": 228
+    },
+    {
+      "facility": "195",
+      "month": "2018-03",
+      "rows": 164
+    },
+    {
+      "facility": "195",
+      "month": "2018-04",
+      "rows": 109
+    },
+    {
+      "facility": "195",
+      "month": "2018-05",
+      "rows": 160
+    },
+    {
+      "facility": "195",
+      "month": "2018-06",
+      "rows": 276
+    },
+    {
+      "facility": "195",
+      "month": "2018-07",
+      "rows": 178
+    },
+    {
+      "facility": "195",
+      "month": "2018-08",
+      "rows": 266
+    },
+    {
+      "facility": "195",
+      "month": "2018-09",
+      "rows": 237
+    },
+    {
+      "facility": "195",
+      "month": "2018-10",
+      "rows": 417
+    },
+    {
+      "facility": "195",
+      "month": "2018-11",
+      "rows": 276
+    },
+    {
+      "facility": "195",
+      "month": "2018-12",
+      "rows": 133
+    },
+    {
+      "facility": "195",
+      "month": "2019-01",
+      "rows": 320
+    },
+    {
+      "facility": "195",
+      "month": "2019-02",
+      "rows": 236
+    },
+    {
+      "facility": "195",
+      "month": "2019-03",
+      "rows": 294
+    },
+    {
+      "facility": "195",
+      "month": "2019-04",
+      "rows": 410
+    },
+    {
+      "facility": "195",
+      "month": "2019-05",
+      "rows": 277
+    },
+    {
+      "facility": "195",
+      "month": "2019-06",
+      "rows": 299
+    },
+    {
+      "facility": "195",
+      "month": "2019-07",
+      "rows": 431
+    },
+    {
+      "facility": "195",
+      "month": "2019-08",
+      "rows": 281
+    },
+    {
+      "facility": "195",
+      "month": "2019-09",
+      "rows": 362
+    },
+    {
+      "facility": "195",
+      "month": "2019-10",
+      "rows": 282
+    },
+    {
+      "facility": "195",
+      "month": "2019-11",
+      "rows": 104
+    },
+    {
+      "facility": "195",
+      "month": "2019-12",
+      "rows": 23
+    },
+    {
+      "facility": "195",
+      "month": "2020-01",
+      "rows": 51
+    },
+    {
+      "facility": "195",
+      "month": "2020-02",
+      "rows": 31
+    },
+    {
+      "facility": "195",
+      "month": "2020-03",
+      "rows": 57
+    },
+    {
+      "facility": "195",
+      "month": "2020-04",
+      "rows": 69
+    },
+    {
+      "facility": "195",
+      "month": "2020-05",
+      "rows": 84
+    },
+    {
+      "facility": "195",
+      "month": "2020-06",
+      "rows": 127
+    },
+    {
+      "facility": "195",
+      "month": "2020-07",
+      "rows": 165
+    },
+    {
+      "facility": "195",
+      "month": "2020-08",
+      "rows": 78
+    },
+    {
+      "facility": "195",
+      "month": "2020-09",
+      "rows": 168
+    },
+    {
+      "facility": "195",
+      "month": "2020-10",
+      "rows": 185
+    },
+    {
+      "facility": "195",
+      "month": "2020-11",
+      "rows": 93
+    },
+    {
+      "facility": "195",
+      "month": "2020-12",
+      "rows": 62
+    },
+    {
+      "facility": "195",
+      "month": "2021-01",
+      "rows": 50
+    },
+    {
+      "facility": "195",
+      "month": "2021-02",
+      "rows": 145
+    },
+    {
+      "facility": "195",
+      "month": "2021-03",
+      "rows": 58
+    },
+    {
+      "facility": "195",
+      "month": "2021-04",
+      "rows": 21
+    },
+    {
+      "facility": "195",
+      "month": "2021-05",
+      "rows": 129
+    },
+    {
+      "facility": "195",
+      "month": "2021-06",
+      "rows": 68
+    },
+    {
+      "facility": "195",
+      "month": "2021-07",
+      "rows": 115
+    },
+    {
+      "facility": "195",
+      "month": "2021-08",
+      "rows": 112
+    },
+    {
+      "facility": "195",
+      "month": "2021-09",
+      "rows": 86
+    },
+    {
+      "facility": "195",
+      "month": "2021-10",
+      "rows": 68
+    },
+    {
+      "facility": "195",
+      "month": "2021-11",
+      "rows": 57
+    },
+    {
+      "facility": "195",
+      "month": "2021-12",
+      "rows": 65
+    },
+    {
+      "facility": "195",
+      "month": "2022-01",
+      "rows": 62
+    },
+    {
+      "facility": "195",
+      "month": "2022-02",
+      "rows": 141
+    },
+    {
+      "facility": "195",
+      "month": "2022-03",
+      "rows": 118
+    },
+    {
+      "facility": "195",
+      "month": "2022-04",
+      "rows": 228
+    },
+    {
+      "facility": "195",
+      "month": "2022-05",
+      "rows": 117
+    },
+    {
+      "facility": "195",
+      "month": "2022-06",
+      "rows": 250
+    },
+    {
+      "facility": "195",
+      "month": "2022-07",
+      "rows": 229
+    },
+    {
+      "facility": "195",
+      "month": "2022-08",
+      "rows": 222
+    },
+    {
+      "facility": "195",
+      "month": "2022-09",
+      "rows": 266
+    },
+    {
+      "facility": "195",
+      "month": "2022-10",
+      "rows": 69
+    },
+    {
+      "facility": "195",
+      "month": "2022-11",
+      "rows": 75
+    },
+    {
+      "facility": "195",
+      "month": "2022-12",
+      "rows": 133
+    },
+    {
+      "facility": "195",
+      "month": "2023-01",
+      "rows": 170
+    },
+    {
+      "facility": "195",
+      "month": "2023-02",
+      "rows": 392
+    },
+    {
+      "facility": "195",
+      "month": "2023-03",
+      "rows": 174
+    },
+    {
+      "facility": "195",
+      "month": "2023-04",
+      "rows": 128
+    },
+    {
+      "facility": "195",
+      "month": "2023-05",
+      "rows": 107
+    },
+    {
+      "facility": "195",
+      "month": "2023-06",
+      "rows": 55
+    },
+    {
+      "facility": "195",
+      "month": "2023-07",
+      "rows": 95
+    },
+    {
+      "facility": "195",
+      "month": "2023-08",
+      "rows": 123
+    },
+    {
+      "facility": "195",
+      "month": "2023-09",
+      "rows": 113
+    },
+    {
+      "facility": "195",
+      "month": "2023-10",
+      "rows": 58
+    },
+    {
+      "facility": "195",
+      "month": "2023-11",
+      "rows": 117
+    },
+    {
+      "facility": "195",
+      "month": "2023-12",
+      "rows": 112
+    },
+    {
+      "facility": "195",
+      "month": "2024-01",
+      "rows": 37
+    },
+    {
+      "facility": "195",
+      "month": "2024-02",
+      "rows": 72
+    },
+    {
+      "facility": "195",
+      "month": "2024-03",
+      "rows": 52
+    },
+    {
+      "facility": "195",
+      "month": "2024-04",
+      "rows": 56
+    },
+    {
+      "facility": "195",
+      "month": "2024-05",
+      "rows": 136
+    },
+    {
+      "facility": "195",
+      "month": "2024-06",
+      "rows": 171
+    },
+    {
+      "facility": "195",
+      "month": "2024-07",
+      "rows": 100
+    },
+    {
+      "facility": "195",
+      "month": "2024-08",
+      "rows": 23
+    },
+    {
+      "facility": "195",
+      "month": "2024-09",
+      "rows": 11
+    },
+    {
+      "facility": "195",
+      "month": "2024-10",
+      "rows": 94
+    },
+    {
+      "facility": "195",
+      "month": "2024-11",
+      "rows": 19
+    },
+    {
+      "facility": "195",
+      "month": "2024-12",
+      "rows": 5
+    },
+    {
+      "facility": "195",
+      "month": "2025-02",
+      "rows": 43
+    },
+    {
+      "facility": "195",
+      "month": "2025-03",
+      "rows": 194
+    },
+    {
+      "facility": "195",
+      "month": "2025-04",
+      "rows": 264
+    },
+    {
+      "facility": "195",
+      "month": "2025-05",
+      "rows": 381
+    },
+    {
+      "facility": "195",
+      "month": "2025-06",
+      "rows": 251
+    },
+    {
+      "facility": "195",
+      "month": "2025-07",
+      "rows": 236
+    },
+    {
+      "facility": "195",
+      "month": "2025-08",
+      "rows": 61
+    },
+    {
+      "facility": "195",
+      "month": "2025-09",
+      "rows": 22
+    },
+    {
+      "facility": "195",
+      "month": "2025-10",
+      "rows": 60
+    },
+    {
+      "facility": "195",
+      "month": "2025-11",
+      "rows": 281
+    },
+    {
+      "facility": "195",
+      "month": "2025-12",
+      "rows": 203
+    },
+    {
+      "facility": "195",
+      "month": "2026-01",
+      "rows": 49
+    },
+    {
+      "facility": "195",
+      "month": "2026-02",
+      "rows": 13
+    },
+    {
+      "facility": "195",
+      "month": "2026-03",
+      "rows": 215
+    },
+    {
+      "facility": "195",
+      "month": "2026-04",
+      "rows": 50
+    },
+    {
+      "facility": "195",
+      "month": "2026-05",
+      "rows": 48
+    },
+    {
+      "facility": "195",
+      "month": "2026-06",
+      "rows": 11
+    },
+    {
+      "facility": "195",
+      "month": "2026-07",
+      "rows": 16
+    },
+    {
+      "facility": "195",
+      "month": "2026-08",
+      "rows": 16
+    },
+    {
+      "facility": "195",
+      "month": "2026-09",
+      "rows": 25
+    },
+    {
+      "facility": "195",
+      "month": "2026-10",
+      "rows": 6
+    },
+    {
+      "facility": "195",
+      "month": "2026-11",
+      "rows": 24
+    },
+    {
+      "facility": "325",
+      "month": "2021-04",
+      "rows": 1
+    },
+    {
+      "facility": "325",
+      "month": "2021-06",
+      "rows": 2
+    },
+    {
+      "facility": "325",
+      "month": "2021-07",
+      "rows": 12
+    },
+    {
+      "facility": "325",
+      "month": "2021-08",
+      "rows": 1046
+    },
+    {
+      "facility": "325",
+      "month": "2021-09",
+      "rows": 292
+    },
+    {
+      "facility": "325",
+      "month": "2021-10",
+      "rows": 177
+    },
+    {
+      "facility": "325",
+      "month": "2021-11",
+      "rows": 135
+    },
+    {
+      "facility": "325",
+      "month": "2021-12",
+      "rows": 100
+    },
+    {
+      "facility": "325",
+      "month": "2022-01",
+      "rows": 157
+    },
+    {
+      "facility": "325",
+      "month": "2022-02",
+      "rows": 177
+    },
+    {
+      "facility": "325",
+      "month": "2022-03",
+      "rows": 157
+    },
+    {
+      "facility": "325",
+      "month": "2022-04",
+      "rows": 150
+    },
+    {
+      "facility": "325",
+      "month": "2022-05",
+      "rows": 280
+    },
+    {
+      "facility": "325",
+      "month": "2022-06",
+      "rows": 255
+    },
+    {
+      "facility": "325",
+      "month": "2022-07",
+      "rows": 695
+    },
+    {
+      "facility": "325",
+      "month": "2022-08",
+      "rows": 124
+    },
+    {
+      "facility": "325",
+      "month": "2022-09",
+      "rows": 288
+    },
+    {
+      "facility": "325",
+      "month": "2022-10",
+      "rows": 181
+    },
+    {
+      "facility": "325",
+      "month": "2022-11",
+      "rows": 196
+    },
+    {
+      "facility": "325",
+      "month": "2022-12",
+      "rows": 96
+    },
+    {
+      "facility": "325",
+      "month": "2023-01",
+      "rows": 195
+    },
+    {
+      "facility": "325",
+      "month": "2023-02",
+      "rows": 147
+    },
+    {
+      "facility": "325",
+      "month": "2023-03",
+      "rows": 171
+    },
+    {
+      "facility": "325",
+      "month": "2023-04",
+      "rows": 112
+    },
+    {
+      "facility": "325",
+      "month": "2023-05",
+      "rows": 251
+    },
+    {
+      "facility": "325",
+      "month": "2023-06",
+      "rows": 180
+    },
+    {
+      "facility": "325",
+      "month": "2023-07",
+      "rows": 185
+    },
+    {
+      "facility": "325",
+      "month": "2023-08",
+      "rows": 159
+    },
+    {
+      "facility": "325",
+      "month": "2023-09",
+      "rows": 209
+    },
+    {
+      "facility": "325",
+      "month": "2023-10",
+      "rows": 128
+    },
+    {
+      "facility": "325",
+      "month": "2023-11",
+      "rows": 67
+    },
+    {
+      "facility": "325",
+      "month": "2023-12",
+      "rows": 26
+    },
+    {
+      "facility": "325",
+      "month": "2024-01",
+      "rows": 149
+    },
+    {
+      "facility": "325",
+      "month": "2024-02",
+      "rows": 165
+    },
+    {
+      "facility": "325",
+      "month": "2024-03",
+      "rows": 101
+    },
+    {
+      "facility": "325",
+      "month": "2024-04",
+      "rows": 109
+    },
+    {
+      "facility": "325",
+      "month": "2024-05",
+      "rows": 84
+    },
+    {
+      "facility": "325",
+      "month": "2024-06",
+      "rows": 108
+    },
+    {
+      "facility": "325",
+      "month": "2024-07",
+      "rows": 125
+    },
+    {
+      "facility": "325",
+      "month": "2024-08",
+      "rows": 135
+    },
+    {
+      "facility": "325",
+      "month": "2024-09",
+      "rows": 112
+    },
+    {
+      "facility": "325",
+      "month": "2024-10",
+      "rows": 151
+    },
+    {
+      "facility": "325",
+      "month": "2024-11",
+      "rows": 188
+    },
+    {
+      "facility": "325",
+      "month": "2024-12",
+      "rows": 28
+    },
+    {
+      "facility": "325",
+      "month": "2025-01",
+      "rows": 50
+    },
+    {
+      "facility": "325",
+      "month": "2025-02",
+      "rows": 101
+    },
+    {
+      "facility": "325",
+      "month": "2025-03",
+      "rows": 112
+    },
+    {
+      "facility": "325",
+      "month": "2025-04",
+      "rows": 144
+    },
+    {
+      "facility": "325",
+      "month": "2025-05",
+      "rows": 161
+    },
+    {
+      "facility": "325",
+      "month": "2025-06",
+      "rows": 153
+    },
+    {
+      "facility": "325",
+      "month": "2025-07",
+      "rows": 129
+    },
+    {
+      "facility": "325",
+      "month": "2025-08",
+      "rows": 143
+    },
+    {
+      "facility": "325",
+      "month": "2025-09",
+      "rows": 145
+    },
+    {
+      "facility": "325",
+      "month": "2025-10",
+      "rows": 234
+    },
+    {
+      "facility": "325",
+      "month": "2025-11",
+      "rows": 137
+    },
+    {
+      "facility": "325",
+      "month": "2025-12",
+      "rows": 30
+    },
+    {
+      "facility": "325",
+      "month": "2026-01",
+      "rows": 190
+    },
+    {
+      "facility": "325",
+      "month": "2026-02",
+      "rows": 213
+    },
+    {
+      "facility": "325",
+      "month": "2026-03",
+      "rows": 427
+    },
+    {
+      "facility": "325",
+      "month": "2026-04",
+      "rows": 153
+    },
+    {
+      "facility": "325",
+      "month": "2026-05",
+      "rows": 232
+    },
+    {
+      "facility": "325",
+      "month": "2026-06",
+      "rows": 129
+    },
+    {
+      "facility": "325",
+      "month": "2026-07",
+      "rows": 252
+    },
+    {
+      "facility": "325",
+      "month": "2026-08",
+      "rows": 95
+    },
+    {
+      "facility": "325",
+      "month": "2026-09",
+      "rows": 171
+    },
+    {
+      "facility": "325",
+      "month": "2026-10",
+      "rows": 153
+    },
+    {
+      "facility": "325",
+      "month": "2026-11",
+      "rows": 59
+    },
+    {
+      "facility": "329",
+      "month": "2021-03",
+      "rows": 2
+    },
+    {
+      "facility": "329",
+      "month": "2021-04",
+      "rows": 88
+    },
+    {
+      "facility": "329",
+      "month": "2021-05",
+      "rows": 18
+    },
+    {
+      "facility": "329",
+      "month": "2021-06",
+      "rows": 29
+    },
+    {
+      "facility": "329",
+      "month": "2021-07",
+      "rows": 39
+    },
+    {
+      "facility": "329",
+      "month": "2021-08",
+      "rows": 597
+    },
+    {
+      "facility": "329",
+      "month": "2021-09",
+      "rows": 325
+    },
+    {
+      "facility": "329",
+      "month": "2021-10",
+      "rows": 207
+    },
+    {
+      "facility": "329",
+      "month": "2021-11",
+      "rows": 139
+    },
+    {
+      "facility": "329",
+      "month": "2021-12",
+      "rows": 119
+    },
+    {
+      "facility": "329",
+      "month": "2022-01",
+      "rows": 248
+    },
+    {
+      "facility": "329",
+      "month": "2022-02",
+      "rows": 180
+    },
+    {
+      "facility": "329",
+      "month": "2022-03",
+      "rows": 214
+    },
+    {
+      "facility": "329",
+      "month": "2022-04",
+      "rows": 228
+    },
+    {
+      "facility": "329",
+      "month": "2022-05",
+      "rows": 204
+    },
+    {
+      "facility": "329",
+      "month": "2022-06",
+      "rows": 265
+    },
+    {
+      "facility": "329",
+      "month": "2022-07",
+      "rows": 241
+    },
+    {
+      "facility": "329",
+      "month": "2022-08",
+      "rows": 225
+    },
+    {
+      "facility": "329",
+      "month": "2022-09",
+      "rows": 335
+    },
+    {
+      "facility": "329",
+      "month": "2022-10",
+      "rows": 290
+    },
+    {
+      "facility": "329",
+      "month": "2022-11",
+      "rows": 272
+    },
+    {
+      "facility": "329",
+      "month": "2022-12",
+      "rows": 167
+    },
+    {
+      "facility": "329",
+      "month": "2023-01",
+      "rows": 244
+    },
+    {
+      "facility": "329",
+      "month": "2023-02",
+      "rows": 313
+    },
+    {
+      "facility": "329",
+      "month": "2023-03",
+      "rows": 297
+    },
+    {
+      "facility": "329",
+      "month": "2023-04",
+      "rows": 423
+    },
+    {
+      "facility": "329",
+      "month": "2023-05",
+      "rows": 449
+    },
+    {
+      "facility": "329",
+      "month": "2023-06",
+      "rows": 359
+    },
+    {
+      "facility": "329",
+      "month": "2023-07",
+      "rows": 525
+    },
+    {
+      "facility": "329",
+      "month": "2023-08",
+      "rows": 452
+    },
+    {
+      "facility": "329",
+      "month": "2023-09",
+      "rows": 496
+    },
+    {
+      "facility": "329",
+      "month": "2023-10",
+      "rows": 429
+    },
+    {
+      "facility": "329",
+      "month": "2023-11",
+      "rows": 494
+    },
+    {
+      "facility": "329",
+      "month": "2023-12",
+      "rows": 296
+    },
+    {
+      "facility": "329",
+      "month": "2024-01",
+      "rows": 445
+    },
+    {
+      "facility": "329",
+      "month": "2024-02",
+      "rows": 469
+    },
+    {
+      "facility": "329",
+      "month": "2024-03",
+      "rows": 492
+    },
+    {
+      "facility": "329",
+      "month": "2024-04",
+      "rows": 437
+    },
+    {
+      "facility": "329",
+      "month": "2024-05",
+      "rows": 401
+    },
+    {
+      "facility": "329",
+      "month": "2024-06",
+      "rows": 322
+    },
+    {
+      "facility": "329",
+      "month": "2024-07",
+      "rows": 216
+    },
+    {
+      "facility": "329",
+      "month": "2024-08",
+      "rows": 426
+    },
+    {
+      "facility": "329",
+      "month": "2024-09",
+      "rows": 438
+    },
+    {
+      "facility": "329",
+      "month": "2024-10",
+      "rows": 374
+    },
+    {
+      "facility": "329",
+      "month": "2024-11",
+      "rows": 331
+    },
+    {
+      "facility": "329",
+      "month": "2024-12",
+      "rows": 256
+    },
+    {
+      "facility": "329",
+      "month": "2025-01",
+      "rows": 262
+    },
+    {
+      "facility": "329",
+      "month": "2025-02",
+      "rows": 128
+    },
+    {
+      "facility": "329",
+      "month": "2025-03",
+      "rows": 180
+    },
+    {
+      "facility": "329",
+      "month": "2025-04",
+      "rows": 320
+    },
+    {
+      "facility": "329",
+      "month": "2025-05",
+      "rows": 362
+    },
+    {
+      "facility": "329",
+      "month": "2025-06",
+      "rows": 241
+    },
+    {
+      "facility": "329",
+      "month": "2025-07",
+      "rows": 192
+    },
+    {
+      "facility": "329",
+      "month": "2025-08",
+      "rows": 282
+    },
+    {
+      "facility": "329",
+      "month": "2025-09",
+      "rows": 424
+    },
+    {
+      "facility": "329",
+      "month": "2025-10",
+      "rows": 306
+    },
+    {
+      "facility": "329",
+      "month": "2025-11",
+      "rows": 263
+    },
+    {
+      "facility": "329",
+      "month": "2025-12",
+      "rows": 253
+    },
+    {
+      "facility": "329",
+      "month": "2026-01",
+      "rows": 323
+    },
+    {
+      "facility": "329",
+      "month": "2026-02",
+      "rows": 224
+    },
+    {
+      "facility": "329",
+      "month": "2026-03",
+      "rows": 300
+    },
+    {
+      "facility": "329",
+      "month": "2026-04",
+      "rows": 328
+    },
+    {
+      "facility": "329",
+      "month": "2026-05",
+      "rows": 274
+    },
+    {
+      "facility": "329",
+      "month": "2026-06",
+      "rows": 245
+    },
+    {
+      "facility": "329",
+      "month": "2026-07",
+      "rows": 267
+    },
+    {
+      "facility": "329",
+      "month": "2026-08",
+      "rows": 237
+    },
+    {
+      "facility": "329",
+      "month": "2026-09",
+      "rows": 340
+    },
+    {
+      "facility": "329",
+      "month": "2026-10",
+      "rows": 210
+    },
+    {
+      "facility": "329",
+      "month": "2026-11",
+      "rows": 84
+    },
+    {
+      "facility": "333",
+      "month": "2020-08",
+      "rows": 2
+    },
+    {
+      "facility": "333",
+      "month": "2020-09",
+      "rows": 15
+    },
+    {
+      "facility": "333",
+      "month": "2020-10",
+      "rows": 54
+    },
+    {
+      "facility": "333",
+      "month": "2020-11",
+      "rows": 58
+    },
+    {
+      "facility": "333",
+      "month": "2020-12",
+      "rows": 68
+    },
+    {
+      "facility": "333",
+      "month": "2021-01",
+      "rows": 48
+    },
+    {
+      "facility": "333",
+      "month": "2021-02",
+      "rows": 71
+    },
+    {
+      "facility": "333",
+      "month": "2021-03",
+      "rows": 77
+    },
+    {
+      "facility": "333",
+      "month": "2021-04",
+      "rows": 57
+    },
+    {
+      "facility": "333",
+      "month": "2021-05",
+      "rows": 45
+    },
+    {
+      "facility": "333",
+      "month": "2021-06",
+      "rows": 81
+    },
+    {
+      "facility": "333",
+      "month": "2021-07",
+      "rows": 66
+    },
+    {
+      "facility": "333",
+      "month": "2021-08",
+      "rows": 62
+    },
+    {
+      "facility": "333",
+      "month": "2021-09",
+      "rows": 118
+    },
+    {
+      "facility": "333",
+      "month": "2021-10",
+      "rows": 80
+    },
+    {
+      "facility": "333",
+      "month": "2021-11",
+      "rows": 93
+    },
+    {
+      "facility": "333",
+      "month": "2021-12",
+      "rows": 54
+    },
+    {
+      "facility": "333",
+      "month": "2022-01",
+      "rows": 153
+    },
+    {
+      "facility": "333",
+      "month": "2022-02",
+      "rows": 97
+    },
+    {
+      "facility": "333",
+      "month": "2022-03",
+      "rows": 76
+    },
+    {
+      "facility": "333",
+      "month": "2022-04",
+      "rows": 74
+    },
+    {
+      "facility": "333",
+      "month": "2022-05",
+      "rows": 136
+    },
+    {
+      "facility": "333",
+      "month": "2022-06",
+      "rows": 96
+    },
+    {
+      "facility": "333",
+      "month": "2022-07",
+      "rows": 178
+    },
+    {
+      "facility": "333",
+      "month": "2022-08",
+      "rows": 97
+    },
+    {
+      "facility": "333",
+      "month": "2022-09",
+      "rows": 108
+    },
+    {
+      "facility": "333",
+      "month": "2022-10",
+      "rows": 118
+    },
+    {
+      "facility": "333",
+      "month": "2022-11",
+      "rows": 146
+    },
+    {
+      "facility": "333",
+      "month": "2022-12",
+      "rows": 85
+    },
+    {
+      "facility": "333",
+      "month": "2023-01",
+      "rows": 145
+    },
+    {
+      "facility": "333",
+      "month": "2023-02",
+      "rows": 118
+    },
+    {
+      "facility": "333",
+      "month": "2023-03",
+      "rows": 127
+    },
+    {
+      "facility": "333",
+      "month": "2023-04",
+      "rows": 92
+    },
+    {
+      "facility": "333",
+      "month": "2023-05",
+      "rows": 100
+    },
+    {
+      "facility": "333",
+      "month": "2023-06",
+      "rows": 103
+    },
+    {
+      "facility": "333",
+      "month": "2023-07",
+      "rows": 79
+    },
+    {
+      "facility": "333",
+      "month": "2023-08",
+      "rows": 117
+    },
+    {
+      "facility": "333",
+      "month": "2023-09",
+      "rows": 198
+    },
+    {
+      "facility": "333",
+      "month": "2023-10",
+      "rows": 112
+    },
+    {
+      "facility": "333",
+      "month": "2023-11",
+      "rows": 129
+    },
+    {
+      "facility": "333",
+      "month": "2023-12",
+      "rows": 15
+    },
+    {
+      "facility": "333",
+      "month": "2024-01",
+      "rows": 108
+    },
+    {
+      "facility": "333",
+      "month": "2024-02",
+      "rows": 87
+    },
+    {
+      "facility": "333",
+      "month": "2024-03",
+      "rows": 86
+    },
+    {
+      "facility": "333",
+      "month": "2024-04",
+      "rows": 88
+    },
+    {
+      "facility": "333",
+      "month": "2024-05",
+      "rows": 107
+    },
+    {
+      "facility": "333",
+      "month": "2024-06",
+      "rows": 45
+    },
+    {
+      "facility": "333",
+      "month": "2024-07",
+      "rows": 63
+    },
+    {
+      "facility": "333",
+      "month": "2024-08",
+      "rows": 148
+    },
+    {
+      "facility": "333",
+      "month": "2024-09",
+      "rows": 56
+    },
+    {
+      "facility": "333",
+      "month": "2024-10",
+      "rows": 89
+    },
+    {
+      "facility": "333",
+      "month": "2024-11",
+      "rows": 49
+    },
+    {
+      "facility": "333",
+      "month": "2024-12",
+      "rows": 27
+    },
+    {
+      "facility": "333",
+      "month": "2025-01",
+      "rows": 98
+    },
+    {
+      "facility": "333",
+      "month": "2025-02",
+      "rows": 17
+    },
+    {
+      "facility": "333",
+      "month": "2025-03",
+      "rows": 26
+    },
+    {
+      "facility": "333",
+      "month": "2025-04",
+      "rows": 56
+    },
+    {
+      "facility": "333",
+      "month": "2025-05",
+      "rows": 63
+    },
+    {
+      "facility": "333",
+      "month": "2025-06",
+      "rows": 59
+    },
+    {
+      "facility": "333",
+      "month": "2025-07",
+      "rows": 94
+    },
+    {
+      "facility": "333",
+      "month": "2025-08",
+      "rows": 113
+    },
+    {
+      "facility": "333",
+      "month": "2025-09",
+      "rows": 73
+    },
+    {
+      "facility": "333",
+      "month": "2025-10",
+      "rows": 77
+    },
+    {
+      "facility": "333",
+      "month": "2025-11",
+      "rows": 55
+    },
+    {
+      "facility": "333",
+      "month": "2025-12",
+      "rows": 64
+    },
+    {
+      "facility": "333",
+      "month": "2026-01",
+      "rows": 80
+    },
+    {
+      "facility": "333",
+      "month": "2026-02",
+      "rows": 188
+    },
+    {
+      "facility": "333",
+      "month": "2026-03",
+      "rows": 82
+    },
+    {
+      "facility": "333",
+      "month": "2026-04",
+      "rows": 126
+    },
+    {
+      "facility": "333",
+      "month": "2026-05",
+      "rows": 41
+    },
+    {
+      "facility": "333",
+      "month": "2026-06",
+      "rows": 61
+    },
+    {
+      "facility": "333",
+      "month": "2026-07",
+      "rows": 50
+    },
+    {
+      "facility": "333",
+      "month": "2026-08",
+      "rows": 11
+    },
+    {
+      "facility": "333",
+      "month": "2026-09",
+      "rows": 32
+    },
+    {
+      "facility": "333",
+      "month": "2026-10",
+      "rows": 10
+    },
+    {
+      "facility": "333",
+      "month": "2026-11",
+      "rows": 36
+    },
+    {
+      "facility": "62",
+      "month": "2008-11",
+      "rows": 1
+    },
+    {
+      "facility": "62",
+      "month": "2009-04",
+      "rows": 1
+    },
+    {
+      "facility": "62",
+      "month": "2010-03",
+      "rows": 19
+    },
+    {
+      "facility": "62",
+      "month": "2010-04",
+      "rows": 1
+    },
+    {
+      "facility": "62",
+      "month": "2010-06",
+      "rows": 11
+    },
+    {
+      "facility": "62",
+      "month": "2010-07",
+      "rows": 16
+    },
+    {
+      "facility": "62",
+      "month": "2010-08",
+      "rows": 56
+    },
+    {
+      "facility": "62",
+      "month": "2010-09",
+      "rows": 41
+    },
+    {
+      "facility": "62",
+      "month": "2010-10",
+      "rows": 45
+    },
+    {
+      "facility": "62",
+      "month": "2010-11",
+      "rows": 74
+    },
+    {
+      "facility": "62",
+      "month": "2010-12",
+      "rows": 21
+    },
+    {
+      "facility": "62",
+      "month": "2011-01",
+      "rows": 60
+    },
+    {
+      "facility": "62",
+      "month": "2011-02",
+      "rows": 54
+    },
+    {
+      "facility": "62",
+      "month": "2011-03",
+      "rows": 66
+    },
+    {
+      "facility": "62",
+      "month": "2011-04",
+      "rows": 16
+    },
+    {
+      "facility": "62",
+      "month": "2011-05",
+      "rows": 107
+    },
+    {
+      "facility": "62",
+      "month": "2011-06",
+      "rows": 40
+    },
+    {
+      "facility": "62",
+      "month": "2011-07",
+      "rows": 62
+    },
+    {
+      "facility": "62",
+      "month": "2011-08",
+      "rows": 32
+    },
+    {
+      "facility": "62",
+      "month": "2011-09",
+      "rows": 151
+    },
+    {
+      "facility": "62",
+      "month": "2011-10",
+      "rows": 77
+    },
+    {
+      "facility": "62",
+      "month": "2011-11",
+      "rows": 177
+    },
+    {
+      "facility": "62",
+      "month": "2011-12",
+      "rows": 25
+    },
+    {
+      "facility": "62",
+      "month": "2012-01",
+      "rows": 67
+    },
+    {
+      "facility": "62",
+      "month": "2012-02",
+      "rows": 69
+    },
+    {
+      "facility": "62",
+      "month": "2012-03",
+      "rows": 52
+    },
+    {
+      "facility": "62",
+      "month": "2012-04",
+      "rows": 23
+    },
+    {
+      "facility": "62",
+      "month": "2012-05",
+      "rows": 93
+    },
+    {
+      "facility": "62",
+      "month": "2012-06",
+      "rows": 53
+    },
+    {
+      "facility": "62",
+      "month": "2012-07",
+      "rows": 62
+    },
+    {
+      "facility": "62",
+      "month": "2012-08",
+      "rows": 50
+    },
+    {
+      "facility": "62",
+      "month": "2012-09",
+      "rows": 66
+    },
+    {
+      "facility": "62",
+      "month": "2012-10",
+      "rows": 45
+    },
+    {
+      "facility": "62",
+      "month": "2012-11",
+      "rows": 56
+    },
+    {
+      "facility": "62",
+      "month": "2012-12",
+      "rows": 34
+    },
+    {
+      "facility": "62",
+      "month": "2013-01",
+      "rows": 54
+    },
+    {
+      "facility": "62",
+      "month": "2013-02",
+      "rows": 20
+    },
+    {
+      "facility": "62",
+      "month": "2013-03",
+      "rows": 40
+    },
+    {
+      "facility": "62",
+      "month": "2013-04",
+      "rows": 65
+    },
+    {
+      "facility": "62",
+      "month": "2013-05",
+      "rows": 54
+    },
+    {
+      "facility": "62",
+      "month": "2013-06",
+      "rows": 65
+    },
+    {
+      "facility": "62",
+      "month": "2013-07",
+      "rows": 49
+    },
+    {
+      "facility": "62",
+      "month": "2013-08",
+      "rows": 71
+    },
+    {
+      "facility": "62",
+      "month": "2013-09",
+      "rows": 18
+    },
+    {
+      "facility": "62",
+      "month": "2013-10",
+      "rows": 67
+    },
+    {
+      "facility": "62",
+      "month": "2013-11",
+      "rows": 53
+    },
+    {
+      "facility": "62",
+      "month": "2013-12",
+      "rows": 40
+    },
+    {
+      "facility": "62",
+      "month": "2014-01",
+      "rows": 26
+    },
+    {
+      "facility": "62",
+      "month": "2014-02",
+      "rows": 56
+    },
+    {
+      "facility": "62",
+      "month": "2014-03",
+      "rows": 60
+    },
+    {
+      "facility": "62",
+      "month": "2014-04",
+      "rows": 20
+    },
+    {
+      "facility": "62",
+      "month": "2014-05",
+      "rows": 69
+    },
+    {
+      "facility": "62",
+      "month": "2014-07",
+      "rows": 37
+    },
+    {
+      "facility": "62",
+      "month": "2014-08",
+      "rows": 45
+    },
+    {
+      "facility": "62",
+      "month": "2014-09",
+      "rows": 59
+    },
+    {
+      "facility": "62",
+      "month": "2014-10",
+      "rows": 74
+    },
+    {
+      "facility": "62",
+      "month": "2014-11",
+      "rows": 25
+    },
+    {
+      "facility": "62",
+      "month": "2014-12",
+      "rows": 22
+    },
+    {
+      "facility": "62",
+      "month": "2015-01",
+      "rows": 41
+    },
+    {
+      "facility": "62",
+      "month": "2015-02",
+      "rows": 47
+    },
+    {
+      "facility": "62",
+      "month": "2015-03",
+      "rows": 24
+    },
+    {
+      "facility": "62",
+      "month": "2015-05",
+      "rows": 72
+    },
+    {
+      "facility": "62",
+      "month": "2015-06",
+      "rows": 53
+    },
+    {
+      "facility": "62",
+      "month": "2015-07",
+      "rows": 28
+    },
+    {
+      "facility": "62",
+      "month": "2015-08",
+      "rows": 9
+    },
+    {
+      "facility": "62",
+      "month": "2015-09",
+      "rows": 48
+    },
+    {
+      "facility": "62",
+      "month": "2015-10",
+      "rows": 39
+    },
+    {
+      "facility": "62",
+      "month": "2015-11",
+      "rows": 39
+    },
+    {
+      "facility": "62",
+      "month": "2015-12",
+      "rows": 47
+    },
+    {
+      "facility": "62",
+      "month": "2016-01",
+      "rows": 17
+    },
+    {
+      "facility": "62",
+      "month": "2016-02",
+      "rows": 37
+    },
+    {
+      "facility": "62",
+      "month": "2016-03",
+      "rows": 51
+    },
+    {
+      "facility": "62",
+      "month": "2016-04",
+      "rows": 17
+    },
+    {
+      "facility": "62",
+      "month": "2016-06",
+      "rows": 35
+    },
+    {
+      "facility": "62",
+      "month": "2016-07",
+      "rows": 144
+    },
+    {
+      "facility": "62",
+      "month": "2016-08",
+      "rows": 37
+    },
+    {
+      "facility": "62",
+      "month": "2016-11",
+      "rows": 202
+    },
+    {
+      "facility": "62",
+      "month": "2016-12",
+      "rows": 135
+    },
+    {
+      "facility": "62",
+      "month": "2017-01",
+      "rows": 41
+    },
+    {
+      "facility": "62",
+      "month": "2017-02",
+      "rows": 51
+    },
+    {
+      "facility": "62",
+      "month": "2017-03",
+      "rows": 59
+    },
+    {
+      "facility": "62",
+      "month": "2017-04",
+      "rows": 52
+    },
+    {
+      "facility": "62",
+      "month": "2017-05",
+      "rows": 46
+    },
+    {
+      "facility": "62",
+      "month": "2017-06",
+      "rows": 42
+    },
+    {
+      "facility": "62",
+      "month": "2017-07",
+      "rows": 107
+    },
+    {
+      "facility": "62",
+      "month": "2017-08",
+      "rows": 51
+    },
+    {
+      "facility": "62",
+      "month": "2017-09",
+      "rows": 101
+    },
+    {
+      "facility": "62",
+      "month": "2017-10",
+      "rows": 59
+    },
+    {
+      "facility": "62",
+      "month": "2017-11",
+      "rows": 57
+    },
+    {
+      "facility": "62",
+      "month": "2017-12",
+      "rows": 49
+    },
+    {
+      "facility": "62",
+      "month": "2018-01",
+      "rows": 71
+    },
+    {
+      "facility": "62",
+      "month": "2018-03",
+      "rows": 125
+    },
+    {
+      "facility": "62",
+      "month": "2018-04",
+      "rows": 145
+    },
+    {
+      "facility": "62",
+      "month": "2018-05",
+      "rows": 80
+    },
+    {
+      "facility": "62",
+      "month": "2018-06",
+      "rows": 74
+    },
+    {
+      "facility": "62",
+      "month": "2018-07",
+      "rows": 44
+    },
+    {
+      "facility": "62",
+      "month": "2018-08",
+      "rows": 45
+    },
+    {
+      "facility": "62",
+      "month": "2018-09",
+      "rows": 62
+    },
+    {
+      "facility": "62",
+      "month": "2018-10",
+      "rows": 49
+    },
+    {
+      "facility": "62",
+      "month": "2018-12",
+      "rows": 16
+    },
+    {
+      "facility": "62",
+      "month": "2019-01",
+      "rows": 29
+    },
+    {
+      "facility": "62",
+      "month": "2019-02",
+      "rows": 113
+    },
+    {
+      "facility": "62",
+      "month": "2019-03",
+      "rows": 309
+    },
+    {
+      "facility": "62",
+      "month": "2019-04",
+      "rows": 103
+    },
+    {
+      "facility": "62",
+      "month": "2019-05",
+      "rows": 78
+    },
+    {
+      "facility": "62",
+      "month": "2019-06",
+      "rows": 82
+    },
+    {
+      "facility": "62",
+      "month": "2019-07",
+      "rows": 80
+    },
+    {
+      "facility": "62",
+      "month": "2019-08",
+      "rows": 71
+    },
+    {
+      "facility": "62",
+      "month": "2019-09",
+      "rows": 174
+    },
+    {
+      "facility": "62",
+      "month": "2019-10",
+      "rows": 120
+    },
+    {
+      "facility": "62",
+      "month": "2019-11",
+      "rows": 104
+    },
+    {
+      "facility": "62",
+      "month": "2019-12",
+      "rows": 71
+    },
+    {
+      "facility": "62",
+      "month": "2020-01",
+      "rows": 133
+    },
+    {
+      "facility": "62",
+      "month": "2020-02",
+      "rows": 78
+    },
+    {
+      "facility": "62",
+      "month": "2020-03",
+      "rows": 160
+    },
+    {
+      "facility": "62",
+      "month": "2020-04",
+      "rows": 87
+    },
+    {
+      "facility": "62",
+      "month": "2020-05",
+      "rows": 60
+    },
+    {
+      "facility": "62",
+      "month": "2020-06",
+      "rows": 42
+    },
+    {
+      "facility": "62",
+      "month": "2020-07",
+      "rows": 80
+    },
+    {
+      "facility": "62",
+      "month": "2020-08",
+      "rows": 99
+    },
+    {
+      "facility": "62",
+      "month": "2020-09",
+      "rows": 527
+    },
+    {
+      "facility": "62",
+      "month": "2020-10",
+      "rows": 418
+    },
+    {
+      "facility": "62",
+      "month": "2020-11",
+      "rows": 357
+    },
+    {
+      "facility": "62",
+      "month": "2020-12",
+      "rows": 325
+    },
+    {
+      "facility": "62",
+      "month": "2021-01",
+      "rows": 362
+    },
+    {
+      "facility": "62",
+      "month": "2021-02",
+      "rows": 290
+    },
+    {
+      "facility": "62",
+      "month": "2021-03",
+      "rows": 347
+    },
+    {
+      "facility": "62",
+      "month": "2021-04",
+      "rows": 303
+    },
+    {
+      "facility": "62",
+      "month": "2021-05",
+      "rows": 152
+    },
+    {
+      "facility": "62",
+      "month": "2021-06",
+      "rows": 496
+    },
+    {
+      "facility": "62",
+      "month": "2021-07",
+      "rows": 248
+    },
+    {
+      "facility": "62",
+      "month": "2021-08",
+      "rows": 225
+    },
+    {
+      "facility": "62",
+      "month": "2021-09",
+      "rows": 328
+    },
+    {
+      "facility": "62",
+      "month": "2021-10",
+      "rows": 304
+    },
+    {
+      "facility": "62",
+      "month": "2021-11",
+      "rows": 396
+    },
+    {
+      "facility": "62",
+      "month": "2021-12",
+      "rows": 260
+    },
+    {
+      "facility": "62",
+      "month": "2022-01",
+      "rows": 333
+    },
+    {
+      "facility": "62",
+      "month": "2022-02",
+      "rows": 324
+    },
+    {
+      "facility": "62",
+      "month": "2022-03",
+      "rows": 285
+    },
+    {
+      "facility": "62",
+      "month": "2022-04",
+      "rows": 245
+    },
+    {
+      "facility": "62",
+      "month": "2022-05",
+      "rows": 323
+    },
+    {
+      "facility": "62",
+      "month": "2022-06",
+      "rows": 473
+    },
+    {
+      "facility": "62",
+      "month": "2022-07",
+      "rows": 432
+    },
+    {
+      "facility": "62",
+      "month": "2022-08",
+      "rows": 410
+    },
+    {
+      "facility": "62",
+      "month": "2022-09",
+      "rows": 671
+    },
+    {
+      "facility": "62",
+      "month": "2022-10",
+      "rows": 404
+    },
+    {
+      "facility": "62",
+      "month": "2022-11",
+      "rows": 332
+    },
+    {
+      "facility": "62",
+      "month": "2022-12",
+      "rows": 252
+    },
+    {
+      "facility": "62",
+      "month": "2023-01",
+      "rows": 456
+    },
+    {
+      "facility": "62",
+      "month": "2023-02",
+      "rows": 310
+    },
+    {
+      "facility": "62",
+      "month": "2023-03",
+      "rows": 515
+    },
+    {
+      "facility": "62",
+      "month": "2023-04",
+      "rows": 408
+    },
+    {
+      "facility": "62",
+      "month": "2023-05",
+      "rows": 595
+    },
+    {
+      "facility": "62",
+      "month": "2023-06",
+      "rows": 623
+    },
+    {
+      "facility": "62",
+      "month": "2023-07",
+      "rows": 615
+    },
+    {
+      "facility": "62",
+      "month": "2023-08",
+      "rows": 581
+    },
+    {
+      "facility": "62",
+      "month": "2023-09",
+      "rows": 1087
+    },
+    {
+      "facility": "62",
+      "month": "2023-10",
+      "rows": 496
+    },
+    {
+      "facility": "62",
+      "month": "2023-11",
+      "rows": 484
+    },
+    {
+      "facility": "62",
+      "month": "2023-12",
+      "rows": 209
+    },
+    {
+      "facility": "62",
+      "month": "2024-01",
+      "rows": 428
+    },
+    {
+      "facility": "62",
+      "month": "2024-02",
+      "rows": 424
+    },
+    {
+      "facility": "62",
+      "month": "2024-03",
+      "rows": 273
+    },
+    {
+      "facility": "62",
+      "month": "2024-04",
+      "rows": 554
+    },
+    {
+      "facility": "62",
+      "month": "2024-05",
+      "rows": 402
+    },
+    {
+      "facility": "62",
+      "month": "2024-06",
+      "rows": 268
+    },
+    {
+      "facility": "62",
+      "month": "2024-07",
+      "rows": 528
+    },
+    {
+      "facility": "62",
+      "month": "2024-08",
+      "rows": 409
+    },
+    {
+      "facility": "62",
+      "month": "2024-09",
+      "rows": 363
+    },
+    {
+      "facility": "62",
+      "month": "2024-10",
+      "rows": 425
+    },
+    {
+      "facility": "62",
+      "month": "2024-11",
+      "rows": 358
+    },
+    {
+      "facility": "62",
+      "month": "2024-12",
+      "rows": 260
+    },
+    {
+      "facility": "62",
+      "month": "2025-01",
+      "rows": 420
+    },
+    {
+      "facility": "62",
+      "month": "2025-02",
+      "rows": 150
+    },
+    {
+      "facility": "62",
+      "month": "2025-03",
+      "rows": 159
+    },
+    {
+      "facility": "62",
+      "month": "2025-04",
+      "rows": 323
+    },
+    {
+      "facility": "62",
+      "month": "2025-05",
+      "rows": 472
+    },
+    {
+      "facility": "62",
+      "month": "2025-06",
+      "rows": 343
+    },
+    {
+      "facility": "62",
+      "month": "2025-07",
+      "rows": 554
+    },
+    {
+      "facility": "62",
+      "month": "2025-08",
+      "rows": 518
+    },
+    {
+      "facility": "62",
+      "month": "2025-09",
+      "rows": 436
+    },
+    {
+      "facility": "62",
+      "month": "2025-10",
+      "rows": 321
+    },
+    {
+      "facility": "62",
+      "month": "2025-11",
+      "rows": 457
+    },
+    {
+      "facility": "62",
+      "month": "2025-12",
+      "rows": 612
+    },
+    {
+      "facility": "62",
+      "month": "2026-01",
+      "rows": 868
+    },
+    {
+      "facility": "62",
+      "month": "2026-02",
+      "rows": 4611
+    },
+    {
+      "facility": "62",
+      "month": "2026-03",
+      "rows": 8126
+    },
+    {
+      "facility": "62",
+      "month": "2026-04",
+      "rows": 10081
+    },
+    {
+      "facility": "62",
+      "month": "2026-05",
+      "rows": 8198
+    },
+    {
+      "facility": "62",
+      "month": "2026-06",
+      "rows": 7703
+    },
+    {
+      "facility": "62",
+      "month": "2026-07",
+      "rows": 6057
+    },
+    {
+      "facility": "62",
+      "month": "2026-08",
+      "rows": 1743
+    },
+    {
+      "facility": "62",
+      "month": "2026-09",
+      "rows": 6802
+    },
+    {
+      "facility": "62",
+      "month": "2026-10",
+      "rows": 6980
+    },
+    {
+      "facility": "62",
+      "month": "2026-11",
+      "rows": 3957
+    },
+    {
+      "facility": "71",
+      "month": "2009-03",
+      "rows": 19
+    },
+    {
+      "facility": "71",
+      "month": "2009-04",
+      "rows": 36
+    },
+    {
+      "facility": "71",
+      "month": "2009-05",
+      "rows": 57
+    },
+    {
+      "facility": "71",
+      "month": "2009-06",
+      "rows": 88
+    },
+    {
+      "facility": "71",
+      "month": "2009-07",
+      "rows": 121
+    },
+    {
+      "facility": "71",
+      "month": "2009-08",
+      "rows": 145
+    },
+    {
+      "facility": "71",
+      "month": "2009-09",
+      "rows": 271
+    },
+    {
+      "facility": "71",
+      "month": "2009-10",
+      "rows": 232
+    },
+    {
+      "facility": "71",
+      "month": "2009-11",
+      "rows": 133
+    },
+    {
+      "facility": "71",
+      "month": "2009-12",
+      "rows": 203
+    },
+    {
+      "facility": "71",
+      "month": "2010-01",
+      "rows": 274
+    },
+    {
+      "facility": "71",
+      "month": "2010-02",
+      "rows": 246
+    },
+    {
+      "facility": "71",
+      "month": "2010-03",
+      "rows": 296
+    },
+    {
+      "facility": "71",
+      "month": "2010-04",
+      "rows": 272
+    },
+    {
+      "facility": "71",
+      "month": "2010-05",
+      "rows": 219
+    },
+    {
+      "facility": "71",
+      "month": "2010-06",
+      "rows": 297
+    },
+    {
+      "facility": "71",
+      "month": "2010-07",
+      "rows": 315
+    },
+    {
+      "facility": "71",
+      "month": "2010-08",
+      "rows": 244
+    },
+    {
+      "facility": "71",
+      "month": "2010-09",
+      "rows": 314
+    },
+    {
+      "facility": "71",
+      "month": "2010-10",
+      "rows": 335
+    },
+    {
+      "facility": "71",
+      "month": "2010-11",
+      "rows": 352
+    },
+    {
+      "facility": "71",
+      "month": "2010-12",
+      "rows": 235
+    },
+    {
+      "facility": "71",
+      "month": "2011-01",
+      "rows": 372
+    },
+    {
+      "facility": "71",
+      "month": "2011-02",
+      "rows": 475
+    },
+    {
+      "facility": "71",
+      "month": "2011-03",
+      "rows": 397
+    },
+    {
+      "facility": "71",
+      "month": "2011-04",
+      "rows": 334
+    },
+    {
+      "facility": "71",
+      "month": "2011-05",
+      "rows": 552
+    },
+    {
+      "facility": "71",
+      "month": "2011-06",
+      "rows": 463
+    },
+    {
+      "facility": "71",
+      "month": "2011-07",
+      "rows": 451
+    },
+    {
+      "facility": "71",
+      "month": "2011-08",
+      "rows": 517
+    },
+    {
+      "facility": "71",
+      "month": "2011-09",
+      "rows": 630
+    },
+    {
+      "facility": "71",
+      "month": "2011-10",
+      "rows": 659
+    },
+    {
+      "facility": "71",
+      "month": "2011-11",
+      "rows": 555
+    },
+    {
+      "facility": "71",
+      "month": "2011-12",
+      "rows": 580
+    },
+    {
+      "facility": "71",
+      "month": "2012-01",
+      "rows": 529
+    },
+    {
+      "facility": "71",
+      "month": "2012-02",
+      "rows": 521
+    },
+    {
+      "facility": "71",
+      "month": "2012-03",
+      "rows": 627
+    },
+    {
+      "facility": "71",
+      "month": "2012-04",
+      "rows": 634
+    },
+    {
+      "facility": "71",
+      "month": "2012-05",
+      "rows": 800
+    },
+    {
+      "facility": "71",
+      "month": "2012-06",
+      "rows": 609
+    },
+    {
+      "facility": "71",
+      "month": "2012-07",
+      "rows": 1396
+    },
+    {
+      "facility": "71",
+      "month": "2012-08",
+      "rows": 1060
+    },
+    {
+      "facility": "71",
+      "month": "2012-09",
+      "rows": 666
+    },
+    {
+      "facility": "71",
+      "month": "2012-10",
+      "rows": 2258
+    },
+    {
+      "facility": "71",
+      "month": "2012-11",
+      "rows": 653
+    },
+    {
+      "facility": "71",
+      "month": "2012-12",
+      "rows": 237
+    },
+    {
+      "facility": "71",
+      "month": "2013-01",
+      "rows": 955
+    },
+    {
+      "facility": "71",
+      "month": "2013-02",
+      "rows": 645
+    },
+    {
+      "facility": "71",
+      "month": "2013-03",
+      "rows": 506
+    },
+    {
+      "facility": "71",
+      "month": "2013-04",
+      "rows": 793
+    },
+    {
+      "facility": "71",
+      "month": "2013-05",
+      "rows": 623
+    },
+    {
+      "facility": "71",
+      "month": "2013-06",
+      "rows": 505
+    },
+    {
+      "facility": "71",
+      "month": "2013-07",
+      "rows": 752
+    },
+    {
+      "facility": "71",
+      "month": "2013-08",
+      "rows": 539
+    },
+    {
+      "facility": "71",
+      "month": "2013-09",
+      "rows": 621
+    },
+    {
+      "facility": "71",
+      "month": "2013-10",
+      "rows": 551
+    },
+    {
+      "facility": "71",
+      "month": "2013-11",
+      "rows": 502
+    },
+    {
+      "facility": "71",
+      "month": "2013-12",
+      "rows": 721
+    },
+    {
+      "facility": "71",
+      "month": "2014-01",
+      "rows": 549
+    },
+    {
+      "facility": "71",
+      "month": "2014-02",
+      "rows": 458
+    },
+    {
+      "facility": "71",
+      "month": "2014-03",
+      "rows": 492
+    },
+    {
+      "facility": "71",
+      "month": "2014-04",
+      "rows": 260
+    },
+    {
+      "facility": "71",
+      "month": "2014-05",
+      "rows": 718
+    },
+    {
+      "facility": "71",
+      "month": "2014-06",
+      "rows": 505
+    },
+    {
+      "facility": "71",
+      "month": "2014-07",
+      "rows": 497
+    },
+    {
+      "facility": "71",
+      "month": "2014-08",
+      "rows": 703
+    },
+    {
+      "facility": "71",
+      "month": "2014-09",
+      "rows": 1537
+    },
+    {
+      "facility": "71",
+      "month": "2014-10",
+      "rows": 1186
+    },
+    {
+      "facility": "71",
+      "month": "2014-11",
+      "rows": 467
+    },
+    {
+      "facility": "71",
+      "month": "2014-12",
+      "rows": 750
+    },
+    {
+      "facility": "71",
+      "month": "2015-01",
+      "rows": 491
+    },
+    {
+      "facility": "71",
+      "month": "2015-02",
+      "rows": 724
+    },
+    {
+      "facility": "71",
+      "month": "2015-03",
+      "rows": 1338
+    },
+    {
+      "facility": "71",
+      "month": "2015-04",
+      "rows": 614
+    },
+    {
+      "facility": "71",
+      "month": "2015-05",
+      "rows": 467
+    },
+    {
+      "facility": "71",
+      "month": "2015-06",
+      "rows": 1175
+    },
+    {
+      "facility": "71",
+      "month": "2015-07",
+      "rows": 1156
+    },
+    {
+      "facility": "71",
+      "month": "2015-08",
+      "rows": 436
+    },
+    {
+      "facility": "71",
+      "month": "2015-09",
+      "rows": 865
+    },
+    {
+      "facility": "71",
+      "month": "2015-10",
+      "rows": 974
+    },
+    {
+      "facility": "71",
+      "month": "2015-11",
+      "rows": 552
+    },
+    {
+      "facility": "71",
+      "month": "2015-12",
+      "rows": 589
+    },
+    {
+      "facility": "71",
+      "month": "2016-01",
+      "rows": 851
+    },
+    {
+      "facility": "71",
+      "month": "2016-02",
+      "rows": 611
+    },
+    {
+      "facility": "71",
+      "month": "2016-03",
+      "rows": 404
+    },
+    {
+      "facility": "71",
+      "month": "2016-04",
+      "rows": 788
+    },
+    {
+      "facility": "71",
+      "month": "2016-05",
+      "rows": 637
+    },
+    {
+      "facility": "71",
+      "month": "2016-06",
+      "rows": 497
+    },
+    {
+      "facility": "71",
+      "month": "2016-07",
+      "rows": 822
+    },
+    {
+      "facility": "71",
+      "month": "2016-08",
+      "rows": 671
+    },
+    {
+      "facility": "71",
+      "month": "2016-09",
+      "rows": 798
+    },
+    {
+      "facility": "71",
+      "month": "2016-10",
+      "rows": 185
+    },
+    {
+      "facility": "71",
+      "month": "2016-11",
+      "rows": 1306
+    },
+    {
+      "facility": "71",
+      "month": "2016-12",
+      "rows": 681
+    },
+    {
+      "facility": "71",
+      "month": "2017-01",
+      "rows": 479
+    },
+    {
+      "facility": "71",
+      "month": "2017-02",
+      "rows": 1358
+    },
+    {
+      "facility": "71",
+      "month": "2017-03",
+      "rows": 1447
+    },
+    {
+      "facility": "71",
+      "month": "2017-04",
+      "rows": 1071
+    },
+    {
+      "facility": "71",
+      "month": "2017-05",
+      "rows": 1554
+    },
+    {
+      "facility": "71",
+      "month": "2017-06",
+      "rows": 1278
+    },
+    {
+      "facility": "71",
+      "month": "2017-07",
+      "rows": 1418
+    },
+    {
+      "facility": "71",
+      "month": "2017-08",
+      "rows": 1131
+    },
+    {
+      "facility": "71",
+      "month": "2017-09",
+      "rows": 1245
+    },
+    {
+      "facility": "71",
+      "month": "2017-10",
+      "rows": 667
+    },
+    {
+      "facility": "71",
+      "month": "2017-11",
+      "rows": 848
+    },
+    {
+      "facility": "71",
+      "month": "2017-12",
+      "rows": 896
+    },
+    {
+      "facility": "71",
+      "month": "2018-01",
+      "rows": 1033
+    },
+    {
+      "facility": "71",
+      "month": "2018-02",
+      "rows": 1498
+    },
+    {
+      "facility": "71",
+      "month": "2018-03",
+      "rows": 1235
+    },
+    {
+      "facility": "71",
+      "month": "2018-04",
+      "rows": 1049
+    },
+    {
+      "facility": "71",
+      "month": "2018-05",
+      "rows": 1067
+    },
+    {
+      "facility": "71",
+      "month": "2018-06",
+      "rows": 949
+    },
+    {
+      "facility": "71",
+      "month": "2018-07",
+      "rows": 1031
+    },
+    {
+      "facility": "71",
+      "month": "2018-08",
+      "rows": 1128
+    },
+    {
+      "facility": "71",
+      "month": "2018-09",
+      "rows": 795
+    },
+    {
+      "facility": "71",
+      "month": "2018-10",
+      "rows": 1177
+    },
+    {
+      "facility": "71",
+      "month": "2018-11",
+      "rows": 1462
+    },
+    {
+      "facility": "71",
+      "month": "2018-12",
+      "rows": 610
+    },
+    {
+      "facility": "71",
+      "month": "2019-01",
+      "rows": 1319
+    },
+    {
+      "facility": "71",
+      "month": "2019-02",
+      "rows": 1286
+    },
+    {
+      "facility": "71",
+      "month": "2019-03",
+      "rows": 1187
+    },
+    {
+      "facility": "71",
+      "month": "2019-04",
+      "rows": 1941
+    },
+    {
+      "facility": "71",
+      "month": "2019-05",
+      "rows": 1583
+    },
+    {
+      "facility": "71",
+      "month": "2019-06",
+      "rows": 1472
+    },
+    {
+      "facility": "71",
+      "month": "2019-07",
+      "rows": 1977
+    },
+    {
+      "facility": "71",
+      "month": "2019-08",
+      "rows": 1763
+    },
+    {
+      "facility": "71",
+      "month": "2019-09",
+      "rows": 1655
+    },
+    {
+      "facility": "71",
+      "month": "2019-10",
+      "rows": 1447
+    },
+    {
+      "facility": "71",
+      "month": "2019-11",
+      "rows": 1174
+    },
+    {
+      "facility": "71",
+      "month": "2019-12",
+      "rows": 709
+    },
+    {
+      "facility": "71",
+      "month": "2020-01",
+      "rows": 1019
+    },
+    {
+      "facility": "71",
+      "month": "2020-02",
+      "rows": 956
+    },
+    {
+      "facility": "71",
+      "month": "2020-03",
+      "rows": 1137
+    },
+    {
+      "facility": "71",
+      "month": "2020-04",
+      "rows": 684
+    },
+    {
+      "facility": "71",
+      "month": "2020-05",
+      "rows": 355
+    },
+    {
+      "facility": "71",
+      "month": "2020-06",
+      "rows": 568
+    },
+    {
+      "facility": "71",
+      "month": "2020-07",
+      "rows": 1131
+    },
+    {
+      "facility": "71",
+      "month": "2020-08",
+      "rows": 1159
+    },
+    {
+      "facility": "71",
+      "month": "2020-09",
+      "rows": 1213
+    },
+    {
+      "facility": "71",
+      "month": "2020-10",
+      "rows": 1325
+    },
+    {
+      "facility": "71",
+      "month": "2020-11",
+      "rows": 930
+    },
+    {
+      "facility": "71",
+      "month": "2020-12",
+      "rows": 608
+    },
+    {
+      "facility": "71",
+      "month": "2021-01",
+      "rows": 935
+    },
+    {
+      "facility": "71",
+      "month": "2021-02",
+      "rows": 889
+    },
+    {
+      "facility": "71",
+      "month": "2021-03",
+      "rows": 908
+    },
+    {
+      "facility": "71",
+      "month": "2021-04",
+      "rows": 813
+    },
+    {
+      "facility": "71",
+      "month": "2021-05",
+      "rows": 991
+    },
+    {
+      "facility": "71",
+      "month": "2021-06",
+      "rows": 1020
+    },
+    {
+      "facility": "71",
+      "month": "2021-07",
+      "rows": 4137
+    },
+    {
+      "facility": "71",
+      "month": "2021-08",
+      "rows": 1342
+    },
+    {
+      "facility": "71",
+      "month": "2021-09",
+      "rows": 914
+    },
+    {
+      "facility": "71",
+      "month": "2021-10",
+      "rows": 1619
+    },
+    {
+      "facility": "71",
+      "month": "2021-11",
+      "rows": 1178
+    },
+    {
+      "facility": "71",
+      "month": "2021-12",
+      "rows": 847
+    },
+    {
+      "facility": "71",
+      "month": "2022-01",
+      "rows": 1518
+    },
+    {
+      "facility": "71",
+      "month": "2022-02",
+      "rows": 1205
+    },
+    {
+      "facility": "71",
+      "month": "2022-03",
+      "rows": 2288
+    },
+    {
+      "facility": "71",
+      "month": "2022-04",
+      "rows": 1295
+    },
+    {
+      "facility": "71",
+      "month": "2022-05",
+      "rows": 2235
+    },
+    {
+      "facility": "71",
+      "month": "2022-06",
+      "rows": 2542
+    },
+    {
+      "facility": "71",
+      "month": "2022-07",
+      "rows": 3745
+    },
+    {
+      "facility": "71",
+      "month": "2022-08",
+      "rows": 1250
+    },
+    {
+      "facility": "71",
+      "month": "2022-09",
+      "rows": 5487
+    },
+    {
+      "facility": "71",
+      "month": "2022-10",
+      "rows": 1841
+    },
+    {
+      "facility": "71",
+      "month": "2022-11",
+      "rows": 2646
+    },
+    {
+      "facility": "71",
+      "month": "2022-12",
+      "rows": 1350
+    },
+    {
+      "facility": "71",
+      "month": "2023-01",
+      "rows": 1953
+    },
+    {
+      "facility": "71",
+      "month": "2023-02",
+      "rows": 3035
+    },
+    {
+      "facility": "71",
+      "month": "2023-03",
+      "rows": 3503
+    },
+    {
+      "facility": "71",
+      "month": "2023-04",
+      "rows": 1512
+    },
+    {
+      "facility": "71",
+      "month": "2023-05",
+      "rows": 2445
+    },
+    {
+      "facility": "71",
+      "month": "2023-06",
+      "rows": 2563
+    },
+    {
+      "facility": "71",
+      "month": "2023-07",
+      "rows": 6315
+    },
+    {
+      "facility": "71",
+      "month": "2023-08",
+      "rows": 1692
+    },
+    {
+      "facility": "71",
+      "month": "2023-09",
+      "rows": 1926
+    },
+    {
+      "facility": "71",
+      "month": "2023-10",
+      "rows": 2374
+    },
+    {
+      "facility": "71",
+      "month": "2023-11",
+      "rows": 2290
+    },
+    {
+      "facility": "71",
+      "month": "2023-12",
+      "rows": 1298
+    },
+    {
+      "facility": "71",
+      "month": "2024-01",
+      "rows": 428
+    },
+    {
+      "facility": "71",
+      "month": "2024-02",
+      "rows": 2274
+    },
+    {
+      "facility": "71",
+      "month": "2024-03",
+      "rows": 1811
+    },
+    {
+      "facility": "71",
+      "month": "2024-04",
+      "rows": 1238
+    },
+    {
+      "facility": "71",
+      "month": "2024-05",
+      "rows": 2603
+    },
+    {
+      "facility": "71",
+      "month": "2024-06",
+      "rows": 1371
+    },
+    {
+      "facility": "71",
+      "month": "2024-07",
+      "rows": 783
+    },
+    {
+      "facility": "71",
+      "month": "2024-08",
+      "rows": 1728
+    },
+    {
+      "facility": "71",
+      "month": "2024-09",
+      "rows": 1568
+    },
+    {
+      "facility": "71",
+      "month": "2024-10",
+      "rows": 1754
+    },
+    {
+      "facility": "71",
+      "month": "2024-11",
+      "rows": 1472
+    },
+    {
+      "facility": "71",
+      "month": "2024-12",
+      "rows": 459
+    },
+    {
+      "facility": "71",
+      "month": "2025-01",
+      "rows": 558
+    },
+    {
+      "facility": "71",
+      "month": "2025-02",
+      "rows": 1187
+    },
+    {
+      "facility": "71",
+      "month": "2025-03",
+      "rows": 1164
+    },
+    {
+      "facility": "71",
+      "month": "2025-04",
+      "rows": 1151
+    },
+    {
+      "facility": "71",
+      "month": "2025-05",
+      "rows": 2602
+    },
+    {
+      "facility": "71",
+      "month": "2025-06",
+      "rows": 859
+    },
+    {
+      "facility": "71",
+      "month": "2025-07",
+      "rows": 867
+    },
+    {
+      "facility": "71",
+      "month": "2025-08",
+      "rows": 1235
+    },
+    {
+      "facility": "71",
+      "month": "2025-09",
+      "rows": 1768
+    },
+    {
+      "facility": "71",
+      "month": "2025-10",
+      "rows": 1518
+    },
+    {
+      "facility": "71",
+      "month": "2025-11",
+      "rows": 1396
+    },
+    {
+      "facility": "71",
+      "month": "2025-12",
+      "rows": 515
+    },
+    {
+      "facility": "71",
+      "month": "2026-01",
+      "rows": 677
+    },
+    {
+      "facility": "71",
+      "month": "2026-02",
+      "rows": 2904
+    },
+    {
+      "facility": "71",
+      "month": "2026-03",
+      "rows": 1254
+    },
+    {
+      "facility": "71",
+      "month": "2026-04",
+      "rows": 2098
+    },
+    {
+      "facility": "71",
+      "month": "2026-05",
+      "rows": 1725
+    },
+    {
+      "facility": "71",
+      "month": "2026-06",
+      "rows": 1625
+    },
+    {
+      "facility": "71",
+      "month": "2026-07",
+      "rows": 927
+    },
+    {
+      "facility": "71",
+      "month": "2026-08",
+      "rows": 761
+    },
+    {
+      "facility": "71",
+      "month": "2026-09",
+      "rows": 2009
+    },
+    {
+      "facility": "71",
+      "month": "2026-10",
+      "rows": 1797
+    },
+    {
+      "facility": "71",
+      "month": "2026-11",
+      "rows": 398
+    }
+  ],
+  "emptied_columns": [
+    "void_reason"
+  ],
+  "standin_location": "s3://dha-analytics/iceberg/hmis_ampath_prod/encounter",
+  "problems": []
+}

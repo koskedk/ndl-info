@@ -1,6 +1,6 @@
 # NHAI proof of concept. Run `make help` for the list.
 .DEFAULT_GOAL := help
-.PHONY: help init up down check-rules measure sample verify-sample reset-source purge purge-dry-run
+.PHONY: help init up down browse-rows check-rules measure sample verify-sample reset-source purge purge-dry-run
 
 help:  ## Show the commands
 	@grep -E '^[a-z-]+:.*##' $(MAKEFILE_LIST) | awk -F ':.*## ' '{printf "  make %-15s %s\n", $$1, $$2}'
@@ -14,17 +14,21 @@ up: init  ## Start the core services
 down:  ## Stop the services; data is kept
 	@docker compose --profile core down
 
+browse-rows: up  ## Open a web page for reading rows in the stand-in with SQL; Ctrl+C stops it
+	@LAKE_EXPLORER_CONFIG=$(CURDIR)/source-sample/standin-sources.toml \
+		env -u VIRTUAL_ENV uv run --project ../explorer lake-explorer ui
+
 check-rules:  ## Check that every text column the sampler copies has a rule
 	@python3 source-sample/check_rules.py
 
 measure: check-rules  ## Show how many source files each table needs; copies nothing (VPN)
-	@cd source-sample && env -u VIRTUAL_ENV uv run python sampler.py measure
+	@cd source-sample && env -u VIRTUAL_ENV uv run python sampler.py measure $(if $(ONLY),--only $(ONLY))
 
 sample: check-rules up  ## Copy the sampled facilities from the real S3 Ceph into the stand-in (VPN)
-	@cd source-sample && env -u VIRTUAL_ENV uv run python sampler.py sample
+	@cd source-sample && env -u VIRTUAL_ENV uv run python sampler.py sample $(if $(ONLY),--only $(ONLY))
 
 verify-sample:  ## Count the same rows on the real S3 Ceph and compare with the sample (VPN)
-	@cd source-sample && env -u VIRTUAL_ENV uv run python sampler.py verify
+	@cd source-sample && env -u VIRTUAL_ENV uv run python sampler.py verify $(if $(ONLY),--only $(ONLY))
 
 reset-source:  ## Delete only the stand-in S3 Ceph and its sample
 	@docker compose --profile core rm -sf standin-s3 && docker volume rm -f nhai-poc_standin_data

@@ -16,6 +16,7 @@ services:
       - -s3.config=/etc/seaweedfs/s3.json
       - -master.volumeSizeLimitMB=512
       - -volume.max=64
+      - -filer.ui.deleteDir=false
     ports:
       - "127.0.0.1:${STANDIN_S3_PORT:-8333}:8333"   # this machine only
     volumes:
@@ -27,6 +28,21 @@ services:
       interval: 10s
       timeout: 5s
       retries: 12
+    restart: "no"
+
+  # A page for looking at the files in the stand-in: http://127.0.0.1:8888
+  # It passes on reads only, so the stand-in still cannot be changed without the sampler's key.
+  standin-browser:
+    image: nginx:1.29-alpine
+    profiles: ["core"]
+    depends_on:
+      standin-s3:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:${STANDIN_BROWSER_PORT:-8888}:8080"   # this machine only
+    volumes:
+      - ./ops/standin-browser.conf:/etc/nginx/conf.d/default.conf:ro
+    mem_limit: 64m
     restart: "no"
 
 volumes:

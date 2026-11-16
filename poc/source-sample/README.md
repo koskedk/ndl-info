@@ -8,7 +8,7 @@ The copy holds real patient records, with names and identifiers. Handle it as co
 
 - **Where it runs:** a Docker container on this laptop (`standin-s3`), reachable only from this machine at `http://127.0.0.1:8333`.
 - **What it looks like:** the same bucket name and the same folders as DHA's lake, so code written against the copy works against the real lake by changing settings only.
-- **What it holds:** the records of a few chosen facilities, not the whole lake. Today that is six tables, about 7 million rows, 167 MB.
+- **What it holds:** the records of a few chosen facilities, not the whole lake. Today that is ten tables, about 7.5 million rows, 187 MB.
 - **Who can change it:** only the sampler. Everything else reads it with a key that can list and read but not write.
 
 ## How it is laid out
@@ -28,9 +28,14 @@ dha-analytics/                       the bucket
       encounter/
       encounter_type/
       patient_identifier/
+    hmis_ampath_prod/                AMRS
+      person/
+      encounter/
+      encounter_type/
+      patient_identifier/
 ```
 
-DHA's lake has more folders in the same shape: `hmis_ampath_prod/` for AMRS, the facility and client registries, and `khis/` for KHIS figures. They are added to the copy when a later stage needs them.
+DHA's lake has more folders in the same shape: the facility and client registries, and `khis/` for KHIS figures. They are added to the copy when a later stage needs them.
 
 ## Nothing is stored by facility
 
@@ -63,6 +68,10 @@ Two rules follow, and both matter for every query:
 | KenyaEMR | `encounter` | 5,545,300 | Every visit |
 | KenyaEMR | `encounter_type` | 578,124 | The list of visit types, for every facility |
 | KenyaEMR | `patient_identifier` | 615,320 | Patients' identifiers |
+| AMRS | `encounter` | 387,785 | Every encounter at the sampled locations |
+| AMRS | `encounter_type` | 355 | The list of encounter types |
+| AMRS | `person` | 29,816 | The patients those encounters refer to |
+| AMRS | `patient_identifier` | 70,852 | Every identifier of those patients, wherever it was issued |
 
 These are the tables the first indicator needs (RMN-16, ANC clients aged 10 to 19). Tables are repeated in the lake exactly as DHA has them, including rows that appear more than once.
 
@@ -78,8 +87,11 @@ The facilities are listed once each in the Master Facility List, [`../transform/
 | KenyaEMR | Lumumba Sub County Hospital (Kisumu), `openmrs_lumumba` | 3,529,249 visits |
 | KenyaEMR | Siaya County Referral Hospital (Siaya), `openmrs_siayacrh` | 1,553,767 visits |
 | KenyaEMR | Sigomere Sub County Hospital (Siaya), `openmrs_sigomere` | 462,284 visits |
+| AMRS | Kesses Health Centre (Uasin Gishu), locations 62, 195 and 333 | 124,950 encounters |
+| AMRS | Moi's Bridge Health Centre (Uasin Gishu), locations 71 and 325 | 242,974 encounters |
+| AMRS | Turbo Sub County Hospital (Uasin Gishu), location 329 | 19,861 encounters |
 
-Kesses, Turbo and Moi's Bridge are also listed for AMRS. No AMRS table has been copied yet.
+AMRS `person` and `patient_identifier` have no usable facility column, so they are taken through the patients of the sampled encounters: 29,774 patients, of whom one has no person record in DHA's lake.
 
 ## What was changed on the way in
 
@@ -103,9 +115,10 @@ Run these from the `poc/` folder.
 |---|---|
 | `make up` | Starts the container |
 | `make measure` | Shows how much of each table would be read from DHA's lake. Copies nothing. Needs the VPN |
-| `make sample` | Copies the tables for the listed facilities, replacing what is there. Needs the VPN |
+| `make sample` | Copies the tables for the listed facilities, replacing what is there. Needs the VPN. Add `ONLY=amrs.encounter,amrs.person` to copy just the named tables and leave the rest |
 | `make verify-sample` | Counts the same rows in DHA's lake and compares. Needs the VPN |
 | `make check-rules` | Checks that every text column has a rule |
+| `make browse-rows` | Opens a web page for reading rows with SQL, at `http://localhost:4213` |
 | `make reset-source` | Deletes the copy only |
 | `make purge` | Deletes every copy of the data on this laptop |
 
@@ -115,6 +128,14 @@ To look inside the copy with the explorer, from `poc/`:
 LAKE_EXPLORER_CONFIG=$PWD/source-sample/standin-sources.toml \
   uv run --project ../explorer lake-explorer tables tiberbu
 ```
+
+To look at the files in a web browser, open `http://127.0.0.1:8888/buckets/dha-analytics/iceberg/` while the container is running. The page shows folders, files and sizes, and can download a file. It cannot change anything: uploads, renames and deletes are refused.
+
+To read rows in a web browser, run `make browse-rows` and open `http://localhost:4213`. The tables are listed on the left under `memory`, one group per system; click one to see its columns and a summary of each, or write SQL in a notebook cell. Three things to know:
+
+- **It shows real names and identifiers.** Clicking `patient`, `person` or `patient_identifier` shows values from those columns. Close the tab and press Ctrl+C when done.
+- **It needs the internet the first time.** The page itself is downloaded from `ui.duckdb.org`; the rows never leave this laptop. Do not use the page's MotherDuck sign-in, which is a cloud service.
+- **Nothing is saved.** Notebooks are kept in `~/.duckdb` on this laptop; the tables are read fresh from the stand-in each time.
 
 ## Files in this folder
 
