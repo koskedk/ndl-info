@@ -1,0 +1,22 @@
+{
+  "source": "kenyaemr",
+  "table": "encounter_type",
+  "sampled_at": "2026-11-16T08:32:41Z",
+  "source_metadata_file": "00535-aeb54f43-0cbb-4ae6-8b57-06fc0d3c8ccc.metadata.json",
+  "source_snapshot_id": 1279785807303984993,
+  "select_by": "whole",
+  "source_rows": 578124,
+  "source_files": 535,
+  "source_bytes": 9328022,
+  "files_read": 535,
+  "bytes_read": 9328022,
+  "rows_kept": 578124,
+  "rows_by_facility": {},
+  "rows_by_load": {
+    "1": 578124
+  },
+  "rows_by_facility_month": [],
+  "emptied_columns": [],
+  "standin_location": "s3://dha-analytics/iceberg/hmis_kenya_emr_conso/encounter_type",
+  "problems": []
+}

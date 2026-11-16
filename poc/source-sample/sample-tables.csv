@@ -1,0 +1,7 @@
+source,table,from_stage,select_by,load_date_column,why
+tiberbu,health_program_enrollment,2,facility,modified,"RMN-16: ANC enrolment, date and facility"
+tiberbu,patient,2,patients_in:health_program_enrollment,modified,"RMN-16: who the client is, sex and date of birth; identity fields for the Master Patient Index"
+kenyaemr,person,2,facility,date_created,RMN-16: sex and date of birth
+kenyaemr,encounter,2,facility,date_created,"RMN-16: the ANC enrolment encounter, date and facility"
+kenyaemr,encounter_type,2,whole,,RMN-16: names the encounter types
+kenyaemr,patient_identifier,2,facility,date_created,Identity for the Master Patient Index

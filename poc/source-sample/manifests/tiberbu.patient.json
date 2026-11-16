@@ -1,0 +1,49 @@
+{
+  "source": "tiberbu",
+  "table": "patient",
+  "sampled_at": "2026-11-16T08:50:43Z",
+  "source_metadata_file": "07766-bf247543-3deb-4dbb-bdc2-3e6b668cbb8f.metadata.json",
+  "source_snapshot_id": 989906627134639318,
+  "select_by": "patients_in:health_program_enrollment",
+  "source_rows": 9078984,
+  "source_files": 7766,
+  "source_bytes": 1244363578,
+  "files_read": 364,
+  "bytes_read": 76214968,
+  "rows_kept": 7248,
+  "rows_by_facility": {
+    "kakamega": 4086,
+    "uasin_gishu": 3162
+  },
+  "rows_by_load": {
+    "2": 3107,
+    "3": 4141
+  },
+  "patients_referred_to": 7391,
+  "patients_in_source": 3567,
+  "rows_by_facility_month": [],
+  "emptied_columns": [
+    "_assign",
+    "_comments",
+    "_liked_by",
+    "_user_tags",
+    "allergies",
+    "custom_btg_supervisor",
+    "custom_consent_badge_number",
+    "custom_consent_captured_by",
+    "custom_consent_otp_record",
+    "custom_consent_uploaded_file",
+    "image",
+    "medical_history",
+    "medication",
+    "modified_by",
+    "occupation",
+    "other_risk_factors",
+    "owner",
+    "patient_details",
+    "surgical_history",
+    "surrounding_factors"
+  ],
+  "standin_location": "s3://dha-analytics/iceberg/hmis_tiberbu_ingestion/patient",
+  "problems": []
+}

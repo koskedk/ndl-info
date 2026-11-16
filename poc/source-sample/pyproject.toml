@@ -1,0 +1,14 @@
+[project]
+name = "source-sample"
+version = "0.1.0"
+description = "Builds the stand-in S3 Ceph for the NHAI proof of concept: copies a sample of a few facilities from the real S3 Ceph"
+requires-python = ">=3.12"
+dependencies = [
+    "lake-explorer",
+    "pyiceberg[pyarrow,sql-sqlite]>=0.9",
+    "duckdb>=1.1",
+    "python-dotenv>=1.0",
+]
+
+[tool.uv.sources]
+lake-explorer = { path = "../../explorer", editable = true }

@@ -25,3 +25,8 @@ logs/
 # Explorer: local caches and query output (output may contain patient data)
 explorer/.cache/
 explorer/out/
+
+# POC: local data, working files and the hash key
+poc/.data/
+poc/.secrets/
+poc/matching/data/

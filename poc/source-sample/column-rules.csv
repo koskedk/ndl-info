@@ -1,0 +1,112 @@
+source,table,column,rule,maps_to,note
+tiberbu,patient,name,keep,,Record key
+tiberbu,patient,modified_by,empty,,"Staff account, not needed"
+tiberbu,patient,owner,empty,,"Staff account, not needed"
+tiberbu,patient,naming_series,keep,,
+tiberbu,patient,first_name,identity,first_name,
+tiberbu,patient,middle_name,identity,middle_name,
+tiberbu,patient,last_name,identity,last_name,
+tiberbu,patient,patient_name,identity,full_name,
+tiberbu,patient,sex,keep,,
+tiberbu,patient,blood_group,keep,,
+tiberbu,patient,image,empty,,Path to a photo
+tiberbu,patient,status,keep,,
+tiberbu,patient,uid,identity,other_identifier,Meaning to confirm
+tiberbu,patient,inpatient_record,keep,,Record key
+tiberbu,patient,inpatient_status,keep,,
+tiberbu,patient,report_preference,keep,,
+tiberbu,patient,mobile,identity,phone_number,
+tiberbu,patient,phone,identity,phone_number,
+tiberbu,patient,email,identity,email,
+tiberbu,patient,user_id,identity,user_account,Portal sign-in name
+tiberbu,patient,customer,identity,full_name,"Billing account, usually the patient name"
+tiberbu,patient,customer_group,keep,,
+tiberbu,patient,territory,keep,,
+tiberbu,patient,default_currency,keep,,
+tiberbu,patient,default_price_list,keep,,
+tiberbu,patient,language,keep,,
+tiberbu,patient,patient_details,empty,,Free text
+tiberbu,patient,occupation,empty,,Free text
+tiberbu,patient,marital_status,keep,,
+tiberbu,patient,allergies,empty,,Free text
+tiberbu,patient,medication,empty,,Free text
+tiberbu,patient,medical_history,empty,,Free text
+tiberbu,patient,surgical_history,empty,,Free text
+tiberbu,patient,tobacco_past_use,keep,,
+tiberbu,patient,tobacco_current_use,keep,,
+tiberbu,patient,alcohol_past_use,keep,,
+tiberbu,patient,alcohol_current_use,keep,,
+tiberbu,patient,surrounding_factors,empty,,Free text
+tiberbu,patient,other_risk_factors,empty,,Free text
+tiberbu,patient,_user_tags,empty,,"System field, not needed"
+tiberbu,patient,_comments,empty,,"System field, not needed"
+tiberbu,patient,_assign,empty,,"System field, not needed"
+tiberbu,patient,_liked_by,empty,,"System field, not needed"
+tiberbu,patient,custom_patient_number,identity,patient_number,
+tiberbu,patient,custom_old_patient_number,identity,patient_number,
+tiberbu,patient,custom_employment_status,keep,,
+tiberbu,patient,custom_next_of_kin,identity,next_of_kin_name,
+tiberbu,patient,custom_next_of_kin_relation,keep,,
+tiberbu,patient,custom_next_of_kin_contact,identity,next_of_kin_phone,
+tiberbu,patient,custom_national_id_number,identity,national_id,
+tiberbu,patient,custom_birth_certificate_number,identity,birth_certificate_number,
+tiberbu,patient,custom_passport_number,identity,passport_number,
+tiberbu,patient,custom_patient_upi,identity,upi,
+tiberbu,patient,custom_principal_sha_id_number,identity,insurance_number,
+tiberbu,patient,custom_county,keep,,
+tiberbu,patient,custom_sub_county,keep,,
+tiberbu,patient,custom_ward,keep,,
+tiberbu,patient,custom_daily_ticket_number,keep,,
+tiberbu,patient,custom_childbirth_record,keep,,Record key
+tiberbu,patient,custom_parent,keep,,Record key of the mother
+tiberbu,patient,custom_smart_copay_amount,keep,,
+tiberbu,patient,custom_smart_copay_percentage,keep,,
+tiberbu,patient,custom_smart_discount,keep,,
+tiberbu,patient,custom_restricted_type,keep,,
+tiberbu,patient,custom_btg_supervisor,empty,,"Staff account, not needed"
+tiberbu,patient,custom_consenting_party_type,keep,,
+tiberbu,patient,custom_consent_party_name,identity,consent_party_name,
+tiberbu,patient,custom_consent_party_phone,identity,consent_party_phone,
+tiberbu,patient,custom_consent_badge_number,empty,,Not needed
+tiberbu,patient,custom_consent_method,keep,,
+tiberbu,patient,custom_consent_form_type,keep,,
+tiberbu,patient,custom_consent_otp_record,empty,,Not needed
+tiberbu,patient,custom_consent_otp_confirmed_at,keep,,
+tiberbu,patient,custom_consent_uploaded_file,empty,,Path to a file
+tiberbu,patient,custom_consent_captured_by,empty,,"Staff account, not needed"
+tiberbu,patient,county_id,keep,,
+tiberbu,health_program_enrollment,name,keep,,Record key
+tiberbu,health_program_enrollment,modified_by,empty,,"Staff account, not needed"
+tiberbu,health_program_enrollment,owner,empty,,"Staff account, not needed"
+tiberbu,health_program_enrollment,program,keep,,
+tiberbu,health_program_enrollment,patient,keep,,Record key
+tiberbu,health_program_enrollment,current_state,keep,,
+tiberbu,health_program_enrollment,voided_by,empty,,"Staff account, not needed"
+tiberbu,health_program_enrollment,void_reason,empty,,Free text
+tiberbu,health_program_enrollment,company,keep,,The facility
+tiberbu,health_program_enrollment,_user_tags,empty,,"System field, not needed"
+tiberbu,health_program_enrollment,_comments,empty,,"System field, not needed"
+tiberbu,health_program_enrollment,_assign,empty,,"System field, not needed"
+tiberbu,health_program_enrollment,_liked_by,empty,,"System field, not needed"
+tiberbu,health_program_enrollment,episode_status,keep,,
+tiberbu,health_program_enrollment,county_id,keep,,
+kenyaemr,person,source_schema,keep,,The facility
+kenyaemr,person,gender,keep,,
+kenyaemr,person,void_reason,empty,,Free text
+kenyaemr,person,uuid,keep,,Record key
+kenyaemr,person,birthtime,keep,,
+kenyaemr,person,cause_of_death_non_coded,empty,,Free text
+kenyaemr,encounter,source_schema,keep,,The facility
+kenyaemr,encounter,void_reason,empty,,Free text
+kenyaemr,encounter,uuid,keep,,Record key
+kenyaemr,encounter_type,source_schema,keep,,The facility
+kenyaemr,encounter_type,name,keep,,
+kenyaemr,encounter_type,description,keep,,
+kenyaemr,encounter_type,retire_reason,keep,,
+kenyaemr,encounter_type,uuid,keep,,Record key
+kenyaemr,encounter_type,view_privilege,keep,,
+kenyaemr,encounter_type,edit_privilege,keep,,
+kenyaemr,patient_identifier,source_schema,keep,,The facility
+kenyaemr,patient_identifier,identifier,identity,identifier,Kind is given by identifier_type
+kenyaemr,patient_identifier,void_reason,empty,,Free text
+kenyaemr,patient_identifier,uuid,keep,,Record key

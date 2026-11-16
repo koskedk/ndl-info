@@ -1,0 +1,33 @@
+# NHAI proof of concept. Services are grouped in profiles; see PLAN.md, "Running it on this laptop".
+# The project name is what `make purge` uses to find this project's containers and volumes.
+name: nhai-poc
+
+services:
+  # The stand-in for DHA's S3 Ceph: same bucket and folder layout, holding the sample.
+  # It is a source, not part of NHAI. Pick-up reads it with a key that can only list and read.
+  standin-s3:
+    image: chrislusf/seaweedfs:4.52
+    profiles: ["core"]
+    command:
+      - server
+      - -dir=/data
+      - -s3
+      - -s3.port=8333
+      - -s3.config=/etc/seaweedfs/s3.json
+      - -master.volumeSizeLimitMB=512
+      - -volume.max=64
+    ports:
+      - "127.0.0.1:${STANDIN_S3_PORT:-8333}:8333"   # this machine only
+    volumes:
+      - standin_data:/data
+      - ./.secrets/standin-s3.json:/etc/seaweedfs/s3.json:ro
+    mem_limit: 768m
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:9333/cluster/healthz"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+    restart: "no"
+
+volumes:
+  standin_data:

@@ -1,0 +1,49 @@
+# NHAI proof of concept: dbt project.
+# Stage 1 holds only the two managed lists: the Master Facility List (seeds/) and the personal data list below.
+# Models and macros arrive in stage 4.
+
+name: nhai_poc
+version: "0.1.0"
+config-version: 2
+profile: nhai_poc
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+clean-targets: ["target", "dbt_packages"]
+
+vars:
+  # The personal data list: every personal field in the canonical model and what silver does with it.
+  #   hash  silver holds a keyed hash, in a column named <field>_hash
+  #   drop  the field does not reach silver
+  #   keep  the field reaches silver as it is
+  # To add or remove a field, change one line and rebuild silver.
+  # The clear values stay in silver_restricted for the Master Patient Index whatever is set here.
+  personal_data:
+    national_id:              {treatment: hash, tidy: id}
+    upi:                      {treatment: hash, tidy: id}
+    birth_certificate_number: {treatment: hash, tidy: id}
+    passport_number:          {treatment: hash, tidy: id}
+    insurance_number:         {treatment: hash, tidy: id}
+    patient_number:           {treatment: hash, tidy: id}
+    identifier:               {treatment: hash, tidy: id}
+    other_identifier:         {treatment: hash, tidy: id}
+    phone_number:             {treatment: hash, tidy: phone}
+    email:                    {treatment: hash, tidy: email}
+    user_account:             {treatment: hash, tidy: email}
+    first_name:               {treatment: hash, tidy: name}
+    middle_name:              {treatment: hash, tidy: name}
+    last_name:                {treatment: hash, tidy: name}
+    full_name:                {treatment: hash, tidy: name}
+    next_of_kin_name:         {treatment: drop}
+    next_of_kin_phone:        {treatment: drop}
+    consent_party_name:       {treatment: drop}
+    consent_party_phone:      {treatment: drop}
+    village:                  {treatment: drop}
+    landmark:                 {treatment: drop}
+    street:                   {treatment: drop}
+    date_of_birth:            {treatment: keep}
+    sex:                      {treatment: keep}
+    county:                   {treatment: keep}
+    sub_county:               {treatment: keep}
+    ward:                     {treatment: keep}

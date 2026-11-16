@@ -1,0 +1,4071 @@
+{
+  "source": "kenyaemr",
+  "table": "encounter",
+  "sampled_at": "2026-11-16T08:32:14Z",
+  "source_metadata_file": "00670-def54529-b6a4-4cd7-a8cc-f032a6797b7b.metadata.json",
+  "source_snapshot_id": 7410062528567239825,
+  "select_by": "facility",
+  "source_rows": 74990769,
+  "source_files": 652,
+  "source_bytes": 2423004788,
+  "files_read": 87,
+  "bytes_read": 1500003459,
+  "rows_kept": 5545300,
+  "rows_by_facility": {
+    "openmrs_lumumba": 3529249,
+    "openmrs_siayacrh": 1553767,
+    "openmrs_sigomere": 462284
+  },
+  "rows_by_load": {
+    "1": 5237427,
+    "2": 153853,
+    "3": 154020
+  },
+  "rows_by_facility_month": [
+    {
+      "facility": "openmrs_lumumba",
+      "month": "0168-02",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "1981-11",
+      "rows": 2
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "1984-09",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "1989-07",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "1993-11",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2002-09",
+      "rows": 4
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2003-04",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2004-07",
+      "rows": 4
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2004-09",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2004-12",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2005-02",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2005-03",
+      "rows": 17
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2005-04",
+      "rows": 23
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2005-05",
+      "rows": 16
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2005-06",
+      "rows": 14
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2005-07",
+      "rows": 15
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2005-08",
+      "rows": 38
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2005-09",
+      "rows": 18
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2005-10",
+      "rows": 36
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2005-11",
+      "rows": 43
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2005-12",
+      "rows": 26
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2006-01",
+      "rows": 28
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2006-02",
+      "rows": 29
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2006-03",
+      "rows": 30
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2006-04",
+      "rows": 51
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2006-05",
+      "rows": 52
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2006-06",
+      "rows": 78
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2006-07",
+      "rows": 56
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2006-08",
+      "rows": 51
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2006-09",
+      "rows": 57
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2006-10",
+      "rows": 63
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2006-11",
+      "rows": 61
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2006-12",
+      "rows": 40
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2007-01",
+      "rows": 63
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2007-02",
+      "rows": 40
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2007-03",
+      "rows": 65
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2007-04",
+      "rows": 27
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2007-05",
+      "rows": 30
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2007-06",
+      "rows": 49
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2007-07",
+      "rows": 83
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2007-08",
+      "rows": 6720
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2007-09",
+      "rows": 5441
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2007-10",
+      "rows": 6231
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2007-11",
+      "rows": 6057
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2007-12",
+      "rows": 4753
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2008-01",
+      "rows": 3378
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2008-02",
+      "rows": 4605
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2008-03",
+      "rows": 5021
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2008-04",
+      "rows": 5963
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2008-05",
+      "rows": 5063
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2008-06",
+      "rows": 5381
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2008-07",
+      "rows": 6171
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2008-08",
+      "rows": 5434
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2008-09",
+      "rows": 5880
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2008-10",
+      "rows": 5997
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2008-11",
+      "rows": 5246
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2008-12",
+      "rows": 4381
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2009-01",
+      "rows": 5531
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2009-02",
+      "rows": 4970
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2009-03",
+      "rows": 5968
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2009-04",
+      "rows": 5760
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2009-05",
+      "rows": 5610
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2009-06",
+      "rows": 6488
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2009-07",
+      "rows": 6860
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2009-08",
+      "rows": 6049
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2009-09",
+      "rows": 8160
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2009-10",
+      "rows": 6849
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2009-11",
+      "rows": 7584
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2009-12",
+      "rows": 5789
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2010-01",
+      "rows": 7335
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2010-02",
+      "rows": 7077
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2010-03",
+      "rows": 8751
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2010-04",
+      "rows": 7561
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2010-05",
+      "rows": 8152
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2010-06",
+      "rows": 8390
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2010-07",
+      "rows": 7387
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2010-08",
+      "rows": 9074
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2010-09",
+      "rows": 8686
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2010-10",
+      "rows": 8612
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2010-11",
+      "rows": 10249
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2010-12",
+      "rows": 7695
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2011-01",
+      "rows": 8081
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2011-02",
+      "rows": 7684
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2011-03",
+      "rows": 8267
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2011-04",
+      "rows": 8112
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2011-05",
+      "rows": 9232
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2011-06",
+      "rows": 8461
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2011-07",
+      "rows": 8527
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2011-08",
+      "rows": 8194
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2011-09",
+      "rows": 9090
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2011-10",
+      "rows": 8539
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2011-11",
+      "rows": 10093
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2011-12",
+      "rows": 6719
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2012-01",
+      "rows": 9408
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2012-02",
+      "rows": 9611
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2012-03",
+      "rows": 8231
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2012-04",
+      "rows": 9138
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2012-05",
+      "rows": 12541
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2012-06",
+      "rows": 9832
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2012-07",
+      "rows": 9575
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2012-08",
+      "rows": 11400
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2012-09",
+      "rows": 10287
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2012-10",
+      "rows": 12768
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2012-11",
+      "rows": 13727
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2012-12",
+      "rows": 8314
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2013-01",
+      "rows": 11323
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2013-02",
+      "rows": 12091
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2013-03",
+      "rows": 8932
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2013-04",
+      "rows": 13895
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2013-05",
+      "rows": 14445
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2013-06",
+      "rows": 11224
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2013-07",
+      "rows": 11516
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2013-08",
+      "rows": 11814
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2013-09",
+      "rows": 11771
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2013-10",
+      "rows": 11518
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2013-11",
+      "rows": 14316
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2013-12",
+      "rows": 8456
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2014-01",
+      "rows": 9684
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2014-02",
+      "rows": 10737
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2014-03",
+      "rows": 9936
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2014-04",
+      "rows": 7126
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2014-05",
+      "rows": 15685
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2014-06",
+      "rows": 8538
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2014-07",
+      "rows": 12157
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2014-08",
+      "rows": 11574
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2014-09",
+      "rows": 11247
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2014-10",
+      "rows": 12550
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2014-11",
+      "rows": 10596
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2014-12",
+      "rows": 8714
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2015-01",
+      "rows": 11934
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2015-02",
+      "rows": 11432
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2015-03",
+      "rows": 11538
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2015-04",
+      "rows": 11877
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2015-05",
+      "rows": 11570
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2015-06",
+      "rows": 11187
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2015-07",
+      "rows": 13230
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2015-08",
+      "rows": 12024
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2015-09",
+      "rows": 12974
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2015-10",
+      "rows": 11951
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2015-11",
+      "rows": 12667
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2015-12",
+      "rows": 5551
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2016-01",
+      "rows": 10262
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2016-02",
+      "rows": 14535
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2016-03",
+      "rows": 14228
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2016-04",
+      "rows": 13498
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2016-05",
+      "rows": 15384
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2016-06",
+      "rows": 12566
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2016-07",
+      "rows": 12562
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2016-08",
+      "rows": 17869
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2016-09",
+      "rows": 13895
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2016-10",
+      "rows": 13267
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2016-11",
+      "rows": 12710
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2016-12",
+      "rows": 9567
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2017-01",
+      "rows": 14508
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2017-02",
+      "rows": 12588
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2017-03",
+      "rows": 13625
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2017-04",
+      "rows": 15252
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2017-05",
+      "rows": 16864
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2017-06",
+      "rows": 11579
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2017-07",
+      "rows": 17441
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2017-08",
+      "rows": 8560
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2017-09",
+      "rows": 14158
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2017-10",
+      "rows": 12224
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2017-11",
+      "rows": 13689
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2017-12",
+      "rows": 11065
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2018-01",
+      "rows": 14266
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2018-02",
+      "rows": 12141
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2018-03",
+      "rows": 14561
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2018-04",
+      "rows": 14229
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2018-05",
+      "rows": 15143
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2018-06",
+      "rows": 12379
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2018-07",
+      "rows": 14013
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2018-08",
+      "rows": 13477
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2018-09",
+      "rows": 16120
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2018-10",
+      "rows": 15939
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2018-11",
+      "rows": 16495
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2018-12",
+      "rows": 14324
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2019-01",
+      "rows": 18922
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2019-02",
+      "rows": 16427
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2019-03",
+      "rows": 17626
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2019-04",
+      "rows": 19763
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2019-05",
+      "rows": 16876
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2019-06",
+      "rows": 15032
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2019-07",
+      "rows": 18486
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2019-08",
+      "rows": 16394
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2019-09",
+      "rows": 14286
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2019-10",
+      "rows": 14872
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2019-11",
+      "rows": 14316
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2019-12",
+      "rows": 10809
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2020-01",
+      "rows": 17384
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2020-02",
+      "rows": 12887
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2020-03",
+      "rows": 16627
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2020-04",
+      "rows": 6184
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2020-05",
+      "rows": 7088
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2020-06",
+      "rows": 8807
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2020-07",
+      "rows": 14022
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2020-08",
+      "rows": 12909
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2020-09",
+      "rows": 12558
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2020-10",
+      "rows": 13681
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2020-11",
+      "rows": 13918
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2020-12",
+      "rows": 10374
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2021-01",
+      "rows": 14605
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2021-02",
+      "rows": 16213
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2021-03",
+      "rows": 17366
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2021-04",
+      "rows": 17101
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2021-05",
+      "rows": 13935
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2021-06",
+      "rows": 13266
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2021-07",
+      "rows": 14183
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2021-08",
+      "rows": 14726
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2021-09",
+      "rows": 4858
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2021-10",
+      "rows": 7171
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2021-11",
+      "rows": 7530
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2021-12",
+      "rows": 5375
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2022-01",
+      "rows": 8733
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2022-02",
+      "rows": 6367
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2022-03",
+      "rows": 8168
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2022-04",
+      "rows": 10551
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2022-05",
+      "rows": 14016
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2022-06",
+      "rows": 12488
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2022-07",
+      "rows": 13544
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2022-08",
+      "rows": 15805
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2022-09",
+      "rows": 17341
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2022-10",
+      "rows": 13820
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2022-11",
+      "rows": 15920
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2022-12",
+      "rows": 10083
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2023-01",
+      "rows": 17062
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2023-02",
+      "rows": 27503
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2023-03",
+      "rows": 30447
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2023-04",
+      "rows": 29345
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2023-05",
+      "rows": 36465
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2023-06",
+      "rows": 31951
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2023-07",
+      "rows": 30718
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2023-08",
+      "rows": 31197
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2023-09",
+      "rows": 28762
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2023-10",
+      "rows": 30672
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2023-11",
+      "rows": 32596
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2023-12",
+      "rows": 23095
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2024-01",
+      "rows": 32823
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2024-02",
+      "rows": 32183
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2024-03",
+      "rows": 31328
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2024-04",
+      "rows": 39416
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2024-05",
+      "rows": 39015
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2024-06",
+      "rows": 32911
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2024-07",
+      "rows": 37522
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2024-08",
+      "rows": 36020
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2024-09",
+      "rows": 26635
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2024-10",
+      "rows": 28087
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2024-11",
+      "rows": 31239
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2024-12",
+      "rows": 21620
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2025-01",
+      "rows": 29034
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2025-02",
+      "rows": 17864
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2025-03",
+      "rows": 27218
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2025-04",
+      "rows": 29216
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2025-05",
+      "rows": 24318
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2025-06",
+      "rows": 33366
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2025-07",
+      "rows": 42225
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2025-08",
+      "rows": 38173
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2025-09",
+      "rows": 37482
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2025-10",
+      "rows": 37253
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2025-11",
+      "rows": 40057
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2025-12",
+      "rows": 38271
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2026-01",
+      "rows": 35869
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2026-02",
+      "rows": 32986
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2026-03",
+      "rows": 31516
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2026-04",
+      "rows": 26860
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2026-05",
+      "rows": 29927
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2026-06",
+      "rows": 39286
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2026-07",
+      "rows": 22127
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2026-08",
+      "rows": 25410
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2026-09",
+      "rows": 48835
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2026-10",
+      "rows": 61119
+    },
+    {
+      "facility": "openmrs_lumumba",
+      "month": "2026-11",
+      "rows": 12692
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2000-04",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2000-05",
+      "rows": 3
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2000-08",
+      "rows": 2
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2000-09",
+      "rows": 6
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2000-11",
+      "rows": 2
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2001-01",
+      "rows": 2
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2001-03",
+      "rows": 3
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2002-02",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2002-08",
+      "rows": 2
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2003-01",
+      "rows": 2
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2003-02",
+      "rows": 2
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2003-03",
+      "rows": 2
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2003-06",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2003-10",
+      "rows": 4
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2003-11",
+      "rows": 3
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2004-01",
+      "rows": 4
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2004-02",
+      "rows": 6
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2004-03",
+      "rows": 17
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2004-04",
+      "rows": 121
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2004-05",
+      "rows": 120
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2004-06",
+      "rows": 120
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2004-07",
+      "rows": 125
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2004-08",
+      "rows": 110
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2004-09",
+      "rows": 106
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2004-10",
+      "rows": 96
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2004-11",
+      "rows": 163
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2004-12",
+      "rows": 157
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2005-01",
+      "rows": 179
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2005-02",
+      "rows": 218
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2005-03",
+      "rows": 324
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2005-04",
+      "rows": 281
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2005-05",
+      "rows": 339
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2005-06",
+      "rows": 208
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2005-07",
+      "rows": 186
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2005-08",
+      "rows": 264
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2005-09",
+      "rows": 257
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2005-10",
+      "rows": 218
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2005-11",
+      "rows": 229
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2005-12",
+      "rows": 300
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2006-01",
+      "rows": 370
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2006-02",
+      "rows": 321
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2006-03",
+      "rows": 337
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2006-04",
+      "rows": 326
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2006-05",
+      "rows": 372
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2006-06",
+      "rows": 457
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2006-07",
+      "rows": 398
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2006-08",
+      "rows": 489
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2006-09",
+      "rows": 356
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2006-10",
+      "rows": 397
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2006-11",
+      "rows": 386
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2006-12",
+      "rows": 310
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2007-01",
+      "rows": 440
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2007-02",
+      "rows": 399
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2007-03",
+      "rows": 400
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2007-04",
+      "rows": 377
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2007-05",
+      "rows": 448
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2007-06",
+      "rows": 416
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2007-07",
+      "rows": 471
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2007-08",
+      "rows": 392
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2007-09",
+      "rows": 324
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2007-10",
+      "rows": 447
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2007-11",
+      "rows": 472
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2007-12",
+      "rows": 403
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2008-01",
+      "rows": 323
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2008-02",
+      "rows": 459
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2008-03",
+      "rows": 496
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2008-04",
+      "rows": 448
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2008-05",
+      "rows": 465
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2008-06",
+      "rows": 522
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2008-07",
+      "rows": 419
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2008-08",
+      "rows": 341
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2008-09",
+      "rows": 350
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2008-10",
+      "rows": 339
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2008-11",
+      "rows": 329
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2008-12",
+      "rows": 340
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2009-01",
+      "rows": 334
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2009-02",
+      "rows": 377
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2009-03",
+      "rows": 369
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2009-04",
+      "rows": 269
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2009-05",
+      "rows": 317
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2009-06",
+      "rows": 386
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2009-07",
+      "rows": 371
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2009-08",
+      "rows": 364
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2009-09",
+      "rows": 375
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2009-10",
+      "rows": 320
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2009-11",
+      "rows": 352
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2009-12",
+      "rows": 283
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2010-01",
+      "rows": 355
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2010-02",
+      "rows": 376
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2010-03",
+      "rows": 318
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2010-04",
+      "rows": 307
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2010-05",
+      "rows": 381
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2010-06",
+      "rows": 472
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2010-07",
+      "rows": 295
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2010-08",
+      "rows": 277
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2010-09",
+      "rows": 338
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2010-10",
+      "rows": 391
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2010-11",
+      "rows": 355
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2010-12",
+      "rows": 230
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2011-01",
+      "rows": 296
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2011-02",
+      "rows": 282
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2011-03",
+      "rows": 270
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2011-04",
+      "rows": 228
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2011-05",
+      "rows": 216
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2011-06",
+      "rows": 209
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2011-07",
+      "rows": 207
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2011-08",
+      "rows": 169
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2011-09",
+      "rows": 210
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2011-10",
+      "rows": 194
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2011-11",
+      "rows": 261
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2011-12",
+      "rows": 146
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2012-01",
+      "rows": 208
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2012-02",
+      "rows": 212
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2012-03",
+      "rows": 264
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2012-04",
+      "rows": 283
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2012-05",
+      "rows": 264
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2012-06",
+      "rows": 252
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2012-07",
+      "rows": 220
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2012-08",
+      "rows": 187
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2012-09",
+      "rows": 158
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2012-10",
+      "rows": 172
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2012-11",
+      "rows": 161
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2012-12",
+      "rows": 139
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2013-01",
+      "rows": 211
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2013-02",
+      "rows": 178
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2013-03",
+      "rows": 141
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2013-04",
+      "rows": 182
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2013-05",
+      "rows": 138
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2013-06",
+      "rows": 134
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2013-07",
+      "rows": 160
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2013-08",
+      "rows": 154
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2013-09",
+      "rows": 101
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2013-10",
+      "rows": 128
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2013-11",
+      "rows": 107
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2013-12",
+      "rows": 112
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2014-01",
+      "rows": 173
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2014-02",
+      "rows": 170
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2014-03",
+      "rows": 153
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2014-04",
+      "rows": 140
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2014-05",
+      "rows": 136
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2014-06",
+      "rows": 187
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2014-07",
+      "rows": 178
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2014-08",
+      "rows": 267
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2014-09",
+      "rows": 285
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2014-10",
+      "rows": 235
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2014-11",
+      "rows": 201
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2014-12",
+      "rows": 103
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2015-01",
+      "rows": 223
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2015-02",
+      "rows": 174
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2015-03",
+      "rows": 170
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2015-04",
+      "rows": 171
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2015-05",
+      "rows": 381989
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2015-06",
+      "rows": 3139
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2015-07",
+      "rows": 3668
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2015-08",
+      "rows": 3141
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2015-09",
+      "rows": 5000
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2015-10",
+      "rows": 4968
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2015-11",
+      "rows": 4250
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2015-12",
+      "rows": 2718
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2016-01",
+      "rows": 4019
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2016-02",
+      "rows": 3592
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2016-03",
+      "rows": 4420
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2016-04",
+      "rows": 6671
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2016-05",
+      "rows": 8293
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2016-06",
+      "rows": 6307
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2016-07",
+      "rows": 8324
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2016-08",
+      "rows": 8041
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2016-09",
+      "rows": 6962
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2016-10",
+      "rows": 7014
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2016-11",
+      "rows": 6583
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2016-12",
+      "rows": 4282
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2017-01",
+      "rows": 8104
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2017-02",
+      "rows": 5994
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2017-03",
+      "rows": 7811
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2017-04",
+      "rows": 5640
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2017-05",
+      "rows": 2414
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2017-06",
+      "rows": 2508
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2017-07",
+      "rows": 4394
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2017-08",
+      "rows": 6493
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2017-09",
+      "rows": 4948
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2017-10",
+      "rows": 5039
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2017-11",
+      "rows": 4580
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2017-12",
+      "rows": 4282
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2018-01",
+      "rows": 6850
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2018-02",
+      "rows": 6267
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2018-03",
+      "rows": 5123
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2018-04",
+      "rows": 5023
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2018-05",
+      "rows": 5915
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2018-06",
+      "rows": 4561
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2018-07",
+      "rows": 7753
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2018-08",
+      "rows": 4367
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2018-09",
+      "rows": 2560
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2018-10",
+      "rows": 4696
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2018-11",
+      "rows": 4818
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2018-12",
+      "rows": 2885
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2019-01",
+      "rows": 4344
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2019-02",
+      "rows": 39752
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2019-03",
+      "rows": 6498
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2019-04",
+      "rows": 10069
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2019-05",
+      "rows": 8904
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2019-06",
+      "rows": 8081
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2019-07",
+      "rows": 8148
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2019-08",
+      "rows": 7677
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2019-09",
+      "rows": 6500
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2019-10",
+      "rows": 8030
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2019-11",
+      "rows": 5449
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2019-12",
+      "rows": 4158
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2020-01",
+      "rows": 6873
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2020-02",
+      "rows": 6957
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2020-03",
+      "rows": 8110
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2020-04",
+      "rows": 7688
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2020-05",
+      "rows": 7283
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2020-06",
+      "rows": 6966
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2020-07",
+      "rows": 7761
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2020-08",
+      "rows": 6584
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2020-09",
+      "rows": 8841
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2020-10",
+      "rows": 8897
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2020-11",
+      "rows": 13631
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2020-12",
+      "rows": 14419
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2021-01",
+      "rows": 14680
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2021-02",
+      "rows": 11948
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2021-03",
+      "rows": 11873
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2021-04",
+      "rows": 8733
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2021-05",
+      "rows": 11642
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2021-06",
+      "rows": 8813
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2021-07",
+      "rows": 8872
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2021-08",
+      "rows": 7606
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2021-09",
+      "rows": 5597
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2021-10",
+      "rows": 7580
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2021-11",
+      "rows": 6970
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2021-12",
+      "rows": 9598
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2022-01",
+      "rows": 7758
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2022-02",
+      "rows": 9363
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2022-03",
+      "rows": 14249
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2022-04",
+      "rows": 9839
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2022-05",
+      "rows": 11547
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2022-06",
+      "rows": 11096
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2022-07",
+      "rows": 11619
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2022-08",
+      "rows": 8674
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2022-09",
+      "rows": 10472
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2022-10",
+      "rows": 9625
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2022-11",
+      "rows": 11631
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2022-12",
+      "rows": 9000
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2023-01",
+      "rows": 9502
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2023-02",
+      "rows": 11864
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2023-03",
+      "rows": 7991
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2023-04",
+      "rows": 8420
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2023-05",
+      "rows": 7213
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2023-06",
+      "rows": 8799
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2023-07",
+      "rows": 5290
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2023-08",
+      "rows": 8729
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2023-09",
+      "rows": 8860
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2023-10",
+      "rows": 10918
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2023-11",
+      "rows": 13023
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2023-12",
+      "rows": 11419
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2024-01",
+      "rows": 11406
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2024-02",
+      "rows": 11578
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2024-03",
+      "rows": 11301
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2024-04",
+      "rows": 9964
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2024-05",
+      "rows": 12928
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2024-06",
+      "rows": 11518
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2024-07",
+      "rows": 13831
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2024-08",
+      "rows": 12278
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2024-09",
+      "rows": 10086
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2024-10",
+      "rows": 10386
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2024-11",
+      "rows": 11271
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2024-12",
+      "rows": 6484
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2025-01",
+      "rows": 9613
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2025-02",
+      "rows": 6360
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2025-03",
+      "rows": 6052
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2025-04",
+      "rows": 8138
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2025-05",
+      "rows": 8680
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2025-06",
+      "rows": 8833
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2025-07",
+      "rows": 11139
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2025-08",
+      "rows": 8998
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2025-09",
+      "rows": 5953
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2025-10",
+      "rows": 5099
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2025-11",
+      "rows": 1426
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2025-12",
+      "rows": 4539
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2026-01",
+      "rows": 6646
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2026-02",
+      "rows": 6839
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2026-03",
+      "rows": 6511
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2026-04",
+      "rows": 6030
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2026-05",
+      "rows": 3053
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2026-06",
+      "rows": 6233
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2026-07",
+      "rows": 6019
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2026-08",
+      "rows": 2927
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2026-09",
+      "rows": 13816
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2026-10",
+      "rows": 44259
+    },
+    {
+      "facility": "openmrs_siayacrh",
+      "month": "2026-11",
+      "rows": 18079
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2002-10",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2003-08",
+      "rows": 2
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2004-04",
+      "rows": 2
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2005-05",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2005-11",
+      "rows": 3
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2006-01",
+      "rows": 4
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2006-04",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2006-06",
+      "rows": 3
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2006-08",
+      "rows": 1
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2007-02",
+      "rows": 4
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2007-03",
+      "rows": 2
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2007-04",
+      "rows": 4
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2007-06",
+      "rows": 2
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2007-07",
+      "rows": 2
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2007-08",
+      "rows": 3
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2007-09",
+      "rows": 15
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2007-10",
+      "rows": 74
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2007-11",
+      "rows": 49
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2007-12",
+      "rows": 13
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2008-01",
+      "rows": 14
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2008-02",
+      "rows": 38
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2008-03",
+      "rows": 30
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2008-04",
+      "rows": 30
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2008-05",
+      "rows": 41
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2008-06",
+      "rows": 34
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2008-07",
+      "rows": 75
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2008-08",
+      "rows": 76
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2008-09",
+      "rows": 72
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2008-10",
+      "rows": 80
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2008-11",
+      "rows": 52
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2008-12",
+      "rows": 72
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2009-01",
+      "rows": 84
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2009-02",
+      "rows": 59
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2009-03",
+      "rows": 50
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2009-04",
+      "rows": 54
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2009-05",
+      "rows": 67
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2009-06",
+      "rows": 80
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2009-07",
+      "rows": 69
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2009-08",
+      "rows": 69
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2009-09",
+      "rows": 66
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2009-10",
+      "rows": 74
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2009-11",
+      "rows": 76
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2009-12",
+      "rows": 48
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2010-01",
+      "rows": 46
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2010-02",
+      "rows": 70
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2010-03",
+      "rows": 54
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2010-04",
+      "rows": 74
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2010-05",
+      "rows": 73
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2010-06",
+      "rows": 89
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2010-07",
+      "rows": 76
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2010-08",
+      "rows": 39
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2010-09",
+      "rows": 52
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2010-10",
+      "rows": 56
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2010-11",
+      "rows": 60
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2010-12",
+      "rows": 35
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2011-01",
+      "rows": 44
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2011-02",
+      "rows": 45
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2011-03",
+      "rows": 65
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2011-04",
+      "rows": 68
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2011-05",
+      "rows": 69
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2011-06",
+      "rows": 86
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2011-07",
+      "rows": 58
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2011-08",
+      "rows": 58
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2011-09",
+      "rows": 61
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2011-10",
+      "rows": 60
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2011-11",
+      "rows": 37
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2011-12",
+      "rows": 17
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2012-01",
+      "rows": 86
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2012-02",
+      "rows": 42
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2012-03",
+      "rows": 58
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2012-04",
+      "rows": 36
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2012-05",
+      "rows": 50
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2012-06",
+      "rows": 41
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2012-07",
+      "rows": 52
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2012-08",
+      "rows": 43
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2012-09",
+      "rows": 31
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2012-10",
+      "rows": 30
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2012-11",
+      "rows": 66
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2012-12",
+      "rows": 20
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2013-01",
+      "rows": 51
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2013-02",
+      "rows": 46
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2013-03",
+      "rows": 49
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2013-04",
+      "rows": 57
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2013-05",
+      "rows": 61
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2013-06",
+      "rows": 48
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2013-07",
+      "rows": 108
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2013-08",
+      "rows": 71
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2013-09",
+      "rows": 67
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2013-10",
+      "rows": 47
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2013-11",
+      "rows": 45
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2013-12",
+      "rows": 11
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2014-01",
+      "rows": 40
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2014-02",
+      "rows": 65
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2014-03",
+      "rows": 46
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2014-04",
+      "rows": 41
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2014-05",
+      "rows": 46
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2014-06",
+      "rows": 37
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2014-07",
+      "rows": 44
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2014-08",
+      "rows": 106
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2014-09",
+      "rows": 106
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2014-10",
+      "rows": 34
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2014-11",
+      "rows": 46
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2014-12",
+      "rows": 47
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2015-01",
+      "rows": 74
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2015-02",
+      "rows": 43
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2015-03",
+      "rows": 35
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2015-04",
+      "rows": 17
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2015-05",
+      "rows": 80
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2015-06",
+      "rows": 70596
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2015-07",
+      "rows": 1109
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2015-08",
+      "rows": 85
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2015-09",
+      "rows": 1529
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2015-10",
+      "rows": 588
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2015-11",
+      "rows": 63
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2015-12",
+      "rows": 43
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2016-01",
+      "rows": 80
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2016-02",
+      "rows": 82
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2016-03",
+      "rows": 603
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2016-04",
+      "rows": 1074
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2016-05",
+      "rows": 2704
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2016-06",
+      "rows": 2447
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2016-07",
+      "rows": 1871
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2016-08",
+      "rows": 1427
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2016-09",
+      "rows": 91
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2016-10",
+      "rows": 34
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2016-11",
+      "rows": 34
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2016-12",
+      "rows": 13
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2017-01",
+      "rows": 19
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2017-02",
+      "rows": 44
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2017-03",
+      "rows": 27
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2017-04",
+      "rows": 40
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2017-05",
+      "rows": 44
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2017-06",
+      "rows": 50
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2017-07",
+      "rows": 53
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2017-08",
+      "rows": 151
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2017-09",
+      "rows": 32
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2017-10",
+      "rows": 95
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2017-11",
+      "rows": 624
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2017-12",
+      "rows": 634
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2018-01",
+      "rows": 1472
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2018-02",
+      "rows": 1573
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2018-03",
+      "rows": 1470
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2018-04",
+      "rows": 793
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2018-05",
+      "rows": 967
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2018-06",
+      "rows": 846
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2018-07",
+      "rows": 1998
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2018-08",
+      "rows": 1585
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2018-09",
+      "rows": 1560
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2018-10",
+      "rows": 1942
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2018-11",
+      "rows": 2116
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2018-12",
+      "rows": 226
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2019-01",
+      "rows": 1944
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2019-02",
+      "rows": 2166
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2019-03",
+      "rows": 8363
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2019-04",
+      "rows": 3693
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2019-05",
+      "rows": 3403
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2019-06",
+      "rows": 2851
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2019-07",
+      "rows": 2790
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2019-08",
+      "rows": 2237
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2019-09",
+      "rows": 1683
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2019-10",
+      "rows": 1509
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2019-11",
+      "rows": 2111
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2019-12",
+      "rows": 1643
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2020-01",
+      "rows": 2153
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2020-02",
+      "rows": 2000
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2020-03",
+      "rows": 1868
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2020-04",
+      "rows": 1766
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2020-05",
+      "rows": 2183
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2020-06",
+      "rows": 1683
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2020-07",
+      "rows": 1827
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2020-08",
+      "rows": 1804
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2020-09",
+      "rows": 2399
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2020-10",
+      "rows": 2678
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2020-11",
+      "rows": 3219
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2020-12",
+      "rows": 2676
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2021-01",
+      "rows": 2934
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2021-02",
+      "rows": 4878
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2021-03",
+      "rows": 3630
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2021-04",
+      "rows": 2135
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2021-05",
+      "rows": 3005
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2021-06",
+      "rows": 2362
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2021-07",
+      "rows": 2249
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2021-08",
+      "rows": 2238
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2021-09",
+      "rows": 1943
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2021-10",
+      "rows": 1656
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2021-11",
+      "rows": 3197
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2021-12",
+      "rows": 3194
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2022-01",
+      "rows": 3669
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2022-02",
+      "rows": 3635
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2022-03",
+      "rows": 3763
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2022-04",
+      "rows": 3059
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2022-05",
+      "rows": 3042
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2022-06",
+      "rows": 3706
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2022-07",
+      "rows": 3538
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2022-08",
+      "rows": 2982
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2022-09",
+      "rows": 3005
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2022-10",
+      "rows": 2970
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2022-11",
+      "rows": 3104
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2022-12",
+      "rows": 2612
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2023-01",
+      "rows": 3014
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2023-02",
+      "rows": 3402
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2023-03",
+      "rows": 4033
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2023-04",
+      "rows": 3180
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2023-05",
+      "rows": 4190
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2023-06",
+      "rows": 4495
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2023-07",
+      "rows": 4584
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2023-08",
+      "rows": 5233
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2023-09",
+      "rows": 2695
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2023-10",
+      "rows": 4173
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2023-11",
+      "rows": 5261
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2023-12",
+      "rows": 4734
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2024-01",
+      "rows": 4770
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2024-02",
+      "rows": 5789
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2024-03",
+      "rows": 4717
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2024-04",
+      "rows": 4923
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2024-05",
+      "rows": 5343
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2024-06",
+      "rows": 5059
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2024-07",
+      "rows": 5328
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2024-08",
+      "rows": 5076
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2024-09",
+      "rows": 4125
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2024-10",
+      "rows": 4925
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2024-11",
+      "rows": 3960
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2024-12",
+      "rows": 2236
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2025-01",
+      "rows": 2973
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2025-02",
+      "rows": 1878
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2025-03",
+      "rows": 2053
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2025-04",
+      "rows": 2173
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2025-05",
+      "rows": 2272
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2025-06",
+      "rows": 2326
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2025-07",
+      "rows": 2813
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2025-08",
+      "rows": 2249
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2025-09",
+      "rows": 1688
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2025-10",
+      "rows": 2457
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2025-11",
+      "rows": 2184
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2025-12",
+      "rows": 1802
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2026-01",
+      "rows": 2857
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2026-02",
+      "rows": 2120
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2026-03",
+      "rows": 1935
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2026-04",
+      "rows": 6530
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2026-05",
+      "rows": 10881
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2026-06",
+      "rows": 12158
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2026-07",
+      "rows": 13558
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2026-08",
+      "rows": 7181
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2026-09",
+      "rows": 13980
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2026-10",
+      "rows": 14816
+    },
+    {
+      "facility": "openmrs_sigomere",
+      "month": "2026-11",
+      "rows": 3055
+    }
+  ],
+  "emptied_columns": [
+    "void_reason"
+  ],
+  "standin_location": "s3://dha-analytics/iceberg/hmis_kenya_emr_conso/encounter",
+  "problems": []
+}

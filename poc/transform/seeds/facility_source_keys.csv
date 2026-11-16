@@ -1,0 +1,13 @@
+fid,source_system,source_facility_key,in_sample
+FID-27-115914-5,tiberbu,Turbo Sub County Hospital,true
+FID-27-115973-1,tiberbu,Moi Bridge Health Centre,true
+FID-37-117873-9,tiberbu,LUMAKANDA SUB-COUNTY HOSPITAL,true
+FID-41-116638-1,kenyaemr,openmrs_sigomere,true
+FID-42-117725-4,kenyaemr,openmrs_lumumba,true
+FID-41-116644-9,kenyaemr,openmrs_siayacrh,true
+FID-27-116007-7,amrs,62,true
+FID-27-116007-7,amrs,333,true
+FID-27-116007-7,amrs,195,true
+FID-27-115914-5,amrs,329,true
+FID-27-115973-1,amrs,325,true
+FID-27-115973-1,amrs,71,true

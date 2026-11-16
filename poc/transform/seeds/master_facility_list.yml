@@ -1,0 +1,81 @@
+# The Master Facility List for the proof of concept, in two files the team manages by hand.
+#
+#   master_facility_list.csv   one row per facility: its identifiers and details
+#   facility_source_keys.csv   one row per name a source system uses for a facility
+#
+# To add a facility, add a row to the first file and a row to the second for each system it reports through.
+# The sampler reads both to know what to copy; dbt builds dim_facility from them.
+
+version: 2
+
+seeds:
+  - name: master_facility_list
+    description: >
+      NHAI's single list of facilities, one row each. FID is DHA's identifier and MFL code is KHIS's.
+      The mapping between the two is kept here.
+    config:
+      column_types:
+        fid: varchar
+        mfl_code: varchar
+        keph_level: integer
+    columns:
+      - name: fid
+        description: DHA's facility identifier (FID), written as in DHA's facility registry, for example FID-27-115914-5.
+        data_tests:
+          - not_null
+          - unique
+      - name: mfl_code
+        description: The Master Facility List code that KHIS reports against. Kept as text so leading zeros survive.
+        data_tests:
+          - not_null
+          - unique
+      - name: facility_name
+        description: The name shown on dashboards.
+        data_tests:
+          - not_null
+      - name: county
+        description: County name, spelled as on the county map.
+        data_tests:
+          - not_null
+      - name: sub_county
+        description: Sub-county name. May be left empty.
+      - name: keph_level
+        description: Level of care, 1 to 6. Dashboards break indicators down by it.
+        data_tests:
+          - accepted_values:
+              values: [1, 2, 3, 4, 5, 6]
+              quote: false
+      - name: ownership
+        description: Who runs the facility, as DHA's facility registry records it. Dashboards break indicators down by it.
+
+  - name: facility_source_keys
+    description: >
+      How each source system names a facility. A facility on two systems, or with several AMRS locations,
+      has a row for each. Staging adapters use it to turn a source's own key into a FID.
+    config:
+      column_types:
+        fid: varchar
+        source_facility_key: varchar
+        in_sample: boolean
+    columns:
+      - name: fid
+        description: The facility, as in master_facility_list.
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('master_facility_list')
+              field: fid
+      - name: source_system
+        description: The system the key belongs to.
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [tiberbu, kenyaemr, amrs]
+      - name: source_facility_key
+        description: The company for Tiberbu, the source_schema for KenyaEMR, the location_id for AMRS.
+        data_tests:
+          - not_null
+      - name: in_sample
+        description: true if the sampler should copy this facility's records from this system.
+        data_tests:
+          - not_null

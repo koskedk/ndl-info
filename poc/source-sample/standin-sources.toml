@@ -1,0 +1,27 @@
+# Points the lake explorer at the stand-in S3 Ceph instead of the real one.
+# Use it with:  LAKE_EXPLORER_CONFIG=poc/source-sample/standin-sources.toml  (run from poc/, so poc/.env is read)
+# The folders are the same as in explorer/sources.toml; only the store differs.
+
+[store.standin]
+env_prefix = "STANDIN_S3"
+
+[[source]]
+name = "kenyaemr"
+store = "standin"
+kind = "iceberg"
+path = "iceberg/hmis_kenya_emr_conso"
+description = "KenyaEMR, consolidated copy: sample in the stand-in"
+
+[[source]]
+name = "amrs"
+store = "standin"
+kind = "iceberg"
+path = "iceberg/hmis_ampath_prod"
+description = "AMPATH AMRS: sample in the stand-in"
+
+[[source]]
+name = "tiberbu"
+store = "standin"
+kind = "iceberg"
+path = "iceberg/hmis_tiberbu_ingestion"
+description = "Tiberbu HMIS: sample in the stand-in"
