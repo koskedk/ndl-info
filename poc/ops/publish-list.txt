@@ -4,6 +4,7 @@
 README.md
 PLAN.md
 KHIS-BRIDGE.md
+MPDSR-TRACKER-BRIDGE.md
 Makefile
 compose.yaml
 purge.sh
@@ -18,4 +19,5 @@ source-sample/sample-tables.csv
 source-sample/column-rules.csv
 source-sample/visit-types.csv
 source-sample/source-folders.csv
+source-sample/tracker-fields-restricted.csv
 source-sample/manifests

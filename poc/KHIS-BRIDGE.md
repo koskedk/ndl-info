@@ -217,5 +217,6 @@ Figures from KHIS on 16 November 2026. Later loads will be a little higher, beca
 
 - **Malaria**, and the other programmes. Their forms (outpatient, laboratory and inpatient summaries) come later.
 - **Other RMNCAH-N forms.** Immunisation is on MOH 710 Rev 2020 (`XoHnrLBL1qB`) and nutrition on MOH 713 (`DWKwKC6dnoB`). Causes of maternal and perinatal death are on the Maternal Death Summary Form (`m6EF2FDkLAE`), which is reported daily by about 600 facilities.
+- **Death cases and their reviews.** MPDSR is on the KHIS tracker, a separate DHIS2 from KHIS. Its bridge has its own brief: [MPDSR-TRACKER-BRIDGE.md](MPDSR-TRACKER-BRIDGE.md). The MOH 711 death totals pulled here stay, as the figures to check it against.
 - **County boundaries.** KHIS holds a shape for each county, which the boundaries bridge can use.
 - **More facilities.** Widening from seven facilities to every facility in the four counties changes the list of places and nothing else.
