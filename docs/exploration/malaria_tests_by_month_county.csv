@@ -1,0 +1,1055 @@
+source,stage,month,county,all_tests,malaria_tests,rapid_tests,microscopy,other_malaria_tests,malaria_pct
+AMRS,test results recorded,2025-11-01,bungoma,456,0,0,0,0,0.0
+AMRS,test results recorded,2025-11-01,busia,1003,0,0,0,0,0.0
+AMRS,test results recorded,2025-11-01,elgeyo marakwet,37,0,0,0,0,0.0
+AMRS,test results recorded,2025-11-01,nandi,43,0,0,0,0,0.0
+AMRS,test results recorded,2025-11-01,trans nzoia,197,0,0,0,0,0.0
+AMRS,test results recorded,2025-11-01,uasin gishu,5618,0,0,0,0,0.0
+AMRS,test results recorded,2025-11-01,unknown,8090,0,0,0,0,0.0
+AMRS,test results recorded,2025-11-01,west pokot,37,0,0,0,0,0.0
+AMRS,test results recorded,2025-12-01,bungoma,331,0,0,0,0,0.0
+AMRS,test results recorded,2025-12-01,busia,748,0,0,0,0,0.0
+AMRS,test results recorded,2025-12-01,elgeyo marakwet,34,0,0,0,0,0.0
+AMRS,test results recorded,2025-12-01,nandi,31,0,0,0,0,0.0
+AMRS,test results recorded,2025-12-01,trans nzoia,173,0,0,0,0,0.0
+AMRS,test results recorded,2025-12-01,uasin gishu,3505,0,0,0,0,0.0
+AMRS,test results recorded,2025-12-01,unknown,4262,0,0,0,0,0.0
+AMRS,test results recorded,2025-12-01,west pokot,19,0,0,0,0,0.0
+AMRS,test results recorded,2026-01-01,bungoma,402,0,0,0,0,0.0
+AMRS,test results recorded,2026-01-01,busia,970,0,0,0,0,0.0
+AMRS,test results recorded,2026-01-01,elgeyo marakwet,80,0,0,0,0,0.0
+AMRS,test results recorded,2026-01-01,nandi,51,0,0,0,0,0.0
+AMRS,test results recorded,2026-01-01,tharaka nithi,1,0,0,0,0,0.0
+AMRS,test results recorded,2026-01-01,trans nzoia,266,0,0,0,0,0.0
+AMRS,test results recorded,2026-01-01,uasin gishu,5545,0,0,0,0,0.0
+AMRS,test results recorded,2026-01-01,unknown,10274,0,0,0,0,0.0
+AMRS,test results recorded,2026-01-01,west pokot,61,0,0,0,0,0.0
+AMRS,test results recorded,2026-02-01,bungoma,351,0,0,0,0,0.0
+AMRS,test results recorded,2026-02-01,busia,851,0,0,0,0,0.0
+AMRS,test results recorded,2026-02-01,elgeyo marakwet,95,0,0,0,0,0.0
+AMRS,test results recorded,2026-02-01,nandi,58,0,0,0,0,0.0
+AMRS,test results recorded,2026-02-01,trans nzoia,323,0,0,0,0,0.0
+AMRS,test results recorded,2026-02-01,uasin gishu,7448,14,0,14,0,0.19
+AMRS,test results recorded,2026-02-01,unknown,8609,0,0,0,0,0.0
+AMRS,test results recorded,2026-02-01,west pokot,36,0,0,0,0,0.0
+AMRS,test results recorded,2026-03-01,bungoma,578,0,0,0,0,0.0
+AMRS,test results recorded,2026-03-01,busia,1327,0,0,0,0,0.0
+AMRS,test results recorded,2026-03-01,elgeyo marakwet,56,0,0,0,0,0.0
+AMRS,test results recorded,2026-03-01,nandi,43,0,0,0,0,0.0
+AMRS,test results recorded,2026-03-01,trans nzoia,539,0,0,0,0,0.0
+AMRS,test results recorded,2026-03-01,uasin gishu,8389,52,26,26,0,0.62
+AMRS,test results recorded,2026-03-01,unknown,7172,0,0,0,0,0.0
+AMRS,test results recorded,2026-03-01,west pokot,45,0,0,0,0,0.0
+AMRS,test results recorded,2026-04-01,bungoma,439,0,0,0,0,0.0
+AMRS,test results recorded,2026-04-01,busia,1232,0,0,0,0,0.0
+AMRS,test results recorded,2026-04-01,elgeyo marakwet,48,0,0,0,0,0.0
+AMRS,test results recorded,2026-04-01,nandi,35,0,0,0,0,0.0
+AMRS,test results recorded,2026-04-01,trans nzoia,372,0,0,0,0,0.0
+AMRS,test results recorded,2026-04-01,uasin gishu,9964,140,16,124,0,1.41
+AMRS,test results recorded,2026-04-01,unknown,9816,0,0,0,0,0.0
+AMRS,test results recorded,2026-04-01,west pokot,47,0,0,0,0,0.0
+AMRS,test results recorded,2026-05-01,bungoma,489,0,0,0,0,0.0
+AMRS,test results recorded,2026-05-01,busia,1045,0,0,0,0,0.0
+AMRS,test results recorded,2026-05-01,elgeyo marakwet,65,0,0,0,0,0.0
+AMRS,test results recorded,2026-05-01,nandi,47,0,0,0,0,0.0
+AMRS,test results recorded,2026-05-01,trans nzoia,336,0,0,0,0,0.0
+AMRS,test results recorded,2026-05-01,uasin gishu,8028,84,20,64,0,1.05
+AMRS,test results recorded,2026-05-01,unknown,8213,0,0,0,0,0.0
+AMRS,test results recorded,2026-05-01,west pokot,60,0,0,0,0,0.0
+AMRS,test results recorded,2026-06-01,bungoma,675,0,0,0,0,0.0
+AMRS,test results recorded,2026-06-01,busia,935,0,0,0,0,0.0
+AMRS,test results recorded,2026-06-01,elgeyo marakwet,64,0,0,0,0,0.0
+AMRS,test results recorded,2026-06-01,nandi,61,0,0,0,0,0.0
+AMRS,test results recorded,2026-06-01,trans nzoia,477,0,0,0,0,0.0
+AMRS,test results recorded,2026-06-01,uasin gishu,8203,83,22,61,0,1.01
+AMRS,test results recorded,2026-06-01,unknown,6673,0,0,0,0,0.0
+AMRS,test results recorded,2026-06-01,west pokot,94,0,0,0,0,0.0
+AMRS,test results recorded,2026-07-01,bungoma,705,0,0,0,0,0.0
+AMRS,test results recorded,2026-07-01,busia,943,0,0,0,0,0.0
+AMRS,test results recorded,2026-07-01,elgeyo marakwet,59,0,0,0,0,0.0
+AMRS,test results recorded,2026-07-01,nandi,42,0,0,0,0,0.0
+AMRS,test results recorded,2026-07-01,trans nzoia,554,0,0,0,0,0.0
+AMRS,test results recorded,2026-07-01,uasin gishu,9067,46,9,37,0,0.51
+AMRS,test results recorded,2026-07-01,unknown,3341,0,0,0,0,0.0
+AMRS,test results recorded,2026-07-01,west pokot,86,0,0,0,0,0.0
+AMRS,test results recorded,2026-08-01,bungoma,536,0,0,0,0,0.0
+AMRS,test results recorded,2026-08-01,busia,756,0,0,0,0,0.0
+AMRS,test results recorded,2026-08-01,elgeyo marakwet,40,0,0,0,0,0.0
+AMRS,test results recorded,2026-08-01,nandi,30,0,0,0,0,0.0
+AMRS,test results recorded,2026-08-01,trans nzoia,348,0,0,0,0,0.0
+AMRS,test results recorded,2026-08-01,uasin gishu,4600,4,1,3,0,0.09
+AMRS,test results recorded,2026-08-01,unknown,1794,0,0,0,0,0.0
+AMRS,test results recorded,2026-08-01,west pokot,29,0,0,0,0,0.0
+AMRS,test results recorded,2026-09-01,bungoma,651,0,0,0,0,0.0
+AMRS,test results recorded,2026-09-01,busia,998,0,0,0,0,0.0
+AMRS,test results recorded,2026-09-01,elgeyo marakwet,34,0,0,0,0,0.0
+AMRS,test results recorded,2026-09-01,kisumu,1,0,0,0,0,0.0
+AMRS,test results recorded,2026-09-01,nandi,54,0,0,0,0,0.0
+AMRS,test results recorded,2026-09-01,trans nzoia,473,0,0,0,0,0.0
+AMRS,test results recorded,2026-09-01,uasin gishu,7443,25,4,21,0,0.34
+AMRS,test results recorded,2026-09-01,unknown,4998,0,0,0,0,0.0
+AMRS,test results recorded,2026-09-01,west pokot,42,0,0,0,0,0.0
+AMRS,test results recorded,2026-10-01,bungoma,637,0,0,0,0,0.0
+AMRS,test results recorded,2026-10-01,busia,990,0,0,0,0,0.0
+AMRS,test results recorded,2026-10-01,elgeyo marakwet,27,0,0,0,0,0.0
+AMRS,test results recorded,2026-10-01,nandi,94,0,0,0,0,0.0
+AMRS,test results recorded,2026-10-01,trans nzoia,422,0,0,0,0,0.0
+AMRS,test results recorded,2026-10-01,uasin gishu,9192,6,0,6,0,0.07
+AMRS,test results recorded,2026-10-01,unknown,4123,0,0,0,0,0.0
+AMRS,test results recorded,2026-10-01,west pokot,53,0,0,0,0,0.0
+AMRS,tests ordered,2025-11-01,bungoma,388,0,0,0,0,0.0
+AMRS,tests ordered,2025-11-01,busia,1063,0,0,0,0,0.0
+AMRS,tests ordered,2025-11-01,elgeyo marakwet,138,0,0,0,0,0.0
+AMRS,tests ordered,2025-11-01,nandi,430,0,0,0,0,0.0
+AMRS,tests ordered,2025-11-01,tharaka nithi,1,0,0,0,0,0.0
+AMRS,tests ordered,2025-11-01,trans nzoia,1146,0,0,0,0,0.0
+AMRS,tests ordered,2025-11-01,uasin gishu,3914,0,0,0,0,0.0
+AMRS,tests ordered,2025-11-01,unknown,89,0,0,0,0,0.0
+AMRS,tests ordered,2025-11-01,west pokot,187,0,0,0,0,0.0
+AMRS,tests ordered,2025-12-01,bungoma,135,0,0,0,0,0.0
+AMRS,tests ordered,2025-12-01,busia,549,0,0,0,0,0.0
+AMRS,tests ordered,2025-12-01,elgeyo marakwet,46,0,0,0,0,0.0
+AMRS,tests ordered,2025-12-01,nandi,140,0,0,0,0,0.0
+AMRS,tests ordered,2025-12-01,tharaka nithi,1,0,0,0,0,0.0
+AMRS,tests ordered,2025-12-01,trans nzoia,202,0,0,0,0,0.0
+AMRS,tests ordered,2025-12-01,uasin gishu,1895,0,0,0,0,0.0
+AMRS,tests ordered,2025-12-01,unknown,32,0,0,0,0,0.0
+AMRS,tests ordered,2025-12-01,west pokot,140,0,0,0,0,0.0
+AMRS,tests ordered,2026-01-01,bungoma,1026,0,0,0,0,0.0
+AMRS,tests ordered,2026-01-01,busia,3441,0,0,0,0,0.0
+AMRS,tests ordered,2026-01-01,elgeyo marakwet,162,0,0,0,0,0.0
+AMRS,tests ordered,2026-01-01,nandi,349,0,0,0,0,0.0
+AMRS,tests ordered,2026-01-01,tharaka nithi,1,0,0,0,0,0.0
+AMRS,tests ordered,2026-01-01,trans nzoia,712,0,0,0,0,0.0
+AMRS,tests ordered,2026-01-01,uasin gishu,3504,0,0,0,0,0.0
+AMRS,tests ordered,2026-01-01,unknown,100,0,0,0,0,0.0
+AMRS,tests ordered,2026-01-01,west pokot,193,0,0,0,0,0.0
+AMRS,tests ordered,2026-02-01,bungoma,897,0,0,0,0,0.0
+AMRS,tests ordered,2026-02-01,busia,2810,0,0,0,0,0.0
+AMRS,tests ordered,2026-02-01,elgeyo marakwet,249,0,0,0,0,0.0
+AMRS,tests ordered,2026-02-01,nandi,248,0,0,0,0,0.0
+AMRS,tests ordered,2026-02-01,trans nzoia,694,0,0,0,0,0.0
+AMRS,tests ordered,2026-02-01,uasin gishu,4045,48,12,36,0,1.19
+AMRS,tests ordered,2026-02-01,unknown,52,0,0,0,0,0.0
+AMRS,tests ordered,2026-02-01,west pokot,164,0,0,0,0,0.0
+AMRS,tests ordered,2026-03-01,bungoma,581,0,0,0,0,0.0
+AMRS,tests ordered,2026-03-01,busia,2099,0,0,0,0,0.0
+AMRS,tests ordered,2026-03-01,elgeyo marakwet,118,0,0,0,0,0.0
+AMRS,tests ordered,2026-03-01,nandi,275,0,0,0,0,0.0
+AMRS,tests ordered,2026-03-01,tharaka nithi,3,0,0,0,0,0.0
+AMRS,tests ordered,2026-03-01,trans nzoia,532,0,0,0,0,0.0
+AMRS,tests ordered,2026-03-01,uasin gishu,4553,131,65,66,0,2.88
+AMRS,tests ordered,2026-03-01,unknown,70,0,0,0,0,0.0
+AMRS,tests ordered,2026-03-01,west pokot,211,0,0,0,0,0.0
+AMRS,tests ordered,2026-04-01,bungoma,1080,0,0,0,0,0.0
+AMRS,tests ordered,2026-04-01,busia,2207,0,0,0,0,0.0
+AMRS,tests ordered,2026-04-01,elgeyo marakwet,340,0,0,0,0,0.0
+AMRS,tests ordered,2026-04-01,nandi,338,0,0,0,0,0.0
+AMRS,tests ordered,2026-04-01,tharaka nithi,1,0,0,0,0,0.0
+AMRS,tests ordered,2026-04-01,trans nzoia,925,0,0,0,0,0.0
+AMRS,tests ordered,2026-04-01,uasin gishu,6621,179,21,158,0,2.7
+AMRS,tests ordered,2026-04-01,unknown,64,0,0,0,0,0.0
+AMRS,tests ordered,2026-04-01,west pokot,155,0,0,0,0,0.0
+AMRS,tests ordered,2026-05-01,bungoma,864,0,0,0,0,0.0
+AMRS,tests ordered,2026-05-01,busia,2330,0,0,0,0,0.0
+AMRS,tests ordered,2026-05-01,elgeyo marakwet,283,0,0,0,0,0.0
+AMRS,tests ordered,2026-05-01,nandi,262,0,0,0,0,0.0
+AMRS,tests ordered,2026-05-01,trans nzoia,791,0,0,0,0,0.0
+AMRS,tests ordered,2026-05-01,uasin gishu,5604,120,31,89,0,2.14
+AMRS,tests ordered,2026-05-01,unknown,73,0,0,0,0,0.0
+AMRS,tests ordered,2026-05-01,west pokot,238,0,0,0,0,0.0
+AMRS,tests ordered,2026-06-01,bungoma,613,0,0,0,0,0.0
+AMRS,tests ordered,2026-06-01,busia,2013,0,0,0,0,0.0
+AMRS,tests ordered,2026-06-01,elgeyo marakwet,138,0,0,0,0,0.0
+AMRS,tests ordered,2026-06-01,nandi,154,0,0,0,0,0.0
+AMRS,tests ordered,2026-06-01,trans nzoia,518,0,0,0,0,0.0
+AMRS,tests ordered,2026-06-01,uasin gishu,4743,123,35,88,0,2.59
+AMRS,tests ordered,2026-06-01,unknown,72,0,0,0,0,0.0
+AMRS,tests ordered,2026-06-01,west pokot,209,0,0,0,0,0.0
+AMRS,tests ordered,2026-07-01,bungoma,246,0,0,0,0,0.0
+AMRS,tests ordered,2026-07-01,busia,1107,0,0,0,0,0.0
+AMRS,tests ordered,2026-07-01,elgeyo marakwet,12,0,0,0,0,0.0
+AMRS,tests ordered,2026-07-01,nandi,48,0,0,0,0,0.0
+AMRS,tests ordered,2026-07-01,tharaka nithi,9,0,0,0,0,0.0
+AMRS,tests ordered,2026-07-01,trans nzoia,210,0,0,0,0,0.0
+AMRS,tests ordered,2026-07-01,uasin gishu,2436,84,23,61,0,3.45
+AMRS,tests ordered,2026-07-01,unknown,48,0,0,0,0,0.0
+AMRS,tests ordered,2026-07-01,west pokot,149,0,0,0,0,0.0
+AMRS,tests ordered,2026-08-01,bungoma,68,0,0,0,0,0.0
+AMRS,tests ordered,2026-08-01,busia,423,0,0,0,0,0.0
+AMRS,tests ordered,2026-08-01,elgeyo marakwet,9,0,0,0,0,0.0
+AMRS,tests ordered,2026-08-01,nandi,53,0,0,0,0,0.0
+AMRS,tests ordered,2026-08-01,trans nzoia,141,0,0,0,0,0.0
+AMRS,tests ordered,2026-08-01,uasin gishu,1155,6,1,5,0,0.52
+AMRS,tests ordered,2026-08-01,unknown,29,0,0,0,0,0.0
+AMRS,tests ordered,2026-08-01,west pokot,187,0,0,0,0,0.0
+AMRS,tests ordered,2026-09-01,bungoma,314,0,0,0,0,0.0
+AMRS,tests ordered,2026-09-01,busia,498,0,0,0,0,0.0
+AMRS,tests ordered,2026-09-01,elgeyo marakwet,126,0,0,0,0,0.0
+AMRS,tests ordered,2026-09-01,nandi,64,0,0,0,0,0.0
+AMRS,tests ordered,2026-09-01,trans nzoia,199,0,0,0,0,0.0
+AMRS,tests ordered,2026-09-01,uasin gishu,2510,31,4,27,0,1.24
+AMRS,tests ordered,2026-09-01,unknown,62,0,0,0,0,0.0
+AMRS,tests ordered,2026-09-01,west pokot,89,0,0,0,0,0.0
+AMRS,tests ordered,2026-10-01,bungoma,177,0,0,0,0,0.0
+AMRS,tests ordered,2026-10-01,busia,535,0,0,0,0,0.0
+AMRS,tests ordered,2026-10-01,elgeyo marakwet,96,0,0,0,0,0.0
+AMRS,tests ordered,2026-10-01,nandi,96,0,0,0,0,0.0
+AMRS,tests ordered,2026-10-01,tharaka nithi,1,0,0,0,0,0.0
+AMRS,tests ordered,2026-10-01,trans nzoia,112,0,0,0,0,0.0
+AMRS,tests ordered,2026-10-01,uasin gishu,1871,6,0,6,0,0.32
+AMRS,tests ordered,2026-10-01,unknown,34,0,0,0,0,0.0
+AMRS,tests ordered,2026-10-01,west pokot,177,0,0,0,0,0.0
+KenyaEMR,malaria test results recorded,2025-11-01,kilifi,,28,4,24,0,
+KenyaEMR,malaria test results recorded,2025-11-01,kisumu,,7452,1502,5950,0,
+KenyaEMR,malaria test results recorded,2025-11-01,siaya,,801,11,790,0,
+KenyaEMR,malaria test results recorded,2025-12-01,kilifi,,20,6,14,0,
+KenyaEMR,malaria test results recorded,2025-12-01,kisumu,,7739,1714,6025,0,
+KenyaEMR,malaria test results recorded,2025-12-01,siaya,,798,19,779,0,
+KenyaEMR,malaria test results recorded,2026-01-01,kilifi,,121,50,71,0,
+KenyaEMR,malaria test results recorded,2026-01-01,kisumu,,8275,1830,6445,0,
+KenyaEMR,malaria test results recorded,2026-01-01,siaya,,1047,25,1022,0,
+KenyaEMR,malaria test results recorded,2026-02-01,kilifi,,206,59,147,0,
+KenyaEMR,malaria test results recorded,2026-02-01,kisumu,,8912,1566,7346,0,
+KenyaEMR,malaria test results recorded,2026-02-01,siaya,,794,160,634,0,
+KenyaEMR,malaria test results recorded,2026-03-01,kilifi,,175,102,71,2,
+KenyaEMR,malaria test results recorded,2026-03-01,kisumu,,9294,1563,7731,0,
+KenyaEMR,malaria test results recorded,2026-03-01,siaya,,1021,467,554,0,
+KenyaEMR,malaria test results recorded,2026-04-01,kilifi,,417,256,161,0,
+KenyaEMR,malaria test results recorded,2026-04-01,kisumu,,6448,1301,5147,0,
+KenyaEMR,malaria test results recorded,2026-04-01,migori,,1,1,0,0,
+KenyaEMR,malaria test results recorded,2026-04-01,siaya,,1275,196,1079,0,
+KenyaEMR,malaria test results recorded,2026-05-01,kajiado,,24,24,0,0,
+KenyaEMR,malaria test results recorded,2026-05-01,kilifi,,607,320,285,2,
+KenyaEMR,malaria test results recorded,2026-05-01,kisumu,,8429,1611,6816,2,
+KenyaEMR,malaria test results recorded,2026-05-01,migori,,14,13,1,0,
+KenyaEMR,malaria test results recorded,2026-05-01,siaya,,4957,1758,3199,0,
+KenyaEMR,malaria test results recorded,2026-06-01,kajiado,,7,7,0,0,
+KenyaEMR,malaria test results recorded,2026-06-01,kilifi,,2070,1201,867,2,
+KenyaEMR,malaria test results recorded,2026-06-01,kisumu,,8192,1805,6387,0,
+KenyaEMR,malaria test results recorded,2026-06-01,siaya,,8281,3461,4818,2,
+KenyaEMR,malaria test results recorded,2026-07-01,kajiado,,3,3,0,0,
+KenyaEMR,malaria test results recorded,2026-07-01,kilifi,,3398,868,2524,6,
+KenyaEMR,malaria test results recorded,2026-07-01,kisumu,,5147,882,4265,0,
+KenyaEMR,malaria test results recorded,2026-07-01,siaya,,4726,1176,3549,1,
+KenyaEMR,malaria test results recorded,2026-08-01,kilifi,,3804,933,2868,3,
+KenyaEMR,malaria test results recorded,2026-08-01,kisumu,,2655,486,2169,0,
+KenyaEMR,malaria test results recorded,2026-08-01,siaya,,2118,345,1773,0,
+KenyaEMR,malaria test results recorded,2026-09-01,kilifi,,8318,1271,7046,1,
+KenyaEMR,malaria test results recorded,2026-09-01,kisumu,,10845,1647,9189,9,
+KenyaEMR,malaria test results recorded,2026-09-01,siaya,,3796,391,3404,1,
+KenyaEMR,malaria test results recorded,2026-10-01,kilifi,,9425,1646,7778,1,
+KenyaEMR,malaria test results recorded,2026-10-01,kisumu,,15093,2483,12606,4,
+KenyaEMR,malaria test results recorded,2026-10-01,siaya,,8503,945,7554,4,
+KenyaEMR,tests ordered,2025-11-01,kilifi,3701,4,0,4,0,0.11
+KenyaEMR,tests ordered,2025-11-01,kisumu,38844,8588,1682,6906,0,22.11
+KenyaEMR,tests ordered,2025-11-01,migori,101,0,0,0,0,0.0
+KenyaEMR,tests ordered,2025-11-01,siaya,14086,379,6,373,0,2.69
+KenyaEMR,tests ordered,2025-12-01,kilifi,1239,15,11,4,0,1.21
+KenyaEMR,tests ordered,2025-12-01,kisumu,35038,9142,1796,7346,0,26.09
+KenyaEMR,tests ordered,2025-12-01,migori,70,0,0,0,0,0.0
+KenyaEMR,tests ordered,2025-12-01,siaya,11910,466,14,452,0,3.91
+KenyaEMR,tests ordered,2026-01-01,kilifi,4078,79,73,6,0,1.94
+KenyaEMR,tests ordered,2026-01-01,kisumu,40786,9716,1810,7906,0,23.82
+KenyaEMR,tests ordered,2026-01-01,migori,59,0,0,0,0,0.0
+KenyaEMR,tests ordered,2026-01-01,siaya,12069,518,33,485,0,4.29
+KenyaEMR,tests ordered,2026-02-01,kilifi,4694,63,61,2,0,1.34
+KenyaEMR,tests ordered,2026-02-01,kisumu,45192,11300,1771,9529,0,25.0
+KenyaEMR,tests ordered,2026-02-01,migori,63,0,0,0,0,0.0
+KenyaEMR,tests ordered,2026-02-01,siaya,9471,565,193,372,0,5.97
+KenyaEMR,tests ordered,2026-03-01,kilifi,3835,146,115,29,2,3.81
+KenyaEMR,tests ordered,2026-03-01,kisumu,50884,13499,1930,11567,2,26.53
+KenyaEMR,tests ordered,2026-03-01,migori,42,0,0,0,0,0.0
+KenyaEMR,tests ordered,2026-03-01,siaya,10400,935,552,383,0,8.99
+KenyaEMR,tests ordered,2026-04-01,kilifi,4937,373,267,106,0,7.56
+KenyaEMR,tests ordered,2026-04-01,kisumu,43771,9550,1425,8125,0,21.82
+KenyaEMR,tests ordered,2026-04-01,migori,54,1,1,0,0,1.85
+KenyaEMR,tests ordered,2026-04-01,siaya,15985,1265,242,1023,0,7.91
+KenyaEMR,tests ordered,2026-05-01,kajiado,24,24,24,0,0,100.0
+KenyaEMR,tests ordered,2026-05-01,kilifi,8111,703,337,364,2,8.67
+KenyaEMR,tests ordered,2026-05-01,kisumu,42339,11469,1763,9702,4,27.09
+KenyaEMR,tests ordered,2026-05-01,migori,85,16,15,1,0,18.82
+KenyaEMR,tests ordered,2026-05-01,siaya,23245,5522,2125,3394,3,23.76
+KenyaEMR,tests ordered,2026-06-01,kajiado,8,8,8,0,0,100.0
+KenyaEMR,tests ordered,2026-06-01,kilifi,19545,3567,1381,2180,6,18.25
+KenyaEMR,tests ordered,2026-06-01,kisumu,36755,10157,1802,8353,2,27.63
+KenyaEMR,tests ordered,2026-06-01,migori,72,0,0,0,0,0.0
+KenyaEMR,tests ordered,2026-06-01,siaya,32134,9111,4024,5077,10,28.35
+KenyaEMR,tests ordered,2026-07-01,kajiado,4,4,4,0,0,100.0
+KenyaEMR,tests ordered,2026-07-01,kilifi,28968,5940,1281,4655,4,20.51
+KenyaEMR,tests ordered,2026-07-01,kisumu,24835,7557,1296,6258,3,30.43
+KenyaEMR,tests ordered,2026-07-01,migori,44,0,0,0,0,0.0
+KenyaEMR,tests ordered,2026-07-01,siaya,22673,5739,1648,4085,6,25.31
+KenyaEMR,tests ordered,2026-07-01,unknown,4,3,3,0,0,75.0
+KenyaEMR,tests ordered,2026-08-01,kajiado,3,3,3,0,0,100.0
+KenyaEMR,tests ordered,2026-08-01,kilifi,30540,5942,1339,4599,4,19.46
+KenyaEMR,tests ordered,2026-08-01,kisumu,13770,3746,752,2989,5,27.2
+KenyaEMR,tests ordered,2026-08-01,migori,41,0,0,0,0,0.0
+KenyaEMR,tests ordered,2026-08-01,siaya,12299,2717,577,2140,0,22.09
+KenyaEMR,tests ordered,2026-09-01,kilifi,45885,8056,2073,5982,1,17.56
+KenyaEMR,tests ordered,2026-09-01,kisumu,34740,12140,2737,9382,21,34.95
+KenyaEMR,tests ordered,2026-09-01,migori,19,0,0,0,0,0.0
+KenyaEMR,tests ordered,2026-09-01,siaya,17158,5135,782,4352,1,29.93
+KenyaEMR,tests ordered,2026-10-01,kajiado,1,1,1,0,0,100.0
+KenyaEMR,tests ordered,2026-10-01,kilifi,19545,4056,1132,2921,3,20.75
+KenyaEMR,tests ordered,2026-10-01,kisumu,17441,6576,1620,4946,10,37.7
+KenyaEMR,tests ordered,2026-10-01,migori,3,0,0,0,0,0.0
+KenyaEMR,tests ordered,2026-10-01,siaya,8483,2884,362,2519,3,34.0
+Tiberbu,tests done,2025-11-01,embu,3,0,0,0,0,0.0
+Tiberbu,tests done,2025-11-01,garissa,27,1,0,1,0,3.7
+Tiberbu,tests done,2025-11-01,kakamega,1,0,0,0,0,0.0
+Tiberbu,tests done,2025-11-01,kericho,14,3,0,3,0,21.43
+Tiberbu,tests done,2025-11-01,kirinyaga,13,1,0,1,0,7.69
+Tiberbu,tests done,2025-11-01,makueni,28507,655,164,491,0,2.3
+Tiberbu,tests done,2025-11-01,migori,12,0,0,0,0,0.0
+Tiberbu,tests done,2025-11-01,mombasa,20259,3748,717,2750,281,18.5
+Tiberbu,tests done,2025-11-01,nairobi,16,0,0,0,0,0.0
+Tiberbu,tests done,2025-11-01,nakuru,34,4,0,4,0,11.76
+Tiberbu,tests done,2025-11-01,nandi,2,0,0,0,0,0.0
+Tiberbu,tests done,2025-11-01,nyandarua,6,0,0,0,0,0.0
+Tiberbu,tests done,2025-11-01,samburu,2,1,0,1,0,50.0
+Tiberbu,tests done,2025-11-01,taita taveta,6295,839,146,693,0,13.33
+Tiberbu,tests done,2025-11-01,tharaka nithi,1,0,0,0,0,0.0
+Tiberbu,tests done,2025-11-01,wajir,12,7,5,2,0,58.33
+Tiberbu,tests done,2025-12-01,baringo,13,1,0,1,0,7.69
+Tiberbu,tests done,2025-12-01,bomet,1,0,0,0,0,0.0
+Tiberbu,tests done,2025-12-01,bungoma,3,2,0,2,0,66.67
+Tiberbu,tests done,2025-12-01,embu,1,0,0,0,0,0.0
+Tiberbu,tests done,2025-12-01,garissa,8,0,0,0,0,0.0
+Tiberbu,tests done,2025-12-01,kericho,18,2,0,2,0,11.11
+Tiberbu,tests done,2025-12-01,kirinyaga,6,0,0,0,0,0.0
+Tiberbu,tests done,2025-12-01,makueni,24653,682,156,526,0,2.77
+Tiberbu,tests done,2025-12-01,migori,9,4,2,2,0,44.44
+Tiberbu,tests done,2025-12-01,mombasa,14533,2215,340,1709,166,15.24
+Tiberbu,tests done,2025-12-01,nairobi,17,0,0,0,0,0.0
+Tiberbu,tests done,2025-12-01,nakuru,1019,33,6,27,0,3.24
+Tiberbu,tests done,2025-12-01,nandi,6,2,2,0,0,33.33
+Tiberbu,tests done,2025-12-01,samburu,2,1,0,1,0,50.0
+Tiberbu,tests done,2025-12-01,taita taveta,4603,611,148,463,0,13.27
+Tiberbu,tests done,2025-12-01,vihiga,299,130,16,114,0,43.48
+Tiberbu,tests done,2025-12-01,wajir,228,50,34,16,0,21.93
+Tiberbu,tests done,2026-01-01,baringo,49,5,0,5,0,10.2
+Tiberbu,tests done,2026-01-01,bomet,9,0,0,0,0,0.0
+Tiberbu,tests done,2026-01-01,bungoma,29,14,2,12,0,48.28
+Tiberbu,tests done,2026-01-01,elgeyo marakwet,1,0,0,0,0,0.0
+Tiberbu,tests done,2026-01-01,embu,9,0,0,0,0,0.0
+Tiberbu,tests done,2026-01-01,garissa,31,3,1,2,0,9.68
+Tiberbu,tests done,2026-01-01,kajiado,2,0,0,0,0,0.0
+Tiberbu,tests done,2026-01-01,kakamega,13,3,1,2,0,23.08
+Tiberbu,tests done,2026-01-01,kericho,30,4,0,4,0,13.33
+Tiberbu,tests done,2026-01-01,kirinyaga,22,0,0,0,0,0.0
+Tiberbu,tests done,2026-01-01,makueni,28297,734,230,504,0,2.59
+Tiberbu,tests done,2026-01-01,migori,23,4,1,3,0,17.39
+Tiberbu,tests done,2026-01-01,mombasa,14080,1691,405,1095,191,12.01
+Tiberbu,tests done,2026-01-01,nairobi,32,0,0,0,0,0.0
+Tiberbu,tests done,2026-01-01,nakuru,5189,380,190,190,0,7.32
+Tiberbu,tests done,2026-01-01,nandi,5,3,2,1,0,60.0
+Tiberbu,tests done,2026-01-01,nyandarua,2,0,0,0,0,0.0
+Tiberbu,tests done,2026-01-01,nyeri,4,0,0,0,0,0.0
+Tiberbu,tests done,2026-01-01,samburu,6,2,0,2,0,33.33
+Tiberbu,tests done,2026-01-01,taita taveta,3959,491,177,314,0,12.4
+Tiberbu,tests done,2026-01-01,vihiga,9202,4472,2476,1996,0,48.6
+Tiberbu,tests done,2026-01-01,wajir,151,32,24,8,0,21.19
+Tiberbu,tests done,2026-02-01,baringo,59,6,2,4,0,10.17
+Tiberbu,tests done,2026-02-01,bomet,15,0,0,0,0,0.0
+Tiberbu,tests done,2026-02-01,bungoma,15,6,1,5,0,40.0
+Tiberbu,tests done,2026-02-01,busia,5,4,2,2,0,80.0
+Tiberbu,tests done,2026-02-01,elgeyo marakwet,1,0,0,0,0,0.0
+Tiberbu,tests done,2026-02-01,embu,4,0,0,0,0,0.0
+Tiberbu,tests done,2026-02-01,garissa,17,1,0,1,0,5.88
+Tiberbu,tests done,2026-02-01,kajiado,44,4,0,4,0,9.09
+Tiberbu,tests done,2026-02-01,kakamega,27,9,0,9,0,33.33
+Tiberbu,tests done,2026-02-01,kericho,26,3,0,3,0,11.54
+Tiberbu,tests done,2026-02-01,kirinyaga,15,1,0,1,0,6.67
+Tiberbu,tests done,2026-02-01,makueni,26071,823,203,620,0,3.16
+Tiberbu,tests done,2026-02-01,meru,1,0,0,0,0,0.0
+Tiberbu,tests done,2026-02-01,migori,11,1,0,1,0,9.09
+Tiberbu,tests done,2026-02-01,mombasa,22378,3951,982,2407,562,17.66
+Tiberbu,tests done,2026-02-01,nairobi,11,0,0,0,0,0.0
+Tiberbu,tests done,2026-02-01,nakuru,11307,581,250,331,0,5.14
+Tiberbu,tests done,2026-02-01,nandi,7,1,0,1,0,14.29
+Tiberbu,tests done,2026-02-01,nyandarua,7,0,0,0,0,0.0
+Tiberbu,tests done,2026-02-01,nyeri,18,0,0,0,0,0.0
+Tiberbu,tests done,2026-02-01,samburu,1,0,0,0,0,0.0
+Tiberbu,tests done,2026-02-01,taita taveta,6195,1079,184,895,0,17.42
+Tiberbu,tests done,2026-02-01,tharaka nithi,1,0,0,0,0,0.0
+Tiberbu,tests done,2026-02-01,uasin gishu,28,3,1,2,0,10.71
+Tiberbu,tests done,2026-02-01,vihiga,15436,8933,6657,2276,0,57.87
+Tiberbu,tests done,2026-02-01,wajir,88,17,6,11,0,19.32
+Tiberbu,tests done,2026-03-01,baringo,30,5,1,4,0,16.67
+Tiberbu,tests done,2026-03-01,bomet,5,0,0,0,0,0.0
+Tiberbu,tests done,2026-03-01,bungoma,19,9,0,9,0,47.37
+Tiberbu,tests done,2026-03-01,busia,2,2,0,2,0,100.0
+Tiberbu,tests done,2026-03-01,elgeyo marakwet,1,0,0,0,0,0.0
+Tiberbu,tests done,2026-03-01,embu,6,1,0,1,0,16.67
+Tiberbu,tests done,2026-03-01,garissa,17,3,1,2,0,17.65
+Tiberbu,tests done,2026-03-01,kajiado,9,0,0,0,0,0.0
+Tiberbu,tests done,2026-03-01,kakamega,24,12,0,12,0,50.0
+Tiberbu,tests done,2026-03-01,kericho,37,4,0,4,0,10.81
+Tiberbu,tests done,2026-03-01,kirinyaga,12,0,0,0,0,0.0
+Tiberbu,tests done,2026-03-01,lamu,1,0,0,0,0,0.0
+Tiberbu,tests done,2026-03-01,makueni,21999,742,176,566,0,3.37
+Tiberbu,tests done,2026-03-01,meru,5,0,0,0,0,0.0
+Tiberbu,tests done,2026-03-01,migori,13,3,1,2,0,23.08
+Tiberbu,tests done,2026-03-01,mombasa,16122,3185,705,2202,278,19.76
+Tiberbu,tests done,2026-03-01,nairobi,32,0,0,0,0,0.0
+Tiberbu,tests done,2026-03-01,nakuru,7318,426,168,258,0,5.82
+Tiberbu,tests done,2026-03-01,nandi,4,2,0,2,0,50.0
+Tiberbu,tests done,2026-03-01,nyandarua,2,0,0,0,0,0.0
+Tiberbu,tests done,2026-03-01,nyeri,27,1,0,1,0,3.7
+Tiberbu,tests done,2026-03-01,samburu,3,0,0,0,0,0.0
+Tiberbu,tests done,2026-03-01,taita taveta,5590,1281,446,835,0,22.92
+Tiberbu,tests done,2026-03-01,tharaka nithi,2,0,0,0,0,0.0
+Tiberbu,tests done,2026-03-01,turkana,1,0,0,0,0,0.0
+Tiberbu,tests done,2026-03-01,uasin gishu,9,2,1,1,0,22.22
+Tiberbu,tests done,2026-03-01,vihiga,17534,10826,7370,3456,0,61.74
+Tiberbu,tests done,2026-03-01,wajir,283,36,11,25,0,12.72
+Tiberbu,tests done,2026-04-01,baringo,36,4,0,4,0,11.11
+Tiberbu,tests done,2026-04-01,bomet,5,0,0,0,0,0.0
+Tiberbu,tests done,2026-04-01,bungoma,23,7,0,7,0,30.43
+Tiberbu,tests done,2026-04-01,busia,3,0,0,0,0,0.0
+Tiberbu,tests done,2026-04-01,elgeyo marakwet,1,0,0,0,0,0.0
+Tiberbu,tests done,2026-04-01,embu,2,0,0,0,0,0.0
+Tiberbu,tests done,2026-04-01,garissa,23,1,0,1,0,4.35
+Tiberbu,tests done,2026-04-01,kajiado,14,1,0,1,0,7.14
+Tiberbu,tests done,2026-04-01,kakamega,7,2,0,2,0,28.57
+Tiberbu,tests done,2026-04-01,kericho,32,6,0,6,0,18.75
+Tiberbu,tests done,2026-04-01,kirinyaga,18,0,0,0,0,0.0
+Tiberbu,tests done,2026-04-01,makueni,19101,693,183,510,0,3.63
+Tiberbu,tests done,2026-04-01,meru,8,1,0,1,0,12.5
+Tiberbu,tests done,2026-04-01,migori,24,4,0,4,0,16.67
+Tiberbu,tests done,2026-04-01,mombasa,18937,4045,554,3084,407,21.36
+Tiberbu,tests done,2026-04-01,nairobi,37,1,0,1,0,2.7
+Tiberbu,tests done,2026-04-01,nakuru,5713,340,134,206,0,5.95
+Tiberbu,tests done,2026-04-01,nandi,11,2,1,1,0,18.18
+Tiberbu,tests done,2026-04-01,nyandarua,2,0,0,0,0,0.0
+Tiberbu,tests done,2026-04-01,nyeri,35,0,0,0,0,0.0
+Tiberbu,tests done,2026-04-01,taita taveta,5488,1000,455,545,0,18.22
+Tiberbu,tests done,2026-04-01,tharaka nithi,8,0,0,0,0,0.0
+Tiberbu,tests done,2026-04-01,uasin gishu,6,0,0,0,0,0.0
+Tiberbu,tests done,2026-04-01,vihiga,18469,10534,6932,3602,0,57.04
+Tiberbu,tests done,2026-04-01,wajir,69,11,5,6,0,15.94
+Tiberbu,tests done,2026-05-01,baringo,48,6,1,5,0,12.5
+Tiberbu,tests done,2026-05-01,bomet,13,0,0,0,0,0.0
+Tiberbu,tests done,2026-05-01,bungoma,33,10,1,9,0,30.3
+Tiberbu,tests done,2026-05-01,busia,1,1,1,0,0,100.0
+Tiberbu,tests done,2026-05-01,elgeyo marakwet,1,0,0,0,0,0.0
+Tiberbu,tests done,2026-05-01,embu,3,0,0,0,0,0.0
+Tiberbu,tests done,2026-05-01,garissa,14,3,1,2,0,21.43
+Tiberbu,tests done,2026-05-01,kajiado,39,2,0,2,0,5.13
+Tiberbu,tests done,2026-05-01,kakamega,9,5,1,4,0,55.56
+Tiberbu,tests done,2026-05-01,kericho,38,4,0,4,0,10.53
+Tiberbu,tests done,2026-05-01,kirinyaga,7,1,0,1,0,14.29
+Tiberbu,tests done,2026-05-01,kisii,6,0,0,0,0,0.0
+Tiberbu,tests done,2026-05-01,makueni,20838,755,300,455,0,3.62
+Tiberbu,tests done,2026-05-01,meru,16,0,0,0,0,0.0
+Tiberbu,tests done,2026-05-01,migori,27,13,1,12,0,48.15
+Tiberbu,tests done,2026-05-01,mombasa,21458,5580,746,4455,379,26.0
+Tiberbu,tests done,2026-05-01,nairobi,29,0,0,0,0,0.0
+Tiberbu,tests done,2026-05-01,nakuru,5241,316,112,204,0,6.03
+Tiberbu,tests done,2026-05-01,nandi,3,0,0,0,0,0.0
+Tiberbu,tests done,2026-05-01,nyamira,3,1,1,0,0,33.33
+Tiberbu,tests done,2026-05-01,nyandarua,9,0,0,0,0,0.0
+Tiberbu,tests done,2026-05-01,nyeri,26,0,0,0,0,0.0
+Tiberbu,tests done,2026-05-01,samburu,3,2,0,2,0,66.67
+Tiberbu,tests done,2026-05-01,taita taveta,5978,1084,359,725,0,18.13
+Tiberbu,tests done,2026-05-01,tana river,3,2,0,2,0,66.67
+Tiberbu,tests done,2026-05-01,tharaka nithi,2,0,0,0,0,0.0
+Tiberbu,tests done,2026-05-01,trans nzoia,2,0,0,0,0,0.0
+Tiberbu,tests done,2026-05-01,turkana,1,1,0,1,0,100.0
+Tiberbu,tests done,2026-05-01,uasin gishu,16,1,0,1,0,6.25
+Tiberbu,tests done,2026-05-01,vihiga,22563,13002,8340,4662,0,57.63
+Tiberbu,tests done,2026-05-01,wajir,49,8,4,4,0,16.33
+Tiberbu,tests done,2026-05-01,west pokot,14,0,0,0,0,0.0
+Tiberbu,tests done,2026-06-01,baringo,50,9,0,9,0,18.0
+Tiberbu,tests done,2026-06-01,bomet,12,1,0,1,0,8.33
+Tiberbu,tests done,2026-06-01,bungoma,28,5,1,4,0,17.86
+Tiberbu,tests done,2026-06-01,busia,5,2,0,2,0,40.0
+Tiberbu,tests done,2026-06-01,elgeyo marakwet,1,0,0,0,0,0.0
+Tiberbu,tests done,2026-06-01,embu,13,0,0,0,0,0.0
+Tiberbu,tests done,2026-06-01,garissa,18,2,0,2,0,11.11
+Tiberbu,tests done,2026-06-01,kajiado,124,3,0,3,0,2.42
+Tiberbu,tests done,2026-06-01,kakamega,5,3,0,3,0,60.0
+Tiberbu,tests done,2026-06-01,kericho,73,11,1,10,0,15.07
+Tiberbu,tests done,2026-06-01,kirinyaga,15,2,0,2,0,13.33
+Tiberbu,tests done,2026-06-01,kisii,3,0,0,0,0,0.0
+Tiberbu,tests done,2026-06-01,kwale,5,0,0,0,0,0.0
+Tiberbu,tests done,2026-06-01,machakos,5,0,0,0,0,0.0
+Tiberbu,tests done,2026-06-01,makueni,12499,322,101,221,0,2.58
+Tiberbu,tests done,2026-06-01,meru,24,2,0,2,0,8.33
+Tiberbu,tests done,2026-06-01,migori,35,7,5,2,0,20.0
+Tiberbu,tests done,2026-06-01,mombasa,17768,4202,426,3552,224,23.65
+Tiberbu,tests done,2026-06-01,nairobi,39,0,0,0,0,0.0
+Tiberbu,tests done,2026-06-01,nakuru,4116,239,85,154,0,5.81
+Tiberbu,tests done,2026-06-01,nandi,12,2,1,1,0,16.67
+Tiberbu,tests done,2026-06-01,narok,4,0,0,0,0,0.0
+Tiberbu,tests done,2026-06-01,nyamira,25,6,0,6,0,24.0
+Tiberbu,tests done,2026-06-01,nyeri,65,0,0,0,0,0.0
+Tiberbu,tests done,2026-06-01,samburu,3,1,1,0,0,33.33
+Tiberbu,tests done,2026-06-01,taita taveta,5167,828,225,603,0,16.02
+Tiberbu,tests done,2026-06-01,tana river,36,3,0,3,0,8.33
+Tiberbu,tests done,2026-06-01,trans nzoia,1,0,0,0,0,0.0
+Tiberbu,tests done,2026-06-01,uasin gishu,18,3,0,3,0,16.67
+Tiberbu,tests done,2026-06-01,vihiga,16304,9491,6390,3101,0,58.21
+Tiberbu,tests done,2026-06-01,wajir,76,11,3,8,0,14.47
+Tiberbu,tests done,2026-06-01,west pokot,11,2,0,2,0,18.18
+Tiberbu,tests done,2026-07-01,baringo,614,129,53,76,0,21.01
+Tiberbu,tests done,2026-07-01,bomet,1324,76,14,62,0,5.74
+Tiberbu,tests done,2026-07-01,bungoma,775,409,192,217,0,52.77
+Tiberbu,tests done,2026-07-01,busia,114,66,62,4,0,57.89
+Tiberbu,tests done,2026-07-01,elgeyo marakwet,246,42,4,38,0,17.07
+Tiberbu,tests done,2026-07-01,embu,5,2,2,0,0,40.0
+Tiberbu,tests done,2026-07-01,garissa,1262,120,24,96,0,9.51
+Tiberbu,tests done,2026-07-01,isiolo,83,9,7,2,0,10.84
+Tiberbu,tests done,2026-07-01,kajiado,716,24,15,9,0,3.35
+Tiberbu,tests done,2026-07-01,kakamega,3131,1435,761,674,0,45.83
+Tiberbu,tests done,2026-07-01,kericho,257,48,12,36,0,18.68
+Tiberbu,tests done,2026-07-01,kiambu,3019,49,9,40,0,1.62
+Tiberbu,tests done,2026-07-01,kirinyaga,1186,58,4,54,0,4.89
+Tiberbu,tests done,2026-07-01,kisii,1277,324,87,237,0,25.37
+Tiberbu,tests done,2026-07-01,kitui,1022,11,3,8,0,1.08
+Tiberbu,tests done,2026-07-01,kwale,191,16,3,13,0,8.38
+Tiberbu,tests done,2026-07-01,laikipia,61,1,1,0,0,1.64
+Tiberbu,tests done,2026-07-01,lamu,152,17,14,3,0,11.18
+Tiberbu,tests done,2026-07-01,machakos,651,7,3,4,0,1.08
+Tiberbu,tests done,2026-07-01,makueni,30706,486,73,413,0,1.58
+Tiberbu,tests done,2026-07-01,mandera,311,34,9,25,0,10.93
+Tiberbu,tests done,2026-07-01,marsabit,422,31,5,26,0,7.35
+Tiberbu,tests done,2026-07-01,meru,1816,103,60,43,0,5.67
+Tiberbu,tests done,2026-07-01,migori,1566,710,292,418,0,45.34
+Tiberbu,tests done,2026-07-01,mombasa,15564,2976,284,2458,234,19.12
+Tiberbu,tests done,2026-07-01,nairobi,3631,150,48,102,0,4.13
+Tiberbu,tests done,2026-07-01,nakuru,11920,458,70,388,0,3.84
+Tiberbu,tests done,2026-07-01,nandi,489,89,7,82,0,18.2
+Tiberbu,tests done,2026-07-01,narok,408,92,13,79,0,22.55
+Tiberbu,tests done,2026-07-01,nyamira,227,70,40,30,0,30.84
+Tiberbu,tests done,2026-07-01,nyandarua,146,4,0,4,0,2.74
+Tiberbu,tests done,2026-07-01,nyeri,3950,22,6,16,0,0.56
+Tiberbu,tests done,2026-07-01,samburu,248,60,2,58,0,24.19
+Tiberbu,tests done,2026-07-01,taita taveta,5087,594,92,502,0,11.68
+Tiberbu,tests done,2026-07-01,tana river,238,43,20,23,0,18.07
+Tiberbu,tests done,2026-07-01,tharaka nithi,92,11,2,9,0,11.96
+Tiberbu,tests done,2026-07-01,trans nzoia,272,51,11,40,0,18.75
+Tiberbu,tests done,2026-07-01,turkana,548,397,221,176,0,72.45
+Tiberbu,tests done,2026-07-01,uasin gishu,450,49,5,44,0,10.89
+Tiberbu,tests done,2026-07-01,vihiga,18434,9293,6418,2875,0,50.41
+Tiberbu,tests done,2026-07-01,wajir,1788,150,13,137,0,8.39
+Tiberbu,tests done,2026-07-01,west pokot,212,29,17,12,0,13.68
+Tiberbu,tests done,2026-08-01,baringo,5827,949,281,668,0,16.29
+Tiberbu,tests done,2026-08-01,bomet,21229,1621,336,1285,0,7.64
+Tiberbu,tests done,2026-08-01,bungoma,4681,2282,911,1371,0,48.75
+Tiberbu,tests done,2026-08-01,busia,545,221,154,67,0,40.55
+Tiberbu,tests done,2026-08-01,elgeyo marakwet,3034,548,89,459,0,18.06
+Tiberbu,tests done,2026-08-01,embu,1823,75,11,64,0,4.11
+Tiberbu,tests done,2026-08-01,garissa,13352,1067,228,839,0,7.99
+Tiberbu,tests done,2026-08-01,isiolo,559,38,14,24,0,6.8
+Tiberbu,tests done,2026-08-01,kajiado,9858,167,68,99,0,1.69
+Tiberbu,tests done,2026-08-01,kakamega,20873,8809,3916,4893,0,42.2
+Tiberbu,tests done,2026-08-01,kericho,3691,527,50,477,0,14.28
+Tiberbu,tests done,2026-08-01,kiambu,35671,464,111,353,0,1.3
+Tiberbu,tests done,2026-08-01,kirinyaga,16834,739,61,678,0,4.39
+Tiberbu,tests done,2026-08-01,kisii,12936,3229,728,2501,0,24.96
+Tiberbu,tests done,2026-08-01,kitui,11433,92,16,76,0,0.8
+Tiberbu,tests done,2026-08-01,kwale,195,12,7,5,0,6.15
+Tiberbu,tests done,2026-08-01,laikipia,848,22,12,10,0,2.59
+Tiberbu,tests done,2026-08-01,lamu,1397,69,60,9,0,4.94
+Tiberbu,tests done,2026-08-01,machakos,8876,141,51,90,0,1.59
+Tiberbu,tests done,2026-08-01,makueni,26361,349,42,307,0,1.32
+Tiberbu,tests done,2026-08-01,mandera,6411,721,161,560,0,11.25
+Tiberbu,tests done,2026-08-01,marsabit,5228,387,47,340,0,7.4
+Tiberbu,tests done,2026-08-01,meru,18332,941,523,418,0,5.13
+Tiberbu,tests done,2026-08-01,migori,10534,4531,1953,2578,0,43.01
+Tiberbu,tests done,2026-08-01,mombasa,7579,1082,108,897,77,14.28
+Tiberbu,tests done,2026-08-01,nairobi,38058,1599,555,1044,0,4.2
+Tiberbu,tests done,2026-08-01,nakuru,15758,544,94,450,0,3.45
+Tiberbu,tests done,2026-08-01,nandi,16977,2520,455,2065,0,14.84
+Tiberbu,tests done,2026-08-01,narok,2186,595,48,547,0,27.22
+Tiberbu,tests done,2026-08-01,nyamira,5705,1272,391,881,0,22.3
+Tiberbu,tests done,2026-08-01,nyandarua,2391,21,8,13,0,0.88
+Tiberbu,tests done,2026-08-01,nyeri,43360,222,56,166,0,0.51
+Tiberbu,tests done,2026-08-01,samburu,3940,570,32,538,0,14.47
+Tiberbu,tests done,2026-08-01,taita taveta,6332,481,61,420,0,7.6
+Tiberbu,tests done,2026-08-01,tana river,82,9,6,3,0,10.98
+Tiberbu,tests done,2026-08-01,tharaka nithi,9078,646,53,593,0,7.12
+Tiberbu,tests done,2026-08-01,trans nzoia,1325,224,41,183,0,16.91
+Tiberbu,tests done,2026-08-01,turkana,8887,4567,1629,2938,0,51.39
+Tiberbu,tests done,2026-08-01,uasin gishu,5995,772,87,685,0,12.88
+Tiberbu,tests done,2026-08-01,vihiga,7629,3305,1913,1392,0,43.32
+Tiberbu,tests done,2026-08-01,wajir,2453,244,104,140,0,9.95
+Tiberbu,tests done,2026-08-01,west pokot,938,181,31,150,0,19.3
+Tiberbu,tests done,2026-09-01,baringo,13304,1855,441,1414,0,13.94
+Tiberbu,tests done,2026-09-01,bomet,31345,2775,505,2270,0,8.85
+Tiberbu,tests done,2026-09-01,bungoma,42213,17419,3891,13528,0,41.26
+Tiberbu,tests done,2026-09-01,busia,8896,3872,2022,1850,0,43.53
+Tiberbu,tests done,2026-09-01,elgeyo marakwet,9023,1107,137,970,0,12.27
+Tiberbu,tests done,2026-09-01,embu,17838,660,47,613,0,3.7
+Tiberbu,tests done,2026-09-01,garissa,15417,1202,312,890,0,7.8
+Tiberbu,tests done,2026-09-01,isiolo,526,47,33,14,0,8.94
+Tiberbu,tests done,2026-09-01,kajiado,24941,455,239,216,0,1.82
+Tiberbu,tests done,2026-09-01,kakamega,46257,19851,10243,9608,0,42.91
+Tiberbu,tests done,2026-09-01,kericho,33865,4750,841,3909,0,14.03
+Tiberbu,tests done,2026-09-01,kiambu,48083,664,110,554,0,1.38
+Tiberbu,tests done,2026-09-01,kirinyaga,20207,786,56,730,0,3.89
+Tiberbu,tests done,2026-09-01,kisii,21740,5565,1288,4277,0,25.6
+Tiberbu,tests done,2026-09-01,kitui,19483,266,151,115,0,1.37
+Tiberbu,tests done,2026-09-01,kwale,16618,3289,1132,2157,0,19.79
+Tiberbu,tests done,2026-09-01,laikipia,3420,96,37,59,0,2.81
+Tiberbu,tests done,2026-09-01,lamu,1902,96,68,28,0,5.05
+Tiberbu,tests done,2026-09-01,machakos,14698,228,70,158,0,1.55
+Tiberbu,tests done,2026-09-01,makueni,42208,513,81,432,0,1.22
+Tiberbu,tests done,2026-09-01,mandera,7551,818,97,721,0,10.83
+Tiberbu,tests done,2026-09-01,marsabit,6293,413,66,347,0,6.56
+Tiberbu,tests done,2026-09-01,meru,28127,1822,1172,650,0,6.48
+Tiberbu,tests done,2026-09-01,migori,21700,9160,5615,3545,0,42.21
+Tiberbu,tests done,2026-09-01,mombasa,20714,4192,402,3420,370,20.24
+Tiberbu,tests done,2026-09-01,nairobi,54916,2271,608,1663,0,4.14
+Tiberbu,tests done,2026-09-01,nakuru,16967,607,127,480,0,3.58
+Tiberbu,tests done,2026-09-01,nandi,40990,6986,1505,5481,0,17.04
+Tiberbu,tests done,2026-09-01,narok,4186,768,149,619,0,18.35
+Tiberbu,tests done,2026-09-01,nyamira,10696,2520,957,1563,0,23.56
+Tiberbu,tests done,2026-09-01,nyandarua,9627,68,14,54,0,0.71
+Tiberbu,tests done,2026-09-01,nyeri,41816,247,44,203,0,0.59
+Tiberbu,tests done,2026-09-01,samburu,5576,707,65,642,0,12.68
+Tiberbu,tests done,2026-09-01,taita taveta,15361,1620,184,1436,0,10.55
+Tiberbu,tests done,2026-09-01,tana river,7080,1116,159,957,0,15.76
+Tiberbu,tests done,2026-09-01,tharaka nithi,14420,1020,85,935,0,7.07
+Tiberbu,tests done,2026-09-01,trans nzoia,5010,720,165,555,0,14.37
+Tiberbu,tests done,2026-09-01,turkana,12307,5191,1733,3458,0,42.18
+Tiberbu,tests done,2026-09-01,uasin gishu,23432,2690,523,2167,0,11.48
+Tiberbu,tests done,2026-09-01,vihiga,17054,8305,5343,2962,0,48.7
+Tiberbu,tests done,2026-09-01,wajir,2896,166,33,133,0,5.73
+Tiberbu,tests done,2026-09-01,west pokot,7079,1689,92,1597,0,23.86
+Tiberbu,tests done,2026-10-01,baringo,21790,3308,492,2816,0,15.18
+Tiberbu,tests done,2026-10-01,bomet,32501,2556,482,2074,0,7.86
+Tiberbu,tests done,2026-10-01,bungoma,68682,27310,5478,21832,0,39.76
+Tiberbu,tests done,2026-10-01,busia,26318,11967,4857,7110,0,45.47
+Tiberbu,tests done,2026-10-01,elgeyo marakwet,12371,1573,169,1404,0,12.72
+Tiberbu,tests done,2026-10-01,embu,18319,709,69,640,0,3.87
+Tiberbu,tests done,2026-10-01,garissa,19272,1418,362,1056,0,7.36
+Tiberbu,tests done,2026-10-01,isiolo,1250,92,33,59,0,7.36
+Tiberbu,tests done,2026-10-01,kajiado,32926,719,353,366,0,2.18
+Tiberbu,tests done,2026-10-01,kakamega,60864,26076,12638,13438,0,42.84
+Tiberbu,tests done,2026-10-01,kericho,42140,5923,1219,4704,0,14.06
+Tiberbu,tests done,2026-10-01,kiambu,55679,887,216,671,0,1.59
+Tiberbu,tests done,2026-10-01,kirinyaga,19500,1099,66,1033,0,5.64
+Tiberbu,tests done,2026-10-01,kisii,25649,6758,1584,5174,0,26.35
+Tiberbu,tests done,2026-10-01,kitui,30615,882,439,443,0,2.88
+Tiberbu,tests done,2026-10-01,kwale,38797,8574,2154,6420,0,22.1
+Tiberbu,tests done,2026-10-01,laikipia,6490,253,81,172,0,3.9
+Tiberbu,tests done,2026-10-01,lamu,3007,254,196,58,0,8.45
+Tiberbu,tests done,2026-10-01,machakos,19425,345,81,264,0,1.78
+Tiberbu,tests done,2026-10-01,makueni,58601,788,181,607,0,1.34
+Tiberbu,tests done,2026-10-01,mandera,8898,1018,112,906,0,11.44
+Tiberbu,tests done,2026-10-01,marsabit,5504,448,50,398,0,8.14
+Tiberbu,tests done,2026-10-01,meru,47737,3909,2574,1335,0,8.19
+Tiberbu,tests done,2026-10-01,migori,45290,16992,9995,6997,0,37.52
+Tiberbu,tests done,2026-10-01,mombasa,45112,8304,1222,6200,882,18.41
+Tiberbu,tests done,2026-10-01,nairobi,84373,2902,822,2080,0,3.44
+Tiberbu,tests done,2026-10-01,nakuru,22227,899,239,660,0,4.04
+Tiberbu,tests done,2026-10-01,nandi,46795,8813,1844,6969,0,18.83
+Tiberbu,tests done,2026-10-01,narok,12275,1886,287,1599,0,15.36
+Tiberbu,tests done,2026-10-01,nyamira,11343,2864,1245,1619,0,25.25
+Tiberbu,tests done,2026-10-01,nyandarua,16754,149,17,132,0,0.89
+Tiberbu,tests done,2026-10-01,nyeri,45422,302,63,239,0,0.66
+Tiberbu,tests done,2026-10-01,samburu,6042,827,57,770,0,13.69
+Tiberbu,tests done,2026-10-01,taita taveta,18065,2030,174,1856,0,11.24
+Tiberbu,tests done,2026-10-01,tana river,12508,2411,277,2134,0,19.28
+Tiberbu,tests done,2026-10-01,tharaka nithi,14822,1236,117,1119,0,8.34
+Tiberbu,tests done,2026-10-01,trans nzoia,10628,2101,477,1624,0,19.77
+Tiberbu,tests done,2026-10-01,turkana,17840,7485,2184,5301,0,41.96
+Tiberbu,tests done,2026-10-01,uasin gishu,33790,4395,964,3431,0,13.01
+Tiberbu,tests done,2026-10-01,vihiga,21445,10613,6139,4474,0,49.49
+Tiberbu,tests done,2026-10-01,wajir,3232,281,116,165,0,8.69
+Tiberbu,tests done,2026-10-01,west pokot,20798,3735,109,3626,0,17.96
+Tiberbu,tests ordered,2025-11-01,bungoma,1,1,1,0,0,100.0
+Tiberbu,tests ordered,2025-11-01,elgeyo marakwet,2,0,0,0,0,0.0
+Tiberbu,tests ordered,2025-11-01,embu,10,0,0,0,0,0.0
+Tiberbu,tests ordered,2025-11-01,garissa,18,3,0,3,0,16.67
+Tiberbu,tests ordered,2025-11-01,kajiado,7,1,0,1,0,14.29
+Tiberbu,tests ordered,2025-11-01,kakamega,37,16,6,10,0,43.24
+Tiberbu,tests ordered,2025-11-01,kericho,10,1,0,1,0,10.0
+Tiberbu,tests ordered,2025-11-01,kirinyaga,3,0,0,0,0,0.0
+Tiberbu,tests ordered,2025-11-01,makueni,28651,657,162,495,0,2.29
+Tiberbu,tests ordered,2025-11-01,migori,14,8,4,4,0,57.14
+Tiberbu,tests ordered,2025-11-01,mombasa,20512,3775,726,2765,284,18.4
+Tiberbu,tests ordered,2025-11-01,nairobi,24,2,1,1,0,8.33
+Tiberbu,tests ordered,2025-11-01,nakuru,34,3,0,3,0,8.82
+Tiberbu,tests ordered,2025-11-01,nandi,13,8,3,5,0,61.54
+Tiberbu,tests ordered,2025-11-01,nyandarua,18,2,1,1,0,11.11
+Tiberbu,tests ordered,2025-11-01,samburu,3,0,0,0,0,0.0
+Tiberbu,tests ordered,2025-11-01,taita taveta,6308,840,147,693,0,13.32
+Tiberbu,tests ordered,2025-11-01,tharaka nithi,14,0,0,0,0,0.0
+Tiberbu,tests ordered,2025-11-01,wajir,12,7,5,2,0,58.33
+Tiberbu,tests ordered,2025-12-01,bomet,2,0,0,0,0,0.0
+Tiberbu,tests ordered,2025-12-01,bungoma,12,8,3,5,0,66.67
+Tiberbu,tests ordered,2025-12-01,elgeyo marakwet,2,0,0,0,0,0.0
+Tiberbu,tests ordered,2025-12-01,embu,10,0,0,0,0,0.0
+Tiberbu,tests ordered,2025-12-01,garissa,41,5,1,4,0,12.2
+Tiberbu,tests ordered,2025-12-01,kajiado,9,1,0,1,0,11.11
+Tiberbu,tests ordered,2025-12-01,kakamega,57,26,13,13,0,45.61
+Tiberbu,tests ordered,2025-12-01,kericho,12,1,0,1,0,8.33
+Tiberbu,tests ordered,2025-12-01,kirinyaga,16,0,0,0,0,0.0
+Tiberbu,tests ordered,2025-12-01,makueni,24826,681,159,522,0,2.74
+Tiberbu,tests ordered,2025-12-01,migori,15,10,8,2,0,66.67
+Tiberbu,tests ordered,2025-12-01,mombasa,14777,2272,355,1751,166,15.38
+Tiberbu,tests ordered,2025-12-01,nairobi,29,1,1,0,0,3.45
+Tiberbu,tests ordered,2025-12-01,nakuru,1051,36,7,29,0,3.43
+Tiberbu,tests ordered,2025-12-01,nandi,27,9,5,4,0,33.33
+Tiberbu,tests ordered,2025-12-01,nyandarua,20,0,0,0,0,0.0
+Tiberbu,tests ordered,2025-12-01,samburu,3,1,1,0,0,33.33
+Tiberbu,tests ordered,2025-12-01,taita taveta,4664,620,156,464,0,13.29
+Tiberbu,tests ordered,2025-12-01,tharaka nithi,16,0,0,0,0,0.0
+Tiberbu,tests ordered,2025-12-01,turkana,2,2,1,1,0,100.0
+Tiberbu,tests ordered,2025-12-01,vihiga,333,146,19,127,0,43.84
+Tiberbu,tests ordered,2025-12-01,wajir,225,49,34,15,0,21.78
+Tiberbu,tests ordered,2026-01-01,baringo,13,4,0,4,0,30.77
+Tiberbu,tests ordered,2026-01-01,bomet,63,4,0,4,0,6.35
+Tiberbu,tests ordered,2026-01-01,bungoma,25,20,9,11,0,80.0
+Tiberbu,tests ordered,2026-01-01,elgeyo marakwet,2,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-01-01,embu,19,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-01-01,garissa,81,13,2,11,0,16.05
+Tiberbu,tests ordered,2026-01-01,kajiado,7,1,1,0,0,14.29
+Tiberbu,tests ordered,2026-01-01,kakamega,105,60,23,37,0,57.14
+Tiberbu,tests ordered,2026-01-01,kericho,36,12,2,10,0,33.33
+Tiberbu,tests ordered,2026-01-01,kirinyaga,6,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-01-01,makueni,27507,705,237,468,0,2.56
+Tiberbu,tests ordered,2026-01-01,meru,2,1,1,0,0,50.0
+Tiberbu,tests ordered,2026-01-01,migori,40,27,19,8,0,67.5
+Tiberbu,tests ordered,2026-01-01,mombasa,14372,1730,413,1126,191,12.04
+Tiberbu,tests ordered,2026-01-01,nairobi,8,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-01-01,nakuru,5331,392,198,194,0,7.35
+Tiberbu,tests ordered,2026-01-01,nandi,65,24,15,9,0,36.92
+Tiberbu,tests ordered,2026-01-01,nyandarua,31,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-01-01,nyeri,2,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-01-01,samburu,5,1,1,0,0,20.0
+Tiberbu,tests ordered,2026-01-01,taita taveta,4015,501,181,320,0,12.48
+Tiberbu,tests ordered,2026-01-01,tharaka nithi,16,1,0,1,0,6.25
+Tiberbu,tests ordered,2026-01-01,turkana,9,6,5,1,0,66.67
+Tiberbu,tests ordered,2026-01-01,uasin gishu,7,3,2,1,0,42.86
+Tiberbu,tests ordered,2026-01-01,vihiga,9411,4602,2558,2044,0,48.9
+Tiberbu,tests ordered,2026-01-01,wajir,153,35,26,9,0,22.88
+Tiberbu,tests ordered,2026-02-01,baringo,30,7,1,6,0,23.33
+Tiberbu,tests ordered,2026-02-01,bomet,99,9,3,6,0,9.09
+Tiberbu,tests ordered,2026-02-01,bungoma,72,38,11,27,0,52.78
+Tiberbu,tests ordered,2026-02-01,busia,7,5,1,4,0,71.43
+Tiberbu,tests ordered,2026-02-01,elgeyo marakwet,27,1,0,1,0,3.7
+Tiberbu,tests ordered,2026-02-01,embu,36,4,1,3,0,11.11
+Tiberbu,tests ordered,2026-02-01,garissa,63,8,2,6,0,12.7
+Tiberbu,tests ordered,2026-02-01,kajiado,12,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-02-01,kakamega,113,80,46,34,0,70.8
+Tiberbu,tests ordered,2026-02-01,kericho,87,15,6,9,0,17.24
+Tiberbu,tests ordered,2026-02-01,kirinyaga,24,3,0,3,0,12.5
+Tiberbu,tests ordered,2026-02-01,lamu,1,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-02-01,makueni,26451,840,207,633,0,3.18
+Tiberbu,tests ordered,2026-02-01,meru,19,1,0,1,0,5.26
+Tiberbu,tests ordered,2026-02-01,migori,44,23,19,4,0,52.27
+Tiberbu,tests ordered,2026-02-01,mombasa,22617,3986,986,2431,569,17.62
+Tiberbu,tests ordered,2026-02-01,nairobi,60,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-02-01,nakuru,11366,586,255,331,0,5.16
+Tiberbu,tests ordered,2026-02-01,nandi,36,11,8,3,0,30.56
+Tiberbu,tests ordered,2026-02-01,nyandarua,34,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-02-01,nyeri,79,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-02-01,samburu,13,2,0,2,0,15.38
+Tiberbu,tests ordered,2026-02-01,taita taveta,6236,1090,188,902,0,17.48
+Tiberbu,tests ordered,2026-02-01,tharaka nithi,20,4,0,4,0,20.0
+Tiberbu,tests ordered,2026-02-01,turkana,26,25,20,5,0,96.15
+Tiberbu,tests ordered,2026-02-01,uasin gishu,29,6,1,5,0,20.69
+Tiberbu,tests ordered,2026-02-01,vihiga,15691,9100,6792,2308,0,58.0
+Tiberbu,tests ordered,2026-02-01,wajir,84,17,6,11,0,20.24
+Tiberbu,tests ordered,2026-03-01,baringo,26,7,5,2,0,26.92
+Tiberbu,tests ordered,2026-03-01,bomet,107,12,1,11,0,11.21
+Tiberbu,tests ordered,2026-03-01,bungoma,98,51,15,36,0,52.04
+Tiberbu,tests ordered,2026-03-01,busia,17,8,0,8,0,47.06
+Tiberbu,tests ordered,2026-03-01,elgeyo marakwet,24,4,3,1,0,16.67
+Tiberbu,tests ordered,2026-03-01,embu,30,1,0,1,0,3.33
+Tiberbu,tests ordered,2026-03-01,garissa,88,11,0,11,0,12.5
+Tiberbu,tests ordered,2026-03-01,kajiado,36,1,1,0,0,2.78
+Tiberbu,tests ordered,2026-03-01,kakamega,155,96,53,43,0,61.94
+Tiberbu,tests ordered,2026-03-01,kericho,79,18,12,6,0,22.78
+Tiberbu,tests ordered,2026-03-01,kirinyaga,35,2,0,2,0,5.71
+Tiberbu,tests ordered,2026-03-01,lamu,2,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-03-01,makueni,22083,736,177,559,0,3.33
+Tiberbu,tests ordered,2026-03-01,meru,5,1,1,0,0,20.0
+Tiberbu,tests ordered,2026-03-01,migori,71,43,35,8,0,60.56
+Tiberbu,tests ordered,2026-03-01,mombasa,16290,3209,706,2222,281,19.7
+Tiberbu,tests ordered,2026-03-01,nairobi,43,3,1,2,0,6.98
+Tiberbu,tests ordered,2026-03-01,nakuru,7377,429,172,257,0,5.82
+Tiberbu,tests ordered,2026-03-01,nandi,75,15,8,7,0,20.0
+Tiberbu,tests ordered,2026-03-01,nyandarua,17,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-03-01,nyeri,58,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-03-01,samburu,6,6,4,2,0,100.0
+Tiberbu,tests ordered,2026-03-01,taita taveta,5623,1287,447,840,0,22.89
+Tiberbu,tests ordered,2026-03-01,tharaka nithi,5,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-03-01,turkana,55,29,16,13,0,52.73
+Tiberbu,tests ordered,2026-03-01,uasin gishu,20,7,6,1,0,35.0
+Tiberbu,tests ordered,2026-03-01,vihiga,17780,10986,7486,3500,0,61.79
+Tiberbu,tests ordered,2026-03-01,wajir,291,37,12,25,0,12.71
+Tiberbu,tests ordered,2026-04-01,baringo,49,6,2,4,0,12.24
+Tiberbu,tests ordered,2026-04-01,bomet,184,25,8,17,0,13.59
+Tiberbu,tests ordered,2026-04-01,bungoma,119,56,22,34,0,47.06
+Tiberbu,tests ordered,2026-04-01,busia,27,13,5,8,0,48.15
+Tiberbu,tests ordered,2026-04-01,elgeyo marakwet,16,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-04-01,embu,71,1,0,1,0,1.41
+Tiberbu,tests ordered,2026-04-01,garissa,136,14,0,14,0,10.29
+Tiberbu,tests ordered,2026-04-01,kajiado,72,1,1,0,0,1.39
+Tiberbu,tests ordered,2026-04-01,kakamega,217,115,68,47,0,53.0
+Tiberbu,tests ordered,2026-04-01,kericho,136,38,25,13,0,27.94
+Tiberbu,tests ordered,2026-04-01,kirinyaga,59,5,1,4,0,8.47
+Tiberbu,tests ordered,2026-04-01,kisii,9,4,0,4,0,44.44
+Tiberbu,tests ordered,2026-04-01,makueni,19954,727,196,531,0,3.64
+Tiberbu,tests ordered,2026-04-01,meru,34,3,1,2,0,8.82
+Tiberbu,tests ordered,2026-04-01,migori,105,54,39,15,0,51.43
+Tiberbu,tests ordered,2026-04-01,mombasa,19939,4156,585,3154,417,20.84
+Tiberbu,tests ordered,2026-04-01,nairobi,66,5,2,3,0,7.58
+Tiberbu,tests ordered,2026-04-01,nakuru,5969,357,147,210,0,5.98
+Tiberbu,tests ordered,2026-04-01,nandi,154,41,19,22,0,26.62
+Tiberbu,tests ordered,2026-04-01,narok,2,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-04-01,nyamira,1,1,1,0,0,100.0
+Tiberbu,tests ordered,2026-04-01,nyandarua,65,1,0,1,0,1.54
+Tiberbu,tests ordered,2026-04-01,nyeri,66,1,0,1,0,1.52
+Tiberbu,tests ordered,2026-04-01,samburu,29,9,3,6,0,31.03
+Tiberbu,tests ordered,2026-04-01,taita taveta,5689,1029,464,565,0,18.09
+Tiberbu,tests ordered,2026-04-01,tharaka nithi,39,4,0,4,0,10.26
+Tiberbu,tests ordered,2026-04-01,turkana,79,68,46,22,0,86.08
+Tiberbu,tests ordered,2026-04-01,uasin gishu,57,9,3,6,0,15.79
+Tiberbu,tests ordered,2026-04-01,vihiga,18966,10841,7165,3676,0,57.16
+Tiberbu,tests ordered,2026-04-01,wajir,71,11,3,8,0,15.49
+Tiberbu,tests ordered,2026-05-01,baringo,49,10,3,7,0,20.41
+Tiberbu,tests ordered,2026-05-01,bomet,193,19,3,16,0,9.84
+Tiberbu,tests ordered,2026-05-01,bungoma,159,75,20,55,0,47.17
+Tiberbu,tests ordered,2026-05-01,busia,30,28,16,12,0,93.33
+Tiberbu,tests ordered,2026-05-01,elgeyo marakwet,25,2,0,2,0,8.0
+Tiberbu,tests ordered,2026-05-01,embu,80,4,0,4,0,5.0
+Tiberbu,tests ordered,2026-05-01,garissa,149,23,1,22,0,15.44
+Tiberbu,tests ordered,2026-05-01,kajiado,140,1,1,0,0,0.71
+Tiberbu,tests ordered,2026-05-01,kakamega,429,223,160,63,0,51.98
+Tiberbu,tests ordered,2026-05-01,kericho,194,50,23,27,0,25.77
+Tiberbu,tests ordered,2026-05-01,kirinyaga,85,7,2,5,0,8.24
+Tiberbu,tests ordered,2026-05-01,kisii,36,15,9,6,0,41.67
+Tiberbu,tests ordered,2026-05-01,lamu,5,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-05-01,machakos,1,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-05-01,makueni,21525,779,312,467,0,3.62
+Tiberbu,tests ordered,2026-05-01,meru,69,2,2,0,0,2.9
+Tiberbu,tests ordered,2026-05-01,migori,172,91,66,25,0,52.91
+Tiberbu,tests ordered,2026-05-01,mombasa,22574,5639,751,4502,386,24.98
+Tiberbu,tests ordered,2026-05-01,nairobi,112,7,2,5,0,6.25
+Tiberbu,tests ordered,2026-05-01,nakuru,5437,325,119,206,0,5.98
+Tiberbu,tests ordered,2026-05-01,nandi,184,45,19,26,0,24.46
+Tiberbu,tests ordered,2026-05-01,nyamira,23,11,7,4,0,47.83
+Tiberbu,tests ordered,2026-05-01,nyandarua,67,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-05-01,nyeri,136,1,1,0,0,0.74
+Tiberbu,tests ordered,2026-05-01,samburu,37,6,2,4,0,16.22
+Tiberbu,tests ordered,2026-05-01,taita taveta,6076,1098,362,736,0,18.07
+Tiberbu,tests ordered,2026-05-01,tana river,2,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-05-01,tharaka nithi,41,2,0,2,0,4.88
+Tiberbu,tests ordered,2026-05-01,trans nzoia,5,2,1,1,0,40.0
+Tiberbu,tests ordered,2026-05-01,turkana,101,69,44,25,0,68.32
+Tiberbu,tests ordered,2026-05-01,uasin gishu,48,10,3,7,0,20.83
+Tiberbu,tests ordered,2026-05-01,vihiga,23050,13279,8542,4737,0,57.61
+Tiberbu,tests ordered,2026-05-01,wajir,56,11,5,6,0,19.64
+Tiberbu,tests ordered,2026-05-01,west pokot,9,3,0,3,0,33.33
+Tiberbu,tests ordered,2026-06-01,baringo,43,18,14,4,0,41.86
+Tiberbu,tests ordered,2026-06-01,bomet,229,25,18,7,0,10.92
+Tiberbu,tests ordered,2026-06-01,bungoma,279,123,52,71,0,44.09
+Tiberbu,tests ordered,2026-06-01,busia,86,50,28,22,0,58.14
+Tiberbu,tests ordered,2026-06-01,elgeyo marakwet,13,3,2,1,0,23.08
+Tiberbu,tests ordered,2026-06-01,embu,149,7,1,6,0,4.7
+Tiberbu,tests ordered,2026-06-01,garissa,135,14,5,9,0,10.37
+Tiberbu,tests ordered,2026-06-01,kajiado,217,5,4,1,0,2.3
+Tiberbu,tests ordered,2026-06-01,kakamega,536,353,251,102,0,65.86
+Tiberbu,tests ordered,2026-06-01,kericho,206,37,7,30,0,17.96
+Tiberbu,tests ordered,2026-06-01,kiambu,1,0,0,0,0,0.0
+Tiberbu,tests ordered,2026-06-01,kirinyaga,85,6,1,5,0,7.06
+Tiberbu,tests ordered,2026-06-01,kisii,39,15,6,9,0,38.46
+Tiberbu,tests ordered,2026-06-01,kwale,17,6,3,3,0,35.29
+Tiberbu,tests ordered,2026-06-01,lamu,12,3,3,0,0,25.0
+Tiberbu,tests ordered,2026-06-01,machakos,17,1,0,1,0,5.88
+Tiberbu,tests ordered,2026-06-01,makueni,14592,364,113,251,0,2.49
+Tiberbu,tests ordered,2026-06-01,meru,111,7,5,2,0,6.31
+Tiberbu,tests ordered,2026-06-01,migori,176,104,90,14,0,59.09
+Tiberbu,tests ordered,2026-06-01,mombasa,19083,4408,447,3726,235,23.1
+Tiberbu,tests ordered,2026-06-01,nairobi,231,7,4,3,0,3.03
+Tiberbu,tests ordered,2026-06-01,nakuru,4992,301,106,195,0,6.03
+Tiberbu,tests ordered,2026-06-01,nandi,324,86,53,33,0,26.54
+Tiberbu,tests ordered,2026-06-01,narok,11,3,0,3,0,27.27
+Tiberbu,tests ordered,2026-06-01,nyamira,71,17,9,8,0,23.94
+Tiberbu,tests ordered,2026-06-01,nyandarua,37,1,0,1,0,2.7
+Tiberbu,tests ordered,2026-06-01,nyeri,369,2,0,2,0,0.54
+Tiberbu,tests ordered,2026-06-01,samburu,77,14,5,9,0,18.18
+Tiberbu,tests ordered,2026-06-01,taita taveta,5477,871,234,637,0,15.9
+Tiberbu,tests ordered,2026-06-01,tana river,39,14,1,13,0,35.9
+Tiberbu,tests ordered,2026-06-01,tharaka nithi,52,5,2,3,0,9.62
+Tiberbu,tests ordered,2026-06-01,trans nzoia,12,6,4,2,0,50.0
+Tiberbu,tests ordered,2026-06-01,turkana,117,99,72,27,0,84.62
+Tiberbu,tests ordered,2026-06-01,uasin gishu,111,19,2,17,0,17.12
+Tiberbu,tests ordered,2026-06-01,vihiga,20067,11624,7863,3761,0,57.93
+Tiberbu,tests ordered,2026-06-01,wajir,101,17,6,11,0,16.83
+Tiberbu,tests ordered,2026-06-01,west pokot,13,4,0,4,0,30.77
+Tiberbu,tests ordered,2026-07-01,baringo,694,146,69,77,0,21.04
+Tiberbu,tests ordered,2026-07-01,bomet,1443,85,26,59,0,5.89
+Tiberbu,tests ordered,2026-07-01,bungoma,1160,618,260,358,0,53.28
+Tiberbu,tests ordered,2026-07-01,busia,297,154,109,45,0,51.85
+Tiberbu,tests ordered,2026-07-01,elgeyo marakwet,287,44,5,39,0,15.33
+Tiberbu,tests ordered,2026-07-01,embu,269,6,0,6,0,2.23
+Tiberbu,tests ordered,2026-07-01,garissa,1289,118,29,89,0,9.15
+Tiberbu,tests ordered,2026-07-01,isiolo,80,9,6,3,0,11.25
+Tiberbu,tests ordered,2026-07-01,kajiado,904,34,22,12,0,3.76
+Tiberbu,tests ordered,2026-07-01,kakamega,3410,1606,912,694,0,47.1
+Tiberbu,tests ordered,2026-07-01,kericho,340,68,21,47,0,20.0
+Tiberbu,tests ordered,2026-07-01,kiambu,3006,40,10,30,0,1.33
+Tiberbu,tests ordered,2026-07-01,kirinyaga,1357,66,3,63,0,4.86
+Tiberbu,tests ordered,2026-07-01,kisii,1250,331,89,242,0,26.48
+Tiberbu,tests ordered,2026-07-01,kitui,1079,21,11,10,0,1.95
+Tiberbu,tests ordered,2026-07-01,kwale,515,79,41,38,0,15.34
+Tiberbu,tests ordered,2026-07-01,laikipia,69,1,1,0,0,1.45
+Tiberbu,tests ordered,2026-07-01,lamu,221,20,18,2,0,9.05
+Tiberbu,tests ordered,2026-07-01,machakos,695,10,5,5,0,1.44
+Tiberbu,tests ordered,2026-07-01,makueni,31725,508,76,432,0,1.6
+Tiberbu,tests ordered,2026-07-01,mandera,358,43,11,32,0,12.01
+Tiberbu,tests ordered,2026-07-01,marsabit,452,33,5,28,0,7.3
+Tiberbu,tests ordered,2026-07-01,meru,1962,121,73,48,0,6.17
+Tiberbu,tests ordered,2026-07-01,migori,1749,831,427,404,0,47.51
+Tiberbu,tests ordered,2026-07-01,mombasa,15735,3029,288,2503,238,19.25
+Tiberbu,tests ordered,2026-07-01,nairobi,3637,142,48,94,0,3.9
+Tiberbu,tests ordered,2026-07-01,nakuru,12277,473,75,398,0,3.85
+Tiberbu,tests ordered,2026-07-01,nandi,780,134,37,97,0,17.18
+Tiberbu,tests ordered,2026-07-01,narok,414,91,17,74,0,21.98
+Tiberbu,tests ordered,2026-07-01,nyamira,283,97,52,45,0,34.28
+Tiberbu,tests ordered,2026-07-01,nyandarua,230,5,0,5,0,2.17
+Tiberbu,tests ordered,2026-07-01,nyeri,3911,21,6,15,0,0.54
+Tiberbu,tests ordered,2026-07-01,samburu,296,68,2,66,0,22.97
+Tiberbu,tests ordered,2026-07-01,taita taveta,5232,608,93,515,0,11.62
+Tiberbu,tests ordered,2026-07-01,tana river,252,45,19,26,0,17.86
+Tiberbu,tests ordered,2026-07-01,tharaka nithi,168,18,4,14,0,10.71
+Tiberbu,tests ordered,2026-07-01,trans nzoia,283,55,17,38,0,19.43
+Tiberbu,tests ordered,2026-07-01,turkana,603,440,250,190,0,72.97
+Tiberbu,tests ordered,2026-07-01,uasin gishu,533,62,13,49,0,11.63
+Tiberbu,tests ordered,2026-07-01,vihiga,18543,9485,6562,2923,0,51.15
+Tiberbu,tests ordered,2026-07-01,wajir,1843,158,13,145,0,8.57
+Tiberbu,tests ordered,2026-07-01,west pokot,196,26,14,12,0,13.27
+Tiberbu,tests ordered,2026-08-01,baringo,5474,914,280,634,0,16.7
+Tiberbu,tests ordered,2026-08-01,bomet,20542,1572,333,1239,0,7.65
+Tiberbu,tests ordered,2026-08-01,bungoma,4600,2239,885,1354,0,48.67
+Tiberbu,tests ordered,2026-08-01,busia,565,219,150,69,0,38.76
+Tiberbu,tests ordered,2026-08-01,elgeyo marakwet,2881,519,81,438,0,18.01
+Tiberbu,tests ordered,2026-08-01,embu,1762,70,10,60,0,3.97
+Tiberbu,tests ordered,2026-08-01,garissa,12798,1025,214,811,0,8.01
+Tiberbu,tests ordered,2026-08-01,isiolo,565,41,14,27,0,7.26
+Tiberbu,tests ordered,2026-08-01,kajiado,9660,169,71,98,0,1.75
+Tiberbu,tests ordered,2026-08-01,kakamega,20038,8483,3814,4669,0,42.33
+Tiberbu,tests ordered,2026-08-01,kericho,3639,504,48,456,0,13.85
+Tiberbu,tests ordered,2026-08-01,kiambu,33739,438,106,332,0,1.3
+Tiberbu,tests ordered,2026-08-01,kirinyaga,16360,695,56,639,0,4.25
+Tiberbu,tests ordered,2026-08-01,kisii,12469,3130,701,2429,0,25.1
+Tiberbu,tests ordered,2026-08-01,kitui,10686,88,18,70,0,0.82
+Tiberbu,tests ordered,2026-08-01,kwale,191,12,7,5,0,6.28
+Tiberbu,tests ordered,2026-08-01,laikipia,816,21,12,9,0,2.57
+Tiberbu,tests ordered,2026-08-01,lamu,1411,68,59,9,0,4.82
+Tiberbu,tests ordered,2026-08-01,machakos,8444,129,47,82,0,1.53
+Tiberbu,tests ordered,2026-08-01,makueni,24994,332,43,289,0,1.33
+Tiberbu,tests ordered,2026-08-01,mandera,6282,704,156,548,0,11.21
+Tiberbu,tests ordered,2026-08-01,marsabit,5024,370,49,321,0,7.36
+Tiberbu,tests ordered,2026-08-01,meru,17462,893,501,392,0,5.11
+Tiberbu,tests ordered,2026-08-01,migori,10398,4522,2018,2504,0,43.49
+Tiberbu,tests ordered,2026-08-01,mombasa,7180,1018,113,838,67,14.18
+Tiberbu,tests ordered,2026-08-01,nairobi,35282,1477,521,956,0,4.19
+Tiberbu,tests ordered,2026-08-01,nakuru,15082,526,95,431,0,3.49
+Tiberbu,tests ordered,2026-08-01,nandi,16097,2422,431,1991,0,15.05
+Tiberbu,tests ordered,2026-08-01,narok,2136,574,45,529,0,26.87
+Tiberbu,tests ordered,2026-08-01,nyamira,5463,1227,383,844,0,22.46
+Tiberbu,tests ordered,2026-08-01,nyandarua,2282,22,8,14,0,0.96
+Tiberbu,tests ordered,2026-08-01,nyeri,39702,203,57,146,0,0.51
+Tiberbu,tests ordered,2026-08-01,samburu,3691,533,29,504,0,14.44
+Tiberbu,tests ordered,2026-08-01,taita taveta,5589,428,59,369,0,7.66
+Tiberbu,tests ordered,2026-08-01,tana river,77,9,6,3,0,11.69
+Tiberbu,tests ordered,2026-08-01,tharaka nithi,8528,596,48,548,0,6.99
+Tiberbu,tests ordered,2026-08-01,trans nzoia,1280,227,41,186,0,17.73
+Tiberbu,tests ordered,2026-08-01,turkana,8816,4509,1599,2910,0,51.15
+Tiberbu,tests ordered,2026-08-01,uasin gishu,5707,736,88,648,0,12.9
+Tiberbu,tests ordered,2026-08-01,vihiga,7345,3216,1878,1338,0,43.78
+Tiberbu,tests ordered,2026-08-01,wajir,2360,239,102,137,0,10.13
+Tiberbu,tests ordered,2026-08-01,west pokot,918,176,31,145,0,19.17
+Tiberbu,tests ordered,2026-09-01,baringo,12550,1800,441,1359,0,14.34
+Tiberbu,tests ordered,2026-09-01,bomet,29817,2594,488,2106,0,8.7
+Tiberbu,tests ordered,2026-09-01,bungoma,40783,16857,3802,13055,0,41.33
+Tiberbu,tests ordered,2026-09-01,busia,8984,3870,1982,1888,0,43.08
+Tiberbu,tests ordered,2026-09-01,elgeyo marakwet,8699,1046,133,913,0,12.02
+Tiberbu,tests ordered,2026-09-01,embu,17178,618,48,570,0,3.6
+Tiberbu,tests ordered,2026-09-01,garissa,14649,1135,296,839,0,7.75
+Tiberbu,tests ordered,2026-09-01,isiolo,544,49,35,14,0,9.01
+Tiberbu,tests ordered,2026-09-01,kajiado,24290,431,232,199,0,1.77
+Tiberbu,tests ordered,2026-09-01,kakamega,45356,19575,10181,9394,0,43.16
+Tiberbu,tests ordered,2026-09-01,kericho,33047,4637,806,3831,0,14.03
+Tiberbu,tests ordered,2026-09-01,kiambu,46784,638,106,532,0,1.36
+Tiberbu,tests ordered,2026-09-01,kirinyaga,19840,779,52,727,0,3.93
+Tiberbu,tests ordered,2026-09-01,kisii,21466,5478,1294,4184,0,25.52
+Tiberbu,tests ordered,2026-09-01,kitui,18498,269,158,111,0,1.45
+Tiberbu,tests ordered,2026-09-01,kwale,16644,3267,1118,2149,0,19.63
+Tiberbu,tests ordered,2026-09-01,laikipia,3454,95,38,57,0,2.75
+Tiberbu,tests ordered,2026-09-01,lamu,2045,102,72,30,0,4.99
+Tiberbu,tests ordered,2026-09-01,machakos,14451,228,70,158,0,1.58
+Tiberbu,tests ordered,2026-09-01,makueni,41419,498,78,420,0,1.2
+Tiberbu,tests ordered,2026-09-01,mandera,7454,809,97,712,0,10.85
+Tiberbu,tests ordered,2026-09-01,marsabit,6181,396,62,334,0,6.41
+Tiberbu,tests ordered,2026-09-01,meru,27466,1786,1147,639,0,6.5
+Tiberbu,tests ordered,2026-09-01,migori,21490,9129,5669,3460,0,42.48
+Tiberbu,tests ordered,2026-09-01,mombasa,19892,3984,391,3228,365,20.03
+Tiberbu,tests ordered,2026-09-01,nairobi,51919,2174,594,1580,0,4.19
+Tiberbu,tests ordered,2026-09-01,nakuru,16684,599,129,470,0,3.59
+Tiberbu,tests ordered,2026-09-01,nandi,39804,6756,1484,5272,0,16.97
+Tiberbu,tests ordered,2026-09-01,narok,4184,755,152,603,0,18.04
+Tiberbu,tests ordered,2026-09-01,nyamira,10473,2496,960,1536,0,23.83
+Tiberbu,tests ordered,2026-09-01,nyandarua,9530,70,15,55,0,0.73
+Tiberbu,tests ordered,2026-09-01,nyeri,40144,234,44,190,0,0.58
+Tiberbu,tests ordered,2026-09-01,samburu,5705,710,68,642,0,12.45
+Tiberbu,tests ordered,2026-09-01,taita taveta,14515,1547,181,1366,0,10.66
+Tiberbu,tests ordered,2026-09-01,tana river,6989,1089,155,934,0,15.58
+Tiberbu,tests ordered,2026-09-01,tharaka nithi,14019,982,82,900,0,7.0
+Tiberbu,tests ordered,2026-09-01,trans nzoia,4838,702,167,535,0,14.51
+Tiberbu,tests ordered,2026-09-01,turkana,12218,5269,1875,3394,0,43.12
+Tiberbu,tests ordered,2026-09-01,uasin gishu,23270,2664,526,2138,0,11.45
+Tiberbu,tests ordered,2026-09-01,vihiga,16572,8131,5252,2879,0,49.06
+Tiberbu,tests ordered,2026-09-01,wajir,2861,160,35,125,0,5.59
+Tiberbu,tests ordered,2026-09-01,west pokot,7013,1674,92,1582,0,23.87
+Tiberbu,tests ordered,2026-10-01,baringo,20162,3126,480,2646,0,15.5
+Tiberbu,tests ordered,2026-10-01,bomet,31350,2463,472,1991,0,7.86
+Tiberbu,tests ordered,2026-10-01,bungoma,66078,26370,5302,21068,0,39.91
+Tiberbu,tests ordered,2026-10-01,busia,25977,11707,4638,7069,0,45.07
+Tiberbu,tests ordered,2026-10-01,elgeyo marakwet,12238,1557,172,1385,0,12.72
+Tiberbu,tests ordered,2026-10-01,embu,17800,688,70,618,0,3.87
+Tiberbu,tests ordered,2026-10-01,garissa,18676,1379,350,1029,0,7.38
+Tiberbu,tests ordered,2026-10-01,isiolo,1279,95,32,63,0,7.43
+Tiberbu,tests ordered,2026-10-01,kajiado,31889,686,352,334,0,2.15
+Tiberbu,tests ordered,2026-10-01,kakamega,60950,26197,12709,13488,0,42.98
+Tiberbu,tests ordered,2026-10-01,kericho,41113,5856,1178,4678,0,14.24
+Tiberbu,tests ordered,2026-10-01,kiambu,55203,870,211,659,0,1.58
+Tiberbu,tests ordered,2026-10-01,kirinyaga,19436,1071,67,1004,0,5.51
+Tiberbu,tests ordered,2026-10-01,kisii,25711,6763,1563,5200,0,26.3
+Tiberbu,tests ordered,2026-10-01,kitui,30462,871,442,429,0,2.86
+Tiberbu,tests ordered,2026-10-01,kwale,37611,8436,2131,6305,0,22.43
+Tiberbu,tests ordered,2026-10-01,laikipia,6596,256,80,176,0,3.88
+Tiberbu,tests ordered,2026-10-01,lamu,3077,260,193,67,0,8.45
+Tiberbu,tests ordered,2026-10-01,machakos,19385,351,81,270,0,1.81
+Tiberbu,tests ordered,2026-10-01,makueni,57531,786,191,595,0,1.37
+Tiberbu,tests ordered,2026-10-01,mandera,9078,1027,109,918,0,11.31
+Tiberbu,tests ordered,2026-10-01,marsabit,5521,445,49,396,0,8.06
+Tiberbu,tests ordered,2026-10-01,meru,47589,3871,2544,1327,0,8.13
+Tiberbu,tests ordered,2026-10-01,migori,43806,16564,9833,6731,0,37.81
+Tiberbu,tests ordered,2026-10-01,mombasa,44788,8256,1217,6141,898,18.43
+Tiberbu,tests ordered,2026-10-01,nairobi,84153,2904,824,2080,0,3.45
+Tiberbu,tests ordered,2026-10-01,nakuru,22508,911,240,671,0,4.05
+Tiberbu,tests ordered,2026-10-01,nandi,45355,8467,1800,6667,0,18.67
+Tiberbu,tests ordered,2026-10-01,narok,12582,1914,296,1618,0,15.21
+Tiberbu,tests ordered,2026-10-01,nyamira,11310,2882,1256,1626,0,25.48
+Tiberbu,tests ordered,2026-10-01,nyandarua,16716,142,17,125,0,0.85
+Tiberbu,tests ordered,2026-10-01,nyeri,44051,298,64,234,0,0.68
+Tiberbu,tests ordered,2026-10-01,samburu,6070,817,56,761,0,13.46
+Tiberbu,tests ordered,2026-10-01,taita taveta,17113,1946,171,1775,0,11.37
+Tiberbu,tests ordered,2026-10-01,tana river,12398,2370,280,2090,0,19.12
+Tiberbu,tests ordered,2026-10-01,tharaka nithi,14568,1206,111,1095,0,8.28
+Tiberbu,tests ordered,2026-10-01,trans nzoia,10625,2120,473,1647,0,19.95
+Tiberbu,tests ordered,2026-10-01,turkana,17693,7631,2365,5266,0,43.13
+Tiberbu,tests ordered,2026-10-01,uasin gishu,33585,4339,963,3376,0,12.92
+Tiberbu,tests ordered,2026-10-01,vihiga,21624,10680,6172,4508,0,49.39
+Tiberbu,tests ordered,2026-10-01,wajir,3222,286,110,176,0,8.88
+Tiberbu,tests ordered,2026-10-01,west pokot,21013,3752,115,3637,0,17.86

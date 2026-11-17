@@ -127,6 +127,8 @@ From the EMR data alone, two groups of malaria indicators in the core framework 
 
 ## Still to confirm by reading data
 
+**Update, 17 November 2026.** Items 1, 2, 5, 6 and 8 have since been answered in [05-malaria-volumes.md](05-malaria-volumes.md), which counts malaria diagnoses and tests by month and county. Items 3, 4 and 7 are still open. One correction to this page: Tiberbu codes diagnoses in ICD-11 only, so the ICD-10 range B50 to B54 in item 1 matches nothing.
+
 1. **Which codes mean malaria.** In KenyaEMR and AMRS, find the malaria concepts in `concept_name`. In Tiberbu, find the malaria rows in `diagnosis_entry` (ICD-10 B50 to B54, ICD-11 1F40 to 1F4Z, and free-text descriptions).
 2. **Which tests are malaria tests** (mRDT, blood slide for malaria parasites) and how a positive result is written, in each source.
 3. **Which drugs are antimalarials** (artemether-lumefantrine and other ACTs, injectable artesunate, SP for IPTp) in `drug`, `item` and the free-text drug name columns.

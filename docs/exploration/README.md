@@ -10,7 +10,9 @@ A record of what is in the existing DHA lake (`s3://dha-analytics`, on Ceph), wr
 | [02-source-table-inventory.md](02-source-table-inventory.md) | Every table in the five EMR source folders, with row counts, sizes and last load dates |
 | [03-malaria-data-map.md](03-malaria-data-map.md) | For a disease question such as malaria: which tables supply patients, encounters, clinical notes, diagnoses, lab tests and prescriptions in each source |
 | [04-rmncah-data-map.md](04-rmncah-data-map.md) | For the RMNCAH-N dashboards: which tables and fields hold maternal, newborn, child, family planning and nutrition data in each of the three EMRs, how much each has, and a verdict for each of the 20 core indicators |
+| [05-malaria-volumes.md](05-malaria-volumes.md) | How many malaria diagnoses and malaria tests each source holds, and their share of all diagnoses and tests, by month and county for November 2025 to October 2026; which codes and test names mean malaria (counted 17 November 2026) |
 | [table_inventory.csv](table_inventory.csv) | The inventory as a spreadsheet, including the column names of every table |
+| [malaria_diagnoses_by_month_county.csv](malaria_diagnoses_by_month_county.csv), [malaria_tests_by_month_county.csv](malaria_tests_by_month_county.csv) | The malaria counts for every source, county and month, as spreadsheets |
 
 ## Main findings
 
@@ -62,6 +64,6 @@ A record of what is in the existing DHA lake (`s3://dha-analytics`, on Ceph), wr
 
 ## What has not been done yet
 
-- **No individual patient record has been examined.** The malaria page describes structure and volume only; which codes, test names and result values identify malaria is still to be confirmed, and the checks are listed at the end of [03-malaria-data-map.md](03-malaria-data-map.md). The RMNCAH-N page uses totals only, and the answer values inside Tiberbu's form fields are still to be read.
+- **No individual patient record has been examined.** The malaria data map describes structure only. Which codes and test names identify malaria, and the volumes by month and county, were counted on 17 November 2026 and are in [05-malaria-volumes.md](05-malaria-volumes.md); antimalarial drugs, Tiberbu test result values and the link from prescriptions to patients are still to be checked. The RMNCAH-N page uses totals only, and the answer values inside Tiberbu's form fields are still to be read.
 - The tables in the non-EMR Iceberg folders (facility registry, client registry, provider portal) were sized by folder but their columns were not examined.
 - The size given for `erp/` is a minimum, because its listing may have been cut short.
