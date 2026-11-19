@@ -11,6 +11,7 @@ A record of what is in the existing DHA lake (`s3://dha-analytics`, on Ceph), wr
 | [03-malaria-data-map.md](03-malaria-data-map.md) | For a disease question such as malaria: which tables supply patients, encounters, clinical notes, diagnoses, lab tests and prescriptions in each source |
 | [04-rmncah-data-map.md](04-rmncah-data-map.md) | For the RMNCAH-N dashboards: which tables and fields hold maternal, newborn, child, family planning and nutrition data in each of the three EMRs, how much each has, and a verdict for each of the 20 core indicators |
 | [05-malaria-volumes.md](05-malaria-volumes.md) | How many malaria diagnoses and malaria tests each source holds, and their share of all diagnoses and tests, by month and county for November 2025 to October 2026; which codes and test names mean malaria (counted 17 November 2026) |
+| [06-malaria-priority-indicators.md](06-malaria-priority-indicators.md) | For the 16 priority indicators of the malaria programme's guide: which ones the proof of concept's bronze can answer, which to build first, and what the team needs to agree (checked 19 November 2026) |
 | [table_inventory.csv](table_inventory.csv) | The inventory as a spreadsheet, including the column names of every table |
 | [malaria_diagnoses_by_month_county.csv](malaria_diagnoses_by_month_county.csv), [malaria_tests_by_month_county.csv](malaria_tests_by_month_county.csv) | The malaria counts for every source, county and month, as spreadsheets |
 
